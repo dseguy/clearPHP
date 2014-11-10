@@ -1,5 +1,5 @@
-<!-- Best practices -->
-# Switch statement requires default case (require-default)
+<!-- Good Practices -->
+# Switch Statement Requires Default Case
 
 Switch statement may have several cases and one default statement, which will act as a catch-all for all unspecified cases. It is considered good practice to always include a default statement, so as to catch any unusual or exceptional behavior. 
 
@@ -40,6 +40,6 @@ switch (foo) {
 <!--
 ### Options
 -->
-## When Not to Use It
+## When Not To Use It
 
 If default is not always necessary, you may disable this rule.

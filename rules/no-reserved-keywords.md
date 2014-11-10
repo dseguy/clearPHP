@@ -1,7 +1,8 @@
-<!-- Best practices -->
-# Disallow Use of Reserved Words as Names
+<!-- Good Practices -->
+# Disallow Use Of Reserved Words As Names
 
 PHP will forbid usage of some of its keywords as structure names, such as variables, functions, classes, constants, methods, properties, trait or interface. However, it will also let it slip past its compiler sometimes. 
+
 For example:
 
 ```php
@@ -48,7 +49,7 @@ $a = [ "class" => "or" ];
 
 ```
 
-## When Not to Use It
+## When Not To Use It
 
 If you don't fear any interference between structures names and code, you can turn this rule off.
 

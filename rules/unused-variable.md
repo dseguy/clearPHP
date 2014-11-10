@@ -1,5 +1,5 @@
-<!-- Best practices -->
-# Disallow Unused Variables (unused-variable)
+<!-- Good Practices -->
+# Disallow Unused Variables
 
 Variables that are created and not used anywhere in the code are most likely useless. Such variables consumes memory, use code space and may create confusion.
 
@@ -32,6 +32,6 @@ $x++;
 <!--
 ### Options
 -->
-## When Not to Use It
+## When Not To Use It
 
 If you don't want to be notified about unused variables or function arguments, you can safely turn this rule off.
