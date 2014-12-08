@@ -1,4 +1,4 @@
-<!-- generated on 04-12-2014 01:0:47-->
+<!-- generated on 09-12-2014 12:0:54-->
 # Rules
 
 Rules are listed below. 
@@ -15,13 +15,17 @@ The following rules are common sense practices that help avoid bugs or conflicts
 
  * [aliases-usage] (aliases-usage.md) - Aliases Usage
  * [constant-condition] (constant-condition.md) - Constant Condition
+ * [lowercase-keyword] (lowercase-keyword.md) - Lowercase Keywords
  * [no-dangling-commas] (no-dangling-commas.md) - No Dangling Commas
  * [no-double-quote] (no-double-quote.md) - No Double Quotes
  * [no-duplicate-case] (no-duplicate-case.md) - No Duplicate Case In Switch
  * [no-duplicate-key] (no-duplicate-key.md) - No Duplicate Keys In Array
  * [no-exit] (no-exit.md) - No Exit
+ * [no-extra-argument] (no-extra-argument.md) - No Extra Argument
  * [no-goto] (no-goto.md) - No Goto
  * [no-incompilable] (no-incompilable.md) - No Incompilable
+ * [no-missing-argument] (no-missing-argument.md) - No Missing Argument
+ * [no-nested-ternary] (no-nested-ternary.md) - No Nested Ternary
  * [no-noscream] (no-noscream.md) - No @
  * [no-reserved-keywords] (no-reserved-keywords.md) - Disallow Use Of Reserved Words As Names
  * [no-return-void] (no-return-void.md) - No Return Void
@@ -48,4 +52,5 @@ The following rules are extracted from the manual.
 The following rules are common coding conventions. They don't change PHP code, but will impact coding and understanding.
 
  * [no-bracketless-blocks] (no-bracketless-blocks.md) - No Bracketless Blocks
+ * [no-php4-constructor] (no-php4-constructor.md) - No PHP4 Constructor
 
