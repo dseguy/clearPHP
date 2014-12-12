@@ -8,7 +8,7 @@ It may hide some legitimate errors : for exemple, when `fopen()` used to emit to
 The operator will slow the code a lot. Compare the two codes below : the second one is much faster than the first. 
 
 ```php
-
+<?php
 // hidding errors
 for($i = 0; $i < MAX; $i++) {
     @$y[$i]++;
@@ -22,7 +22,7 @@ for($i = 0; $i < MAX; $i++) {
         $y[$i]++;
     }
 }
-
+?>
 ```
 
 

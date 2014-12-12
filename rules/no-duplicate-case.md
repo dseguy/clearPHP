@@ -10,6 +10,7 @@ This is useless as the second defined case will be silentely ignored.
 This rule require that every `switch()` statement has unique literal case, or complex calls. The followings are wrong. 
 
 ```php
+<?php
 switch($a) {
 	case 1: 
 		break 1;
@@ -21,12 +22,13 @@ switch($a) {
 		break 1;
 	default:	
 }
-
+?>
 ```php
 
 The following patterns are considered OK :
 
 ```php
+<?php
 switch($a) {
 	case $a + 1 == 2:  // complex comparison. Should be reviewed
 		break 1;
@@ -46,7 +48,7 @@ switch($a) {
 		break 1;
 	default:	
 }
-
+?>
 ```
 <!--
 ### Options

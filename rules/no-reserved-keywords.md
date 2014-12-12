@@ -6,7 +6,7 @@ PHP will forbid usage of some of its keywords as structure names, such as variab
 For example:
 
 ```php
-
+<?php
 class Null {
 	private $and = array();
 	
@@ -20,7 +20,7 @@ class Null {
 		$this->list(1,2,3);
 	}
 }
-
+?>
 ```
 
 In this example, `Null` is used as a class name, allowing `$var = new Null();`. PHP will compile and run such code. However, readability is decreased.
@@ -32,6 +32,7 @@ This rule is aimed at eliminating the use of PHP keywords and reserved words as 
 The following codes are considered warnings:
 
 ```php
+<?php
 $array = [];
 
 $xor = 1;
@@ -39,14 +40,15 @@ $xor = 1;
 class Null {}
 
 define('class', true);
+?>
 ```
 
 The following patterns are not considered warnings:
 
 ```php
-
+<?php
 $a = [ "class" => "or" ];
-
+?>
 ```
 
 ## When Not To Use It

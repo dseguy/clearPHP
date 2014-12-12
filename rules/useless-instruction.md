@@ -13,7 +13,7 @@ This rule targets code that doesn't do anything useful.
 The following code is considered a warning:
 
 ```php
-
+<?php
 // literals in the code flow
 1; 
 My_CONSTANT;
@@ -23,20 +23,21 @@ function () { return $x = 3; }
 // post-incrementation in a return
 return $a++;
 
-
+?>
 ```
 
 
 The following pattern is considered legit:
 
 ```php
+<?php
 
 // properties may be processed with __get()
 $object->property;
 
 // pre-incrementation in a return
 return ++$a;
-
+?>
 ```
 
 <!--

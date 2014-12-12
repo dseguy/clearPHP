@@ -18,7 +18,7 @@ print_r($array2);
 
 In this example, `$array[1]` finally get assigned with the value `'d'`, which is the last value in the second loop. Any assignation to `$a` would affect `$array` too.
 
-```
+`
 Array
 (
     [0] => a
@@ -29,7 +29,7 @@ Array
     [0] => c
     [1] => d
 )
-```
+`
 
 ## Rule Details
 
@@ -38,22 +38,25 @@ This rule targets code that doesn't unset the loop's reference after usage.
 The following code is considered a warning:
 
 ```php
-
+<?php
 foreach (array(1, 2, 3, 4) as &$value) {
     $value = $value * 2;
 }
 $other_value *= 2;
 unset($value); // don't wait too long to remove $value
+?>
 ```
 
 
 The following pattern is considered legit:
 
 ```php
+<?php
 foreach (array(1, 2, 3, 4) as &$value) {
     $value = $value * 2;
 }
 unset($value);
+?>
 ```
 
 <!--
