@@ -1,7 +1,7 @@
-<!-- generated on 12-12-2014 05:0:23-->
+<!-- generated on 12-12-2014 07:0:30-->
 # Rules
 
-This list contains thirty five rules, in six categories.
+This list contains thirty seven rules, in six categories.
 
 ## Potential Errors
 
@@ -34,6 +34,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [no-noscream] (no-noscream.md) - 
  * [no-reserved-keywords] (no-reserved-keywords.md) - 
  * [no-return-void] (no-return-void.md) - 
+ * [no-static-this] (no-static-this.md) - 
  * [no-switch-without-default] (no-switch-without-default.md) - 
  * [strict-comparisons] (strict-comparisons.md) - 
  * [unused-variable] (unused-variable.md) - 
@@ -54,6 +55,7 @@ The following rules are extracted from the manual.
  * [no-aliases] (no-aliases.md) - 
  * [no-deprecated] (no-deprecated.md) - 
  * [no-return-parenthesis] (no-return-parenthesis.md) - 
+ * [no-short-tags] (no-short-tags.md) - 
 
 ## Coding Conventions
 
