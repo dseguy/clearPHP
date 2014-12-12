@@ -56,7 +56,7 @@ HEREDOC;
 ## When Not To Use It
 If the application makes heavy use of one of the quotes in another related technology (HTML uses " a lot), it is good to use the other to create such literals in PHP. 
 
-Speed-wise, only very-high volume application will benefit from this. 
+Speed-wise, only very high volume application will benefit from this. 
 
 
 ## Further Reading 

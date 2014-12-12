@@ -18,7 +18,7 @@ print "Result : ".( $success ? $christmas ? 'transaction success and you get a g
 
 ## Rule Details
 
-Ternary operators are OK. Nesting them hurts. 
+Ternary operators are fine. Nesting them hurts. 
 
 <!--
 ## When Not To Use It

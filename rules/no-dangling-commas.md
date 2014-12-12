@@ -16,8 +16,6 @@ $array2 = ['c',
 
 This is valid syntax, and may be convenient if you plan to add other values in those arrays in the future. 
 
-This is also quite strange for developpers used to other languages. 
-
 ## Rule Details
 
 This rule targets array definitions that have an empty last slot. 
