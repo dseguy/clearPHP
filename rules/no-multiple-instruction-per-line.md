@@ -60,7 +60,7 @@ if ($a == 0) {if ($b) {$c ^= $d; $e ^= $f;} else {$g = $h; $i = $j; $k = $l; $m 
 ?>
 ```
 
-This code is considered OK : 
+This code is considered valid : 
 
 ```php
 <?php

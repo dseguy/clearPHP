@@ -21,7 +21,7 @@ It is recommended to provide only the needed arguments when calling a method or 
 
 This rule spots functions and methods calls with arguments than needed. 
 
-When the called method makes use of variable number of argument, using `func_get_args`, `func_get_arg` or `func_num_args`, or even the `...` operator, the numbero of acceptable argument is 
+When the called method makes use of variable number of argument, using `func_get_args`, `func_get_arg` or `func_num_args`, or even the `...` operator, the number of acceptable argument is. 
 
 The following codes are considered a warning:
 

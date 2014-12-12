@@ -8,7 +8,7 @@ The ternary operator is a compact version of a `if then else` structure. It is v
 print "Result : ".( $success ? 'transaction succeded' : 'transaction failed');
 ?>
 ```
-Ternary operators may be nested. This degrades very rapidely the readability of the code.
+Ternary operators may be nested. This degrades very quickly the readability of the code.
 
 ```php
 <?php

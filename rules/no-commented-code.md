@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # No Commented Code
 
-In the age of ubiquituous Version Control System, there is just no reason to put code in comments and commit them. 
+In the age of ubiquitous Version Control System, there is just no reason to put code in comments and commit them. 
 
 ## Rule Details
 

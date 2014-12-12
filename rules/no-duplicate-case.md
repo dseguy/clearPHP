@@ -23,7 +23,7 @@ switch($a) {
 	default:	
 }
 ?>
-```php
+```
 
 The following patterns are considered OK :
 

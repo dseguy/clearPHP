@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # Disallow Use Of Reserved Words As Names
 
-PHP will forbid usage of some of its keywords as structure names, such as variables, functions, classes, constants, methods, properties, trait or interface. However, it will also let it slip past its compiler sometimes. 
+`PHP` will forbid usage of some of its keywords as structure names, such as variables, functions, classes, constants, methods, properties, trait or interface. However, it will also let it slip past its compiler sometimes. 
 
 For example:
 
@@ -23,11 +23,11 @@ class Null {
 ?>
 ```
 
-In this example, `Null` is used as a class name, allowing `$var = new Null();`. PHP will compile and run such code. However, readability is decreased.
+In this example, `Null` is used as a class name, allowing `$var = new Null();`. `PHP` will compile and run such code. However, readability is decreased.
 
 ## Rule Details
 
-This rule is aimed at eliminating the use of PHP keywords and reserved words as literal keys. As such, it warns whenever a structure is named with a PHP keyword. Literals are OK, as long as they are not used to manipulate a compiled structure.  
+This rule is aimed at eliminating the use of `PHP` keywords and reserved words as literal keys. As such, it warns whenever a structure is named with a `PHP` keyword. Literals are OK, as long as they are not used to manipulate a compiled structure.  
 
 The following codes are considered warnings:
 

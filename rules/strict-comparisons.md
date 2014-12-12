@@ -18,7 +18,7 @@ $x = strpos('abc', 'a');
 if ($x == false) { /* process error */ } else { /* process finding */}
 ?>
 ```
-Things gets a little more confusing when some information is carried by the type of the value. Here, strpos will return `false` if it can't find the needle (`'a'`) in the haystack (`'abc'`). But it will also return `0` if it finds the needle in the first position, which is indexed with 0. 
+Things gets a little more confusing when some information is carried by the type of the value. Here, `strpos` will return `false` if it can't find the needle (`'a'`) in the haystack (`'abc'`). But it will also return `0` if it finds the needle in the first position, which is indexed with 0. 
 
 The solution is to use `===`, 
 

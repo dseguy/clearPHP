@@ -23,7 +23,7 @@ It is recommended to provide an acceptable number of arguments, depending on def
 
 This rule spots functions and methods calls with less arguments than needed. 
 
-When the called method makes use of variable number of argument, using `func_get_args`, `func_get_arg` or `func_num_args`, or even the `...` operator, the numbero of acceptable argument is 
+When the called method makes use of variable number of argument, using `func_get_args`, `func_get_arg` or `func_num_args`, or even the `...` operator, the number of acceptable arguments is.
 
 The following codes are considered a warning:
 

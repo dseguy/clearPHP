@@ -3,7 +3,7 @@
 
 Disallow the creation of duplicate keys in literal arrays. 
 
-This is useless as the second defined key will overwritte the first silently. 
+This is useless as the second defined key will overwrite the first silently. 
 
 ## Rule Details
 
