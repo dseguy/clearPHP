@@ -1,9 +1,9 @@
 <!-- Good Practices -->
 # No Duplicate Case In Switch
 
-Disallow the creation of duplicate `case` in `switch` statement. 
+Disallow the creation of duplicate `case` in `switch` statement. 
 
-This is useless as the second defined case will be silentely ignored.
+This is useless as the second defined case will be silently ignored.
 
 ## Rule Details
 
