@@ -1,7 +1,7 @@
-<!-- generated on 12-12-2014 07:0:30-->
+<!-- generated on 15-12-2014 01:0:52-->
 # Rules
 
-This list contains thirty seven rules, in six categories.
+This list contains thirty nine rules, in six categories.
 
 ## Potential Errors
 
@@ -15,6 +15,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
 
  * [commented-fallthrough] (commented-fallthrough.md) - 
  * [constant-condition] (constant-condition.md) - 
+ * [declares-or-executes] (declares-or-executes.md) - 
  * [lowercase-keyword] (lowercase-keyword.md) - 
  * [no-commented-code] (no-commented-code.md) - 
  * [no-curly-array] (no-curly-array.md) - 
@@ -36,6 +37,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [no-return-void] (no-return-void.md) - 
  * [no-static-this] (no-static-this.md) - 
  * [no-switch-without-default] (no-switch-without-default.md) - 
+ * [one-class-per-file] (one-class-per-file.md) - 
  * [strict-comparisons] (strict-comparisons.md) - 
  * [unused-variable] (unused-variable.md) - 
  * [useless-instruction] (useless-instruction.md) - 

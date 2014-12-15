@@ -7,6 +7,7 @@ This is the summary of my book.
 <!-- rules -->
 * [Commented Fallthrough](rules/commented-fallthrough.md)
   * [Constant Condition](rules/constant-condition.md)
+  * [Declares Or Executes](rules/declares-or-executes.md)
   * [Lowercase Keywords](rules/lowercase-keyword.md)
   * [No Aliases](rules/no-aliases.md)
   * [No Bracketless Blocks](rules/no-bracketless-blocks.md)
@@ -39,6 +40,7 @@ This is the summary of my book.
   * [No Sleep ](rules/no-sleep.md)
   * [No $this In Static Methods](rules/no-static-this.md)
   * [No Switch Without Default](rules/no-switch-without-default.md)
+  * [One Class Per File](rules/one-class-per-file.md)
   * [Strict Comparisons](rules/strict-comparisons.md)
   * [Disallow Unused Variables](rules/unused-variable.md)
   * [Useless Instructions](rules/useless-instruction.md)
