@@ -1,7 +1,7 @@
-<!-- generated on 15-12-2014 01:0:52-->
+<!-- generated on 15-12-2014 05:0:12-->
 # Rules
 
-This list contains thirty nine rules, in six categories.
+This list contains forty rules, in six categories.
 
 ## Potential Errors
 
@@ -26,6 +26,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [no-duplicated-code] (no-duplicated-code.md) - 
  * [no-exit] (no-exit.md) - 
  * [no-extra-argument] (no-extra-argument.md) - 
+ * [no-global] (no-global.md) - 
  * [no-goto] (no-goto.md) - 
  * [no-incompilable] (no-incompilable.md) - 
  * [no-isolated-block] (no-isolated-block.md) - 

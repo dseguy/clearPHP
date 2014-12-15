@@ -44,4 +44,5 @@ return;
 
 * [Programming with Reason: Why is goto Bad?](http://www.drdobbs.com/jvm/programming-with-reason-why-is-goto-bad/228200966)
 * [Goto at xkcd](http://xkcd.com/292/)
+* [Goto Considered Harmful](http://c2.com/cgi/wiki?GotoConsideredHarmful)
 
