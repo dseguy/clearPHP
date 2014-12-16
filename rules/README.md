@@ -1,7 +1,7 @@
-<!-- generated on 16-12-2014 10:0:22-->
+<!-- generated on 16-12-2014 10:0:11-->
 # Rules
 
-This list contains forty three rules, in six categories.
+This list contains forty two rules, in six categories.
 
 ## Potential Errors
 
@@ -59,7 +59,6 @@ The following rules are extracted from the manual.
  * [no-aliases] (no-aliases.md) - 
  * [no-deprecated] (no-deprecated.md) - 
  * [no-letter-logical] (no-letter-logical.md) - 
- * [no-return-parenthesis] (no-return-parenthesis.md) - 
  * [no-return-with-parenthesis] (no-return-with-parenthesis.md) - 
  * [no-short-tags] (no-short-tags.md) - 
 

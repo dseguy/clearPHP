@@ -46,7 +46,6 @@ This is the summary of my book.
    * [No Aliases](rules/no-aliases.md)
    * [No Deprecated](rules/no-deprecated.md)
    * [No Letters For Logical Operators](rules/no-letter-logical.md)
-   * [No Parenthesis For Return](rules/no-return-parenthesis.md)
    * [No Return With Parenthesis](rules/no-return-with-parenthesis.md)
    * [No Short Tags](rules/no-short-tags.md)
  * Coding Conventions
