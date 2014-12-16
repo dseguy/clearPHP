@@ -7,6 +7,9 @@ The `case` statement represents one option in a `switch` instruction.
 # class
 Basic `class` definitions begin with the keyword class, followed by a class name, followed by a pair of curly braces which enclose the definitions of the properties and methods belonging to the class.
 
+# constant 
+A `constant` is an identifier (name) for a simple value.
+
 # continue
 `continue` is used within looping structures to skip the rest of the current loop iteration and continue execution at the condition evaluation and then the beginning of the next iteration.
 

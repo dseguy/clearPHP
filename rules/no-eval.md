@@ -14,7 +14,7 @@ eval($php);
 ```
 
 `eval` has two main drawbacks : 
-* it is very slow, as PHP as to stop the current processing, compile the code and include it in the current tree, then resume execution. It is also known that opcode caches doesn't cache any `eval`-ed string, and force the recompilation of that code everytime. 
+* it is very slow, as PHP as to stop the current processing, compile the code and include it in the current tree, then resume execution. It is also known that opcode caches doesn't cache any `eval`-ed string, and force the recompilation of that code every time. 
 * Security wise, `eval` will most probably be fed with data that are not known at coding time, may be even with input from the internet user. Such code has to be systematically sanitized before it is used. 
 
 It is highly recommended to avoid using `eval` function and rely on other dynamical features of PHP such as variables variables. 

@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # No Double Quotes
 
-PHP allows `'` and `"` quotes to create string literals. It also allows for NOWDOC and HEREDOC syntax, which are the same as the former but for larger blob of text. Both first syntaxes will stay unchanged, while the second syntaxes will make PHP replaces any variables, properties or array it finds within the literal by their actual value. 
+PHP allows `'` and `"` quotes to create string literals. It also allows for NOWDOC and HEREDOC syntax, which are the same as the former but for larger blob of text. Both first syntax will stay unchanged, while the second syntax will make PHP replaces any variables, properties or array it finds within the literal by their actual value. 
 
 ```php
 <?php

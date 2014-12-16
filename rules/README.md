@@ -1,7 +1,7 @@
-<!-- generated on 15-12-2014 05:0:12-->
+<!-- generated on 16-12-2014 10:0:22-->
 # Rules
 
-This list contains forty rules, in six categories.
+This list contains forty three rules, in six categories.
 
 ## Potential Errors
 
@@ -38,10 +38,10 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [no-return-void] (no-return-void.md) - 
  * [no-static-this] (no-static-this.md) - 
  * [no-switch-without-default] (no-switch-without-default.md) - 
+ * [no-useless-instruction] (no-useless-instruction.md) - 
  * [one-class-per-file] (one-class-per-file.md) - 
  * [strict-comparisons] (strict-comparisons.md) - 
  * [unused-variable] (unused-variable.md) - 
- * [useless-instruction] (useless-instruction.md) - 
 
 ## Security
 
@@ -49,6 +49,7 @@ The following rules are help strengthening the security of your application.
 
  * [no-debug] (no-debug.md) - 
  * [no-eval] (no-eval.md) - 
+ * [no-hardcoded-credential] (no-hardcoded-credential.md) - 
  * [no-sleep] (no-sleep.md) - 
 
 ## PHP Manual recommendations
@@ -57,7 +58,9 @@ The following rules are extracted from the manual.
 
  * [no-aliases] (no-aliases.md) - 
  * [no-deprecated] (no-deprecated.md) - 
+ * [no-letter-logical] (no-letter-logical.md) - 
  * [no-return-parenthesis] (no-return-parenthesis.md) - 
+ * [no-return-with-parenthesis] (no-return-with-parenthesis.md) - 
  * [no-short-tags] (no-short-tags.md) - 
 
 ## Coding Conventions

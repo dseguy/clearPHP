@@ -1,7 +1,7 @@
 <!-- Performances -->
 # No Functioncall In Loop
 
-Loops are a way to execute the same instructions multiple times. That ability makes them prime candidate for optimisation : the less process in a loop, the fastest the loop performs. 
+Loops are a way to execute the same instructions multiple times. That ability makes them prime candidate for optimization : the less process in a loop, the fastest the loop performs. 
 
 ```php
 <?php

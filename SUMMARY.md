@@ -33,18 +33,21 @@ This is the summary of my book.
    * [No Return Void](rules/no-return-void.md)
    * [No $this In Static Methods](rules/no-static-this.md)
    * [No Switch Without Default](rules/no-switch-without-default.md)
+   * [Useless Instructions](rules/no-useless-instruction.md)
    * [One Class Per File](rules/one-class-per-file.md)
    * [Strict Comparisons](rules/strict-comparisons.md)
    * [Disallow Unused Variables](rules/unused-variable.md)
-   * [Useless Instructions](rules/useless-instruction.md)
  * Security
    * [No Debug](rules/no-debug.md)
    * [No Eval](rules/no-eval.md)
+   * [No Hardcoded Credentials](rules/no-hardcoded-credential.md)
    * [No Sleep ](rules/no-sleep.md)
  * PHP Manual recommendations
    * [No Aliases](rules/no-aliases.md)
    * [No Deprecated](rules/no-deprecated.md)
+   * [No Letters For Logical Operators](rules/no-letter-logical.md)
    * [No Parenthesis For Return](rules/no-return-parenthesis.md)
+   * [No Return With Parenthesis](rules/no-return-with-parenthesis.md)
    * [No Short Tags](rules/no-short-tags.md)
  * Coding Conventions
    * [No Bracketless Blocks](rules/no-bracketless-blocks.md)
@@ -54,3 +57,5 @@ This is the summary of my book.
 <!-- rules -->
 * [Annexes](ANNEXES.md)
  * [Glossary](GLOSSARY.md)
+ * [License](LICENSE.md)
+ * [Authors](AUTHORS.md)

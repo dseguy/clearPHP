@@ -1,7 +1,7 @@
 <!-- Security -->
 # No Debug
 
-PHP has a number of convenient functions for understanding the environnement in which it is executed or display inner information. This should be replaced by modern debuggers, that will provide a more convenient to assess a situation, and will not leave any unwanted instructions in the code.
+PHP has a number of convenient functions for understanding the environment in which it is executed or display inner information. This should be replaced by modern debuggers, that will provide a more convenient to assess a situation, and will not leave any unwanted instructions in the code.
 
 ```php
 <?php
