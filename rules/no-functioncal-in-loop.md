@@ -28,7 +28,7 @@ for($i = 0; $i < $count; $i++) {
 ```
 This second code will do the same as the first, but speed will be dramatically increased. 
 
-As a general rule, anything inside the loop (here `doSomething with $i`), in the terminal clause or in the incrementation clause (second and third argument to `for`, are worth checking for any operation that will not be affected by `$i`. If it is always the same, then it should be pre-processed. 
+As a general rule, anything inside the loop (here `doSomething with $i`), in the terminal clause or in the incrementation clause (second and third argument to `for`, are worth checking for any operation that will not be affected by `$i`. If it is always the same, then it should be preprocessed. 
 
 ## Rule Details
 

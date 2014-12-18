@@ -25,7 +25,7 @@ class Null {
 
 In this example, `Null` is used as a class name, allowing `$var = new Null();`. `PHP` will compile and run such code. However, readability is decreased.
 
-`Null` is not a PHP reserved keyword per se, but, just like `true` and `false`, it may just be considered as one. 
+`Null` is not a real PHP keyword, but, just like `true` and `false`, it may just be considered as one. 
 
 Constants and variables will easily bear keyword names, and not interfere with compilation. They may still confuse the reader. 
 

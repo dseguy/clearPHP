@@ -3,11 +3,11 @@
 
 case in switch structures may be finalized using the `break` keyword. 
 
-They may also continue in the next case, by letting the execution continue without `break`. This way, two case are merged in one. This is called fallthough.
+They may also continue in the next case, by letting the execution continue without `break`. This way, two case are merged in one. This is called fallthrough.
 
 Fallthrough is usually rare. In the event they occur, most of them will be empty fallthrough, which are actually several case with the same name. 
 
-Fallthough are OK but needs to be commented so as to highlight their usage.
+Fallthrough are OK but needs to be commented so as to highlight their usage.
 
 ## Rule Details
 

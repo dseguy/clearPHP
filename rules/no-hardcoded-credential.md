@@ -21,7 +21,7 @@ ftp_login($conn_id, $ftp_user, $ftp_pass);
 
 In this example, `$ftp_server`, `$ftp_user` and `$ftp_pass` are all pieces of information that should be stored outside the application and not hardcoded in the script itself. 
 
-More ofthen than not, host, login and password are hardcoded during testing phase, and a few of them stay put until production. Not only such information have to be handled by sysadmins, but they may simply change without notice. 
+More often than not, host, login and password are hardcoded during testing phase, and a few of them stay put until production. Not only such information have to be handled by sysadmins, but they may simply change without notice. 
 
 It is recommended to check that functions that require credentials are not using hardcoded data. 
 
