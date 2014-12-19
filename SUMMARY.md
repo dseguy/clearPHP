@@ -45,7 +45,8 @@ This is the summary of my book.
    * [One Class Per File](rules/one-class-per-file.md)
    * [One Instruction Per Line](rules/one-instruction-per-line.md)
    * [Strict Comparisons](rules/strict-comparisons.md)
-   * [Disallow Unused Variables](rules/unused-variable.md)
+   * [No Unused Arguments](rules/unused-arguments.md)
+   * [No Unused Variables](rules/unused-variable.md)
    * [Use Const](rules/use-const.md)
    * [Use Self](rules/use-self.md)
  * Security
