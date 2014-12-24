@@ -1,7 +1,7 @@
-<!-- generated on 18-12-2014 10:0:01-->
+<!-- generated on 24-12-2014 02:0:31-->
 # Rules
 
-This list contains fifty three rules, in six categories.
+This list contains fifty seven rules, in six categories.
 
 ## Potential Errors
 
@@ -50,6 +50,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [one-class-per-file] (one-class-per-file.md) - 
  * [one-instruction-per-line] (one-instruction-per-line.md) - 
  * [strict-comparisons] (strict-comparisons.md) - 
+ * [unused-arguments] (unused-arguments.md) - 
  * [unused-variable] (unused-variable.md) - 
  * [use-const] (use-const.md) - 
  * [use-self] (use-self.md) - 
@@ -84,5 +85,8 @@ The following rules are common coding conventions. They don't change PHP code, b
 
 The following rules will speed up the code execution.
 
+ * [always-preprocess] (always-preprocess.md) - 
+ * [no-array-unique] (no-array-unique.md) - 
  * [no-functioncal-in-loop] (no-functioncal-in-loop.md) - 
+ * [no-recalculate] (no-recalculate.md) - 
 

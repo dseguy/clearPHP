@@ -64,7 +64,10 @@ This is the summary of my book.
    * [No Bracketless Blocks](rules/no-bracketless-blocks.md)
    * [No PHP4 Constructor](rules/no-php4-constructor.md)
  * Performances
+   * [Always preprocess](rules/always-preprocess.md)
+   * [No `array_unique`](rules/no-array-unique.md)
    * [No Functioncall In Loop](rules/no-functioncal-in-loop.md)
+   * [No Recalculate](rules/no-recalculate.md)
 <!-- rules -->
 * [Annexes](ANNEXES.md)
  * [Glossary](GLOSSARY.md)
