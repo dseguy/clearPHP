@@ -13,6 +13,7 @@ This is the summary of my book.
    * [Compatible Typehint](rules/compatible-typehint.md)
    * [Constant Condition](rules/constant-condition.md)
    * [Declares Or Executes](rules/declares-or-executes.md)
+   * [Definitions Only Files](rules/definitions-only.md)
    * [Lowercase Keywords](rules/lowercase-keyword.md)
    * [No Assign Null Method](rules/no-assign-null-method.md)
    * [No Catch Overwrite](rules/no-catch-overwrite.md)

@@ -1,7 +1,7 @@
-<!-- generated on 24-12-2014 02:0:31-->
+<!-- generated on 02-01-2015 12:0:18-->
 # Rules
 
-This list contains fifty seven rules, in six categories.
+This list contains fifty eight rules, in six categories.
 
 ## Potential Errors
 
@@ -18,6 +18,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [compatible-typehint] (compatible-typehint.md) - 
  * [constant-condition] (constant-condition.md) - 
  * [declares-or-executes] (declares-or-executes.md) - 
+ * [definitions-only] (definitions-only.md) - 
  * [lowercase-keyword] (lowercase-keyword.md) - 
  * [no-assign-null-method] (no-assign-null-method.md) - 
  * [no-catch-overwrite] (no-catch-overwrite.md) - 
