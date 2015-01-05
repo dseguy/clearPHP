@@ -1,5 +1,5 @@
 <!-- Performances -->
-# Always preprocess
+# Always Preprocess
 
 Everything that may be prepared before compiling will be less work for PHP at later stage. This usually leads to building cache into the application, as most data are dynamical and not known at compile time.
 

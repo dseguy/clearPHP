@@ -1,7 +1,7 @@
-<!-- generated on 02-01-2015 12:0:18-->
+<!-- generated on 05-01-2015 11:0:01-->
 # Rules
 
-This list contains fifty eight rules, in six categories.
+This list contains fifty nine rules, in six categories.
 
 ## Potential Errors
 
@@ -90,4 +90,5 @@ The following rules will speed up the code execution.
  * [no-array-unique] (no-array-unique.md) - 
  * [no-functioncal-in-loop] (no-functioncal-in-loop.md) - 
  * [no-recalculate] (no-recalculate.md) - 
+ * [no-repeated-print] (no-repeated-print.md) - 
 

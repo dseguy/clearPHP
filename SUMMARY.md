@@ -69,6 +69,7 @@ This is the summary of my book.
    * [No `array_unique`](rules/no-array-unique.md)
    * [No Functioncall In Loop](rules/no-functioncal-in-loop.md)
    * [No Recalculate](rules/no-recalculate.md)
+   * [No Repeated Print](rules/no-repeated-print.md)
 <!-- rules -->
 * [Annexes](ANNEXES.md)
  * [Glossary](GLOSSARY.md)
