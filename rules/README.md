@@ -9,7 +9,7 @@ The following rules signal possible mistakes in the code.
 
  * [no-dangling-reference] (no-dangling-reference.md) - 
 
-## Good Practices
+## Best Practices
 
 The following rules are common sense practices that help avoid bugs or conflicts.
 
@@ -82,7 +82,7 @@ The following rules are common coding conventions. They don't change PHP code, b
  * [no-bracketless-blocks] (no-bracketless-blocks.md) - 
  * [no-php4-constructor] (no-php4-constructor.md) - 
 
-## Performances
+## Performance
 
 The following rules will speed up the code execution.
 
