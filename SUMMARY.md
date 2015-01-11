@@ -10,6 +10,7 @@ This is the summary of my book.
  * Good Practices
    * [Always Has Visibility](rules/always-have-visibility.md)
    * [Avoid Redefining Properties](rules/avoid-redefining-properties.md)
+   * [Avoid Those Functions](rules/avoid-those-functions.md)
    * [Commented Fallthrough](rules/commented-fallthrough.md)
    * [Compatible Typehint](rules/compatible-typehint.md)
    * [Constant Condition](rules/constant-condition.md)
@@ -17,6 +18,7 @@ This is the summary of my book.
    * [Definitions Only Files](rules/definitions-only.md)
    * [No Closure Argument Collisions](rules/imported-collision.md)
    * [Lowercase Keywords](rules/lowercase-keyword.md)
+   * [No Array_merge In Loops](rules/no-array_merge-in-loop.md)
    * [No Assign Null Method](rules/no-assign-null-method.md)
    * [No Catch Overwrite](rules/no-catch-overwrite.md)
    * [No Commented Code](rules/no-commented-code.md)
@@ -41,6 +43,8 @@ This is the summary of my book.
    * [No Multiple Instruction Per Line](rules/no-multiple-instruction-per-line.md)
    * [No Nested Ternary](rules/no-nested-ternary.md)
    * [No @](rules/no-noscream.md)
+   * [No Obsolete Directives](rules/no-obsolete-directives.md)
+   * [No Obsolete Extensions](rules/no-obsolete-extensions.md)
    * [No PHP4 Class Syntax](rules/no-php4-constructor.md)
    * [No References On Objects](rules/no-references-on-objects.md)
    * [Disallow Use Of Reserved Words As Names](rules/no-reserved-keywords.md)
@@ -82,7 +86,7 @@ This is the summary of my book.
    * [No Bracketless Blocks](rules/no-bracketless-blocks.md)
  * Performances
    * [Always Preprocess](rules/always-preprocess.md)
-   * [No `array_unique`](rules/no-array-unique.md)
+   * [Avoid Those Slow Functions](rules/avoid-those-slow-functions.md)
    * [No Debug Code](rules/no-debug-code.md)
    * [No Functioncall In Loop](rules/no-functioncal-in-loop.md)
    * [No Recalculate](rules/no-recalculate.md)

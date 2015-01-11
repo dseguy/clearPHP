@@ -1,7 +1,7 @@
-<!-- generated on 09-01-2015 03:0:10-->
+<!-- generated on 11-01-2015 10:0:06-->
 # Rules
 
-This list contains seventy eight rules, in six categories.
+This list contains eighty two rules, in six categories.
 
 ## Potential Errors
 
@@ -15,6 +15,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
 
  * [always-have-visibility] (always-have-visibility.md) - 
  * [avoid-redefining-properties] (avoid-redefining-properties.md) - 
+ * [avoid-those-functions] (avoid-those-functions.md) - 
  * [commented-fallthrough] (commented-fallthrough.md) - 
  * [compatible-typehint] (compatible-typehint.md) - 
  * [constant-condition] (constant-condition.md) - 
@@ -22,6 +23,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [definitions-only] (definitions-only.md) - 
  * [imported-collision] (imported-collision.md) - 
  * [lowercase-keyword] (lowercase-keyword.md) - 
+ * [no-array_merge-in-loop] (no-array_merge-in-loop.md) - 
  * [no-assign-null-method] (no-assign-null-method.md) - 
  * [no-catch-overwrite] (no-catch-overwrite.md) - 
  * [no-commented-code] (no-commented-code.md) - 
@@ -46,6 +48,8 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [no-multiple-instruction-per-line] (no-multiple-instruction-per-line.md) - 
  * [no-nested-ternary] (no-nested-ternary.md) - 
  * [no-noscream] (no-noscream.md) - 
+ * [no-obsolete-directives] (no-obsolete-directives.md) - 
+ * [no-obsolete-extensions] (no-obsolete-extensions.md) - 
  * [no-php4-constructor] (no-php4-constructor.md) - 
  * [no-references-on-objects] (no-references-on-objects.md) - 
  * [no-reserved-keywords] (no-reserved-keywords.md) - 
@@ -103,7 +107,7 @@ The following rules are common coding conventions. They don't change PHP code, b
 The following rules will speed up the code execution.
 
  * [always-preprocess] (always-preprocess.md) - 
- * [no-array-unique] (no-array-unique.md) - 
+ * [avoid-those-slow-functions] (avoid-those-slow-functions.md) - 
  * [no-debug-code] (no-debug-code.md) - 
  * [no-functioncal-in-loop] (no-functioncal-in-loop.md) - 
  * [no-recalculate] (no-recalculate.md) - 
