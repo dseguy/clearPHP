@@ -1,7 +1,7 @@
-<!-- generated on 11-01-2015 10:0:06-->
+<!-- generated on 19-01-2015 11:0:36-->
 # Rules
 
-This list contains eighty two rules, in six categories.
+This list contains eighty eight rules, in six categories.
 
 ## Potential Errors
 
@@ -14,6 +14,7 @@ The following rules signal possible mistakes in the code.
 The following rules are common sense practices that help avoid bugs or conflicts.
 
  * [always-have-visibility] (always-have-visibility.md) - 
+ * [always-typehint] (always-typehint.md) - 
  * [avoid-redefining-properties] (avoid-redefining-properties.md) - 
  * [avoid-those-functions] (avoid-those-functions.md) - 
  * [commented-fallthrough] (commented-fallthrough.md) - 
@@ -36,6 +37,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [no-duplicated-code] (no-duplicated-code.md) - 
  * [no-empty-blocks] (no-empty-blocks.md) - 
  * [no-empty-catch] (no-empty-catch.md) - 
+ * [no-executable] (no-executable.md) - 
  * [no-exit] (no-exit.md) - 
  * [no-extra-argument] (no-extra-argument.md) - 
  * [no-global] (no-global.md) - 
@@ -60,14 +62,17 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [no-undefined-variables] (no-undefined-variables.md) - 
  * [no-unresolved-instanceof] (no-unresolved-instanceof.md) - 
  * [no-unresolved-use] (no-unresolved-use.md) - 
+ * [no-unused-arguments] (no-unused-arguments.md) - 
+ * [no-unused-method] (no-unused-method.md) - 
+ * [no-unused-property] (no-unused-property.md) - 
+ * [no-unused-variable] (no-unused-variable.md) - 
+ * [no-useless-argument-reference] (no-useless-argument-reference.md) - 
  * [no-useless-instruction] (no-useless-instruction.md) - 
  * [no-useless-math] (no-useless-math.md) - 
+ * [no-useless-use] (no-useless-use.md) - 
  * [one-class-per-file] (one-class-per-file.md) - 
- * [one-instruction-per-line] (one-instruction-per-line.md) - 
  * [properties-always-used-locally] (properties-always-used-locally.md) - 
  * [strict-comparisons] (strict-comparisons.md) - 
- * [unused-arguments] (unused-arguments.md) - 
- * [unused-variable] (unused-variable.md) - 
  * [use-const] (use-const.md) - 
  * [use-constant-not-function] (use-constant-not-function.md) - 
  * [use-self] (use-self.md) - 
@@ -92,9 +97,10 @@ The following rules are extracted from the manual.
  * [no-incompatible-reference] (no-incompatible-reference.md) - 
  * [no-letter-logical] (no-letter-logical.md) - 
  * [no-parenthesis-for-print] (no-parenthesis-for-print.md) - 
+ * [no-reassign-references] (no-reassign-references.md) - 
  * [no-return-with-parenthesis] (no-return-with-parenthesis.md) - 
  * [no-short-tags] (no-short-tags.md) - 
- * [unnecessary-string-concatenation] (unnecessary-string-concatenation.md) - 
+ * [no-unnecessary-string-concatenation] (no-unnecessary-string-concatenation.md) - 
 
 ## Coding Conventions
 
@@ -109,9 +115,9 @@ The following rules will speed up the code execution.
  * [always-preprocess] (always-preprocess.md) - 
  * [avoid-those-slow-functions] (avoid-those-slow-functions.md) - 
  * [no-debug-code] (no-debug-code.md) - 
- * [no-functioncal-in-loop] (no-functioncal-in-loop.md) - 
+ * [no-functioncall-in-loop] (no-functioncall-in-loop.md) - 
  * [no-recalculate] (no-recalculate.md) - 
  * [no-repeated-print] (no-repeated-print.md) - 
  * [no-uninitialized-variable] (no-uninitialized-variable.md) - 
- * [unnecessary-conversion] (unnecessary-conversion.md) - 
+ * [no-unnecessary-conversion] (no-unnecessary-conversion.md) - 
 
