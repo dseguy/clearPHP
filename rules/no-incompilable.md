@@ -5,7 +5,7 @@ Within an application, any PHP code should be compilable with the recommended ve
 
 Newer version of PHP may introduce backward incompatibilities. Preparing the code for them means the code will have to be adapted or dropped. 
 
-Older version of PHP may not support all the current version. If backward compatibility is not important, support for such version will be dropped.
+Older version of PHP may not support all the current version features. If backward compatibility is not important, support for such version will be dropped. This is normal behavior.
 
 ```php
 <?php
@@ -21,6 +21,7 @@ In the example above, the code is only compatible PHP 5.4 : `short syntax` is in
 
 ## Rule Details
 
+This rule aims at avoid incompilable code. 
 
 ```php
 <?php

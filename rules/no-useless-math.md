@@ -23,6 +23,15 @@ The following patterns are considered warnings:
 ```php
 <?php
 
+// Definitions
+$a = "10";
+$a = +0;
+$a = -0;
+$a = +100; // whatever the value
+$a = +100.0; // whatever the value
+
+$a = 0.0;
+
 // Additions
 $a = "10";
 $a += 0;
