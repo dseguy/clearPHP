@@ -17,6 +17,28 @@ This rule require that every `case` statement without a `break` has at least a c
 <?php
 switch (foo) {
     case 'a':
+    case 'c':
+        doSomethingForA();
+        // will also do for c
+        break 1;
+
+    case 'b':
+        doSomethingForB();
+        break 1;
+
+    default:
+        doSomethingForDefault();
+}
+?>
+```
+
+The following code is considered legit : 
+
+
+```php
+<?php
+switch (foo) {
+    case 'a':
         doSomethingForA();
         break 1;
 
@@ -44,27 +66,6 @@ switch (foo) {
         doSomethingForDefault();
 }
 
-?>
-```
-
-The following code is considered legit : 
-
-```php
-<?php
-switch (foo) {
-    case 'a':
-    case 'c':
-        doSomethingForA();
-        // will also do for c
-        break 1;
-
-    case 'b':
-        doSomethingForB();
-        break 1;
-
-    default:
-        doSomethingForDefault();
-}
 ?>
 ```
 <!--
