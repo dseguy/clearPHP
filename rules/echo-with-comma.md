@@ -14,7 +14,7 @@ print "$someVariable\n";
 ```
 
 
-One of their main differences is that `echo` accepts several arguments, while `print` only accepts one. This forces `print` to concatenate everything before outputing it, while `echo` will process all arguments one after each other. 
+One of their main differences is that `echo` accepts several arguments, while `print` only accepts one. This forces `print` to concatenate everything before outputting it, while `echo` will process all arguments one after each other. 
 
 
 ```php
@@ -32,7 +32,7 @@ The main consequence here is that `echo` will not concatenate the values before 
 
 On the other hand, `print` will first concatenate everything. That concatenation will actually double the memory used, and provide no special effect here.
 
-If `$someVariable` is small, both the memory and performance impact will be negligeable. When the size of the variable increase, more resources will be needed. 
+If `$someVariable` is small, both the memory and performance impact will be negligible. When the size of the variable increase, more resources will be needed. 
 
 It is recommended to always call `echo` with comma instead of concatenation. As for one-arguments calls, `print` and `echo` are the same. 
 
