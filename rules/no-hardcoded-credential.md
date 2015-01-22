@@ -23,6 +23,11 @@ In this example, `$ftp_server`, `$ftp_user` and `$ftp_pass` are all pieces of in
 
 More often than not, host, login and password are hardcoded during testing phase, and a few of them stay put until production. Not only such information have to be handled by sysadmins, but they may simply change without notice. 
 
+There are solutions to put credential outside the PHP code : 
+* php.ini file, which may host some default access, such as mysqli default credentials.
+* Application configuration file, in XML, INI, YAML, JSON, ... Such files shouldn't be commited with those values to the repository.
+* Use environnement variables, set at the system level, the web server, or some external configuration file (see PHP dotenv)
+
 It is recommended to check that functions that require credentials are not using hardcoded data. 
 
 ## Rule Details
@@ -77,8 +82,9 @@ try {
 ## When Not To Use It
 
 If default is not always necessary, you may disable this rule.
-
+-->
 
 ## Further Reading
-* []()
--->
+* [PHP dotenv](https://github.com/vlucas/phpdotenv)
+* [ext/Mysqli runtime configuration](http://php.net/manual/en/mysqli.configuration.php)
+* [Is it secure to store passwords as environment variables](http://stackoverflow.com/questions/12461484/is-it-secure-to-store-passwords-as-environment-variables-rather-than-as-plain-t)
