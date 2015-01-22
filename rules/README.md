@@ -1,7 +1,7 @@
-<!-- generated on 19-01-2015 11:0:36-->
+<!-- generated on 22-01-2015 11:0:25-->
 # Rules
 
-This list contains eighty eight rules, in six categories.
+This list contains eighty nine rules, in six categories.
 
 ## Potential Errors
 
@@ -98,9 +98,9 @@ The following rules are extracted from the manual.
  * [no-letter-logical] (no-letter-logical.md) - 
  * [no-parenthesis-for-print] (no-parenthesis-for-print.md) - 
  * [no-reassign-references] (no-reassign-references.md) - 
- * [no-return-with-parenthesis] (no-return-with-parenthesis.md) - 
  * [no-short-tags] (no-short-tags.md) - 
  * [no-unnecessary-string-concatenation] (no-unnecessary-string-concatenation.md) - 
+ * [not-with-parenthesis] (not-with-parenthesis.md) - 
 
 ## Coding Conventions
 
@@ -114,6 +114,7 @@ The following rules will speed up the code execution.
 
  * [always-preprocess] (always-preprocess.md) - 
  * [avoid-those-slow-functions] (avoid-those-slow-functions.md) - 
+ * [echo-with-comma] (echo-with-comma.md) - 
  * [no-debug-code] (no-debug-code.md) - 
  * [no-functioncall-in-loop] (no-functioncall-in-loop.md) - 
  * [no-recalculate] (no-recalculate.md) - 

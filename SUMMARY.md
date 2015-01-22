@@ -85,14 +85,15 @@ This is the summary of my book.
    * [No Letters For Logical Operators](rules/no-letter-logical.md)
    * [No Parenthesis For Print](rules/no-parenthesis-for-print.md)
    * [No Reassign References](rules/no-reassign-references.md)
-   * [No Return With Parenthesis](rules/no-return-with-parenthesis.md)
    * [No Short Tags](rules/no-short-tags.md)
    * [No Unnecessary Concatenations](rules/no-unnecessary-string-concatenation.md)
+   * [Not With Parenthesis](rules/not-with-parenthesis.md)
  * Coding Conventions
    * [No Bracketless Blocks](rules/no-bracketless-blocks.md)
  * Performances
    * [Always Preprocess](rules/always-preprocess.md)
    * [Avoid Those Slow Functions](rules/avoid-those-slow-functions.md)
+   * [Echo With Commas](rules/echo-with-comma.md)
    * [No Debug Code](rules/no-debug-code.md)
    * [No Functioncall In Loop](rules/no-functioncall-in-loop.md)
    * [No Recalculate](rules/no-recalculate.md)
