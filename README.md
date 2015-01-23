@@ -19,7 +19,7 @@ A copy of the license is included in the repository.
 Acknowledgements
 ------------------------------------
 
-ClearPHP was origionally written by Damien Seguy. The following people have contributed to this project:
+ClearPHP was originally written by Damien Seguy. The following people have contributed to this project:
 
 * Derick Rethans (https://github.com/kitsched)
 * fneuneu (https://github.com/Fneufneu)
@@ -33,5 +33,5 @@ Proposing a New Rule
 
 To propose a new rule :
 
-- fork this repo, create a branch, checkout that branch, add the rule in `proposition` branch, push the branch to Github, and send a pull request
+- fork this repository, create a branch, checkout that branch, add the rule in `proposition` branch, push the branch to Github, and send a pull request
 - Join us on the [mailing-list](https://groups.google.com/forum/#!forum/clearphp)

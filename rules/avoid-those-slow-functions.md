@@ -28,7 +28,7 @@ There are a few PHP native functions that should be avoided for speed reasons. T
 
 ## Rule Details
 
-Using any of the functions mentionned above will trigger a warning. 
+Using any of the functions mentioned above will trigger a warning. 
 
 <!--
 ### Options
