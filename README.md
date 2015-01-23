@@ -16,6 +16,17 @@ Unless stated otherwise, all content is licensed under the Creative Commons Attr
 
 A copy of the license is included in the repository.
 
+Acknowledgements
+------------------------------------
+
+ClearPHP was origionally written by Damien Seguy. The following people have contributed to this project:
+
+* Derick Rethans (https://github.com/kitsched)
+* fneuneu (https://github.com/Fneufneu)
+* MozMorris (https://github.com/MozMorris)
+* Phil Sturgeon (https://github.com/philsturgeon)
+* Victor Stanciu (https://github.com/victorstanciu)
+* Juliette Reinders Folmer (https://github.com/jrfnl)
 
 Proposing a New Rule
 ------------------------------------
