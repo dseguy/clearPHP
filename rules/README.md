@@ -1,7 +1,7 @@
-<!-- generated on 22-01-2015 11:0:25-->
+<!-- generated on 23-01-2015 04:0:10-->
 # Rules
 
-This list contains eighty nine rules, in six categories.
+This list contains ninety one rules, in six categories.
 
 ## Potential Errors
 
@@ -31,6 +31,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [no-curly-array] (no-curly-array.md) - 
  * [no-dangling-commas] (no-dangling-commas.md) - 
  * [no-dead-code] (no-dead-code.md) - 
+ * [no-deep-definitions] (no-deep-definitions.md) - 
  * [no-double-quote] (no-double-quote.md) - 
  * [no-duplicate-case] (no-duplicate-case.md) - 
  * [no-duplicate-key] (no-duplicate-key.md) - 
@@ -47,6 +48,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [no-isolated-block] (no-isolated-block.md) - 
  * [no-missing-argument] (no-missing-argument.md) - 
  * [no-mixed-incrementations] (no-mixed-incrementations.md) - 
+ * [no-multiple-identical-case] (no-multiple-identical-case.md) - 
  * [no-multiple-instruction-per-line] (no-multiple-instruction-per-line.md) - 
  * [no-nested-ternary] (no-nested-ternary.md) - 
  * [no-noscream] (no-noscream.md) - 
