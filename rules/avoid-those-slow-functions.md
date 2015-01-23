@@ -5,15 +5,21 @@ There are a few PHP native functions that should be avoided for speed reasons. T
 
 | Function | Alternative |
 |---|---|
-| array\_diff        | array\_diff\_key |
-| array\_intersect   | &nbsp; |
-| array\_udiff       | array\_diff\_key |
-| array\_uintersect  | &nbsp; |
-| array\_unique  |  array\_count\_values and array\_keys|
-
+| array\_diff        | try using array\_diff\_key, as keys are unique |
+| array\_intersect   | try using array\_intersect\_key, as keys are unique |
+| array\_udiff       | try using array\_diff\_key, as keys are unique |
+| array\_uintersect  | try using array\_intersect\_key, as keys are unique |
+| array\_unique      |  array\_count\_values and array\_keys|
 | uasort             | Build the array to use non-u sort|
 | uksort             | Build the array to use non-u sort|
-| usort              | Build the array to use non-u sort |
+| usort              | Build the array to use non-u sort|
+| in_array           | replace with isset() |
+| array_search              | replace with array_key_exists |
+| preg_replace              | replace with str_replace, for simple replacements |
+| array_search              | replace with array_key_exists |
+| array_search              | process the array the other way with array_pop |
+| array_unshift              | process the array the other way with array_push |
+| strstr              | strpos for simple searches |
 
 <!--
 |   |   |
@@ -22,13 +28,14 @@ There are a few PHP native functions that should be avoided for speed reasons. T
 
 ## Rule Details
 
-Using any of the functions mentioned above will trigger a warning. 
+Using any of the functions mentionned above will trigger a warning. 
 
 <!--
 ### Options
 
 ## When Not To Use It
-
-## Further Readings
 -->
 
+## Further Readings
+
+* [PHP Pitfalls](https://secure.phabricator.com/book/phabflavor/article/php_pitfalls/)
