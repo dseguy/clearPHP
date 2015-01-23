@@ -1,4 +1,4 @@
-<!-- generated on 23-01-2015 04:0:10-->
+<!-- generated on 23-01-2015 07:0:46-->
 # Rules
 
 This list contains ninety one rules, in six categories.
@@ -29,7 +29,6 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [no-catch-overwrite] (no-catch-overwrite.md) - 
  * [no-commented-code] (no-commented-code.md) - 
  * [no-curly-array] (no-curly-array.md) - 
- * [no-dangling-commas] (no-dangling-commas.md) - 
  * [no-dead-code] (no-dead-code.md) - 
  * [no-deep-definitions] (no-deep-definitions.md) - 
  * [no-double-quote] (no-double-quote.md) - 
@@ -69,6 +68,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [no-unused-property] (no-unused-property.md) - 
  * [no-unused-variable] (no-unused-variable.md) - 
  * [no-useless-argument-reference] (no-useless-argument-reference.md) - 
+ * [no-useless-final] (no-useless-final.md) - 
  * [no-useless-instruction] (no-useless-instruction.md) - 
  * [no-useless-math] (no-useless-math.md) - 
  * [no-useless-use] (no-useless-use.md) - 
