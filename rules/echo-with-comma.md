@@ -28,7 +28,7 @@ print "$someVariable\n";
 ?>
 ```
 
-The main consequence here is that `echo` will not concatenate the values before outputing : the values will be feed to the standard output one after each other. 
+The main consequence here is that `echo` will not concatenate the values before outputting : the values will be feed to the standard output one after each other. 
 
 On the other hand, `print` will first concatenate everything. That concatenation will actually double the memory used, and provide no special effect here.
 

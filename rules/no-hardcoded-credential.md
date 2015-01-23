@@ -25,8 +25,8 @@ More often than not, host, login and password are hardcoded during testing phase
 
 There are solutions to put credential outside the PHP code : 
 * php.ini file, which may host some default access, such as mysqli default credentials.
-* Application configuration file, in XML, INI, YAML, JSON, ... Such files shouldn't be commited with those values to the repository.
-* Use environnement variables, set at the system level, the web server, or some external configuration file (see PHP dotenv)
+* Application configuration file, in XML, INI, YAML, JSON, ... Such files shouldn't be committed with those values to the repository.
+* Use environment variables, set at the system level, the web server, or some external configuration file (see PHP dotenv)
 
 It is recommended to check that functions that require credentials are not using hardcoded data. 
 

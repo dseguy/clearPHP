@@ -28,7 +28,7 @@ One time use function should be created as closure, so as to avoid the pollution
 
 Structures like `class`, `interface` or `trait` should be created in the upper level of their namespace, even in their own file. 
 
-Constants may be optionaly included in this rule. 
+Constants may be optionally included in this rule. 
 
 Deep definition should not be confused with conditional definition : conditional definition will happen in the global space, inside a `if...then` structure, and not within a method, like deep definition. 
 
@@ -60,7 +60,7 @@ print_r(debug_backtrace());
 ```
 
 ## Options
-* Contants : they may be included in this rule, when constants are used to represent literal values. When they are used for state, like use once-only function, this option must be used.
+* Constants : they may be included in this rule, when constants are used to represent literal values. When they are used for state, like use once-only function, this option must be used.
 
 <!--
 ## When Not To Use It
