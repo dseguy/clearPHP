@@ -76,6 +76,19 @@ for ( ; $object->property == 2 ; ) {
 	// doSomething()
 }
 
+// here, the condition is in the case
+switch (true) {
+	case $a : 
+		// doSomething()
+		break;
+	
+	case $c == $d; 
+		// doSomething()
+		break;
+	
+	default : 
+
+}
 
 ?>
 ```
