@@ -17,7 +17,7 @@ There are a few PHP native functions that should be avoided for speed reasons. T
 | array_search              | replace with array_key_exists |
 | preg_replace              | replace with str_replace, for simple replacements |
 | array_search              | replace with array_key_exists |
-| array_search              | process the array the other way with array_pop |
+| array_shift              | process the array the other way with array_pop |
 | array_unshift              | process the array the other way with array_push |
 | strstr              | strpos for simple searches |
 
