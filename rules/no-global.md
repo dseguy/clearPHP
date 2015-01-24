@@ -43,6 +43,7 @@ The following codes are considered warnings:
 		/**/
 	}
 ?>
+```
 
 ## When Not To Use It
 
