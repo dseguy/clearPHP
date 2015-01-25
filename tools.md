@@ -9,4 +9,3 @@ Here is a list of tools that are handy to use when checking clearPHP rules.
 * [PHP CPD (Copy Paste Detector)](https://github.com/sebastianbergmann/phpcpd)
 * [PHP Depends](http://pdepend.org/)
 * [PHP Metrics](http://www.phpmetrics.org/)
-* 
