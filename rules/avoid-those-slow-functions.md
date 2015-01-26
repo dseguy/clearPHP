@@ -5,21 +5,20 @@ There are a few PHP native functions that should be avoided for speed reasons. T
 
 | Function | Alternative |
 |---|---|
-| array\_diff        | try using array\_diff\_key, as keys are unique |
-| array\_intersect   | try using array\_intersect\_key, as keys are unique |
-| array\_udiff       | try using array\_diff\_key, as keys are unique |
-| array\_uintersect  | try using array\_intersect\_key, as keys are unique |
-| array\_unique      |  array\_count\_values and array\_keys|
+| array\_diff        | Try using array\_diff\_key, as keys are unique |
+| array\_intersect   | Try using array\_intersect\_key, as keys are unique |
+| array\_udiff       | Try using array\_diff\_key, as keys are unique |
+| array\_uintersect  | Try using array\_intersect\_key, as keys are unique |
+| array\_unique      | Use array\_count\_values and array\_keys|
 | uasort             | Build the array to use non-u sort|
 | uksort             | Build the array to use non-u sort|
 | usort              | Build the array to use non-u sort|
-| in_array           | replace with isset() |
-| array_search              | replace with array_key_exists |
-| preg_replace              | replace with str_replace, for simple replacements |
-| array_search              | replace with array_key_exists |
-| array_shift              | process the array the other way with array_pop |
-| array_unshift              | process the array the other way with array_push |
-| strstr              | strpos for simple searches |
+| in_array           | Replace with isset() |
+| preg_replace       | Replace with str_replace(), for simple replacements |
+| array_search       | Replace with array_key_exists() |
+| array_shift        | Process the array the other way with array_pop() |
+| array_unshift      | Process the array the other way with array_push() |
+| strstr             | Use strpos() for simple searches |
 
 <!--
 |   |   |
