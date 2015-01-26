@@ -14,7 +14,7 @@ Their usage should be investigated.
 | addCslashes  | Ineffective protection in SQL query  | Use prepared statements |
 | SQLite3::escapeString | Not effective protection in SQL query for all characters  | Use prepared statements |
 | eval | This function has a rule for itself  | Use reflexion, closures. |
-| set_include_path | May interfere with other inclusions | Configure include_path in php.ini and don't mess with it again |
+| set\_include\_path | May interfere with other inclusions | Configure include_path in php.ini and don't mess with it again |
 
 
 <!--
