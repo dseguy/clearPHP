@@ -1,7 +1,7 @@
-<!-- generated on 23-01-2015 07:0:46-->
+<!-- generated on 26-01-2015 04:0:26-->
 # Rules
 
-This list contains ninety one rules, in six categories.
+This list contains ninety two rules, in six categories.
 
 ## Potential Errors
 
@@ -47,7 +47,6 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [no-isolated-block] (no-isolated-block.md) - 
  * [no-missing-argument] (no-missing-argument.md) - 
  * [no-mixed-incrementations] (no-mixed-incrementations.md) - 
- * [no-multiple-identical-case] (no-multiple-identical-case.md) - 
  * [no-multiple-instruction-per-line] (no-multiple-instruction-per-line.md) - 
  * [no-nested-ternary] (no-nested-ternary.md) - 
  * [no-noscream] (no-noscream.md) - 
@@ -58,6 +57,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [no-reserved-keywords] (no-reserved-keywords.md) - 
  * [no-return-void] (no-return-void.md) - 
  * [no-static-this] (no-static-this.md) - 
+ * [no-switch-with-multiple-default] (no-switch-with-multiple-default.md) - 
  * [no-switch-without-default] (no-switch-without-default.md) - 
  * [no-undefined-properties] (no-undefined-properties.md) - 
  * [no-undefined-variables] (no-undefined-variables.md) - 
@@ -93,6 +93,7 @@ The following rules are help strengthening the security of your application.
 The following rules are extracted from the manual.
 
  * [all-unique-arguments] (all-unique-arguments.md) - 
+ * [always-compare-with-triple] (always-compare-with-triple.md) - 
  * [argument-with-default-at-the-end] (argument-with-default-at-the-end.md) - 
  * [no-aliases] (no-aliases.md) - 
  * [no-deprecated] (no-deprecated.md) - 
