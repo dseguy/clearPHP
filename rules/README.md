@@ -1,7 +1,7 @@
-<!-- generated on 26-01-2015 04:0:26-->
+<!-- generated on 26-01-2015 10:0:37-->
 # Rules
 
-This list contains ninety two rules, in six categories.
+This list contains ninety four rules, in six categories.
 
 ## Potential Errors
 
@@ -71,12 +71,14 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [no-useless-final] (no-useless-final.md) - 
  * [no-useless-instruction] (no-useless-instruction.md) - 
  * [no-useless-math] (no-useless-math.md) - 
+ * [no-useless-unset] (no-useless-unset.md) - 
  * [no-useless-use] (no-useless-use.md) - 
  * [one-class-per-file] (one-class-per-file.md) - 
  * [properties-always-used-locally] (properties-always-used-locally.md) - 
  * [strict-comparisons] (strict-comparisons.md) - 
  * [use-const] (use-const.md) - 
  * [use-constant-not-function] (use-constant-not-function.md) - 
+ * [use-object-api] (use-object-api.md) - 
  * [use-self] (use-self.md) - 
 
 ## Security
