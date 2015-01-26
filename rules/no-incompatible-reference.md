@@ -9,18 +9,26 @@ When calling a method or a function, the arguments passed by reference, and sign
 ```php
 <?php
 
-    $htmlLink = '<a href="'.strtr(strtolower($url), ' ', '-').'.php"><img src="'.strtr(strtolower($url), ' ', '-').'.png" alt="$title"></a>';
+parse_str($incomingString, 'string');
 ?>
 ```
 
-PHP only check that functioncall are using valid type at execution time. 
+PHP only check that functioncall are using valid type at execution time, if the definition of the method is not available at compile time (aka, the method is not native or not defined in the same file than call). 
 
 ```php
 <?php
 
+// definition file, to be included in the next code
 function foo(&$string) { /**/ }
 
-foo('PHP'); // This will yield a Fatal error
+?>
+```
+
+
+```php
+<?php
+
+foo('PHP'); // This will yield a Fatal error at execution
 
 ?>
 ```
