@@ -8,7 +8,7 @@ PHP does a lot of type juggling : this means that it will automatically cast val
 
 $a = "5";
 $b = 1 + (int) $a;
-$c = 'c' . (string) $a); // both unnecessary : $a is a string 
+$c = 'c' . ((string) $a); // both unnecessary : $a is a string 
 					     // and concatenation will require one anyway
 
 ?>
