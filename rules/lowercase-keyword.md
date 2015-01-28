@@ -23,7 +23,7 @@ This is incorrect :
 <?php
 DO {
 	print "Result : ";
-} WHILE ($x AND $y === FALSE);
+} While ($x AnD $y === FALSE);
 ?>
 ```
 
