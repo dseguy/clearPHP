@@ -1,7 +1,7 @@
 <!-- PHP Manual -->
-# No Parenthesis For Print
+# No Parenthesis For Language Construct
 
-`print` may be called without parenthesis : it, along with a small group of other PHP native structures, are called 'language construct' and are not usual functions. The other language constructs are `echo`, `print`, `unset`, `isset`, `empty`, `include`, `include_once`, `require` and `require_once`.
+`print` may be called without parenthesis : it, along with a small group of other PHP native structures, are called 'language construct' and are not usual functions. The language constructs are `echo`, `print`, `unset`, `isset`, `empty`, `include`, `include_once`, `require` and `require_once`.
 
 
 ```php
@@ -18,22 +18,22 @@ It is easier to understand the situation with the following script :
 ```php
 <?php
 
-print("a") && die();
+print("a") && print("b");
 
 ?>
 ```
 
-If `print` was a function, then it would first display `a` and then `die`. However, the script will simply `die` without displaying anything. In fact, the above script is equivalent to the one below : 
+If `print` was a function, then it would display `a` and then `b`. However, the script displays `b1`. In fact, the above script is equivalent to the one below : 
 
 ```php
 <?php
 
-print( ("a") && die()  );
+print( ("a") && print("b")  );
 
 ?>
 ```
 
-The print function will be executed on the result of `("a") && die()`. Since this expression involve the execution of `die`, then the script will finish before `print` is actually run. 
+The first print function displays the result of `("a") && print "b"`. This expression displays `"b"`, then return `1`, and  `("a") && 1` is processed, resulting in 1. At that point, the second `print` is actually run. 
 
 It is recommended not to use any parenthesis with language constructs, so as to avoid such pitfall.
 
