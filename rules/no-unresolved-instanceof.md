@@ -1,57 +1,26 @@
 <!-- Good Practices -->
-# Properties Used Locally
+# Unresolved instanceOf
 
-At least, properties should be used in the class or trait where they are defined. 
-
-Check the code below : `$name` is defined in a `Human` class, as a universal characteristics. However, the methods manipulating that property are located in the child class `Man`. 
+The `instanceof` operator checks that an object is of a class, or has this class in its ancestors.
 
 ```php
 <?php
 
-class Human {
-	public $name = 'quidam';
-}
+class A { }
+class B extends A {}
 
-class Man extends Human {
-	function setName($name) { 
-		$this->name = $name;
-	}
-	
-	function getName() { 
-		return $this->name;
-	}
-	
-	function __toString() {
-		return 'M. '.$this->name;
-	}
-}
+$b = new B();
 
-class UnknownSoldier extends Human {
-	function __construct() {
-		$this->name = 'Unknown';
-	}
-
-	function __toString() {
-		return 'Soldier '.$this->name;
-	}
-}
-
+var_dump($b instanceof A); // true
+var_dump($b instanceof B); // true
+var_dump($b instanceof C); // false
 ?>
 ```
+In the example here, `C` doesn't exist. The operator doesn't tell the difference between "C doesn't exist" and "$b is not of class C". No error is reported. 
 
-It seems that the common class only holds the `$name` property, while child classes has various ways to set the name. Child classes have their own usage of the `$name` (see `__toString()`). As it is, `$name` act as a hard link between the classes. 
+As `instanceof` is often used in condition, this will lead to dead code (or to constantly used code). This is not desirable. 
 
-It would be cleaner to have different properties in each child class, so as to decouple them, or to move some common accessors in `Human`, to provide some generic way. 
-
-Private properties will naturally need their own local methods for manipulations, as they can't be accessed from anywhere else. 
-
-Protected properties will be accessed by child classes, so methods that access such properties may be located in the parent class or its child. However, the parent class should make some use of that property, such as initializing it, reset it, changing its state.  
-
-Public properties may be accessed from anywhere. When they are in an object but not used from within, then they do not belong to that class but to another one. 
-
-Abstract an final classes are included in this rule.
-
-It is recommended to make sure that properties are at least used once locally. 
+It is recommended to make sure that the class used in the left part of the `instanceof` operator is always valid.
 
 ## Rule Details
 
@@ -60,9 +29,12 @@ The following patterns are considered warnings:
 ```php
 <?php
 
-class Vehicle {
-	protected $unusedLocally = 0;
-}
+// various sources for unexisting class
+$a instanceof UnexistingClass;
+
+$a instanceof ClassWithASpelllingMistake;
+
+$a instanceof ClassActuallyInAnotherNamespace;
 
 ?>
 ```
