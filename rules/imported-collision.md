@@ -57,7 +57,7 @@ function ($a) use ($a, $b, $c) {
 ?>
 ```
 
-The following codes are considered warnings:
+The following codes are not considered warnings:
 
 ```php
 <?php
