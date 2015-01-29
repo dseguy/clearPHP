@@ -13,15 +13,15 @@ There are a few PHP native functions that should be avoided for speed reasons. T
 | uasort             | Build the array to use non-u sort|
 | uksort             | Build the array to use non-u sort|
 | usort              | Build the array to use non-u sort|
-| in_array           | Replace with isset() |
-| preg_replace       | Replace with str_replace(), for simple replacements |
-| array_search       | Replace with array_key_exists() |
-| array_shift        | Process the array the other way with array_pop() |
-| array_unshift      | Process the array the other way with array_push() |
+| in\_array           | Replace with isset() |
+| preg\_replace       | Replace with str\_replace(), for simple replacements |
+| array\_search       | Replace with array\_key\_exists() |
+| array\_shift        | Process the array the other way with array\_pop() |
+| array\_unshift      | Process the array the other way with array\_push() |
 | strstr             | Use strpos() for simple searches |
 | uniqid()           | Always mention entropy (2nd parameter) |
-| array_walk()       | Use foreach($source as &$variable) {} |
-| array_map()       | Use foreach($source as &$variable) {} |
+| array\_walk()       | Use foreach($source as &$variable) { } |
+| array\_map()       | Use foreach($source as &$variable) { } |
 
 <!--
 |   |   |
