@@ -20,6 +20,8 @@ There are a few PHP native functions that should be avoided for speed reasons. T
 | array_unshift      | Process the array the other way with array_push() |
 | strstr             | Use strpos() for simple searches |
 | uniqid()           | Always mention entropy (2nd parameter) |
+| array_walk()       | Use foreach($source as &$variable) {} |
+| array_map()       | Use foreach($source as &$variable) {} |
 
 <!--
 |   |   |
