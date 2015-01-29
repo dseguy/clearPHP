@@ -39,6 +39,7 @@ ClearPHP was originally written by Damien Seguy. The following people have contr
 * Phil Sturgeon (https://github.com/philsturgeon)
 * Victor Stanciu (https://github.com/victorstanciu)
 * Juliette Reinders Folmer (https://github.com/jrfnl)
+* Aleksandr Yuriev (https://github.com/aleksandrzen)
 
 Proposing a New Rule
 ------------------------------------

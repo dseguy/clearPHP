@@ -1,7 +1,7 @@
-<!-- generated on 26-01-2015 10:0:37-->
+<!-- generated on 29-01-2015 09:0:52-->
 # Rules
 
-This list contains ninety four rules, in six categories.
+This list contains one hundred one rules, in six categories.
 
 ## Potential Errors
 
@@ -15,7 +15,6 @@ The following rules are common sense practices that help avoid bugs or conflicts
 
  * [always-have-visibility] (always-have-visibility.md) - 
  * [always-typehint] (always-typehint.md) - 
- * [avoid-redefining-properties] (avoid-redefining-properties.md) - 
  * [avoid-those-functions] (avoid-those-functions.md) - 
  * [commented-fallthrough] (commented-fallthrough.md) - 
  * [compatible-typehint] (compatible-typehint.md) - 
@@ -25,7 +24,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [imported-collision] (imported-collision.md) - 
  * [lowercase-keyword] (lowercase-keyword.md) - 
  * [no-array_merge-in-loop] (no-array_merge-in-loop.md) - 
- * [no-assign-null-method] (no-assign-null-method.md) - 
+ * [no-assign-null-from-method] (no-assign-null-from-method.md) - 
  * [no-catch-overwrite] (no-catch-overwrite.md) - 
  * [no-commented-code] (no-commented-code.md) - 
  * [no-curly-array] (no-curly-array.md) - 
@@ -43,6 +42,8 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [no-global] (no-global.md) - 
  * [no-goto] (no-goto.md) - 
  * [no-hardcoded-path] (no-hardcoded-path.md) - 
+ * [no-implied-cast] (no-implied-cast.md) - 
+ * [no-implied-if] (no-implied-if.md) - 
  * [no-incompilable] (no-incompilable.md) - 
  * [no-isolated-block] (no-isolated-block.md) - 
  * [no-missing-argument] (no-missing-argument.md) - 
@@ -52,17 +53,18 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [no-noscream] (no-noscream.md) - 
  * [no-obsolete-directives] (no-obsolete-directives.md) - 
  * [no-obsolete-extensions] (no-obsolete-extensions.md) - 
- * [no-php4-constructor] (no-php4-constructor.md) - 
+ * [no-php4-class-syntax] (no-php4-class-syntax.md) - 
  * [no-references-on-objects] (no-references-on-objects.md) - 
  * [no-reserved-keywords] (no-reserved-keywords.md) - 
- * [no-return-void] (no-return-void.md) - 
  * [no-static-this] (no-static-this.md) - 
  * [no-switch-with-multiple-default] (no-switch-with-multiple-default.md) - 
  * [no-switch-without-default] (no-switch-without-default.md) - 
+ * [no-unchecked-resources] (no-unchecked-resources.md) - 
  * [no-undefined-properties] (no-undefined-properties.md) - 
  * [no-undefined-variables] (no-undefined-variables.md) - 
  * [no-unresolved-instanceof] (no-unresolved-instanceof.md) - 
  * [no-unresolved-use] (no-unresolved-use.md) - 
+ * [no-unthrown-exceptions] (no-unthrown-exceptions.md) - 
  * [no-unused-arguments] (no-unused-arguments.md) - 
  * [no-unused-method] (no-unused-method.md) - 
  * [no-unused-property] (no-unused-property.md) - 
@@ -71,6 +73,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [no-useless-final] (no-useless-final.md) - 
  * [no-useless-instruction] (no-useless-instruction.md) - 
  * [no-useless-math] (no-useless-math.md) - 
+ * [no-useless-return] (no-useless-return.md) - 
  * [no-useless-unset] (no-useless-unset.md) - 
  * [no-useless-use] (no-useless-use.md) - 
  * [one-class-per-file] (one-class-per-file.md) - 
@@ -78,6 +81,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [strict-comparisons] (strict-comparisons.md) - 
  * [use-const] (use-const.md) - 
  * [use-constant-not-function] (use-constant-not-function.md) - 
+ * [use-foreach] (use-foreach.md) - 
  * [use-object-api] (use-object-api.md) - 
  * [use-self] (use-self.md) - 
 
@@ -85,7 +89,8 @@ The following rules are common sense practices that help avoid bugs or conflicts
 
 The following rules are help strengthening the security of your application.
 
- * [no-debug] (no-debug.md) - 
+ * [always-prepare-statement] (always-prepare-statement.md) - 
+ * [know-your-variables] (know-your-variables.md) - 
  * [no-eval] (no-eval.md) - 
  * [no-hardcoded-credential] (no-hardcoded-credential.md) - 
  * [no-sleep] (no-sleep.md) - 
@@ -95,17 +100,20 @@ The following rules are help strengthening the security of your application.
 The following rules are extracted from the manual.
 
  * [all-unique-arguments] (all-unique-arguments.md) - 
- * [always-compare-with-triple] (always-compare-with-triple.md) - 
  * [argument-with-default-at-the-end] (argument-with-default-at-the-end.md) - 
+ * [assigning-to-array-with-list] (assigning-to-array-with-list.md) - 
  * [no-aliases] (no-aliases.md) - 
+ * [no-buried-assignation] (no-buried-assignation.md) - 
+ * [no-constant-as-array-keys] (no-constant-as-array-keys.md) - 
  * [no-deprecated] (no-deprecated.md) - 
+ * [no-direct-call-to-magic-method] (no-direct-call-to-magic-method.md) - 
  * [no-incompatible-reference] (no-incompatible-reference.md) - 
  * [no-letter-logical] (no-letter-logical.md) - 
- * [no-parenthesis-for-print] (no-parenthesis-for-print.md) - 
+ * [no-parenthesis-for-language-construct] (no-parenthesis-for-language-construct.md) - 
  * [no-reassign-references] (no-reassign-references.md) - 
  * [no-short-tags] (no-short-tags.md) - 
  * [no-unnecessary-string-concatenation] (no-unnecessary-string-concatenation.md) - 
- * [not-with-parenthesis] (not-with-parenthesis.md) - 
+ * [use-smart-autoload] (use-smart-autoload.md) - 
 
 ## Coding Conventions
 
@@ -119,11 +127,10 @@ The following rules will speed up the code execution.
 
  * [always-preprocess] (always-preprocess.md) - 
  * [avoid-those-slow-functions] (avoid-those-slow-functions.md) - 
- * [echo-with-comma] (echo-with-comma.md) - 
  * [no-debug-code] (no-debug-code.md) - 
  * [no-functioncall-in-loop] (no-functioncall-in-loop.md) - 
  * [no-recalculate] (no-recalculate.md) - 
  * [no-repeated-print] (no-repeated-print.md) - 
- * [no-uninitialized-variable] (no-uninitialized-variable.md) - 
  * [no-unnecessary-conversion] (no-unnecessary-conversion.md) - 
+ * [use-reference-to-alter-in-foreach] (use-reference-to-alter-in-foreach.md) - 
 
