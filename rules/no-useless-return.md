@@ -32,8 +32,8 @@ It is recommended to omit return in those methods, unless for short circuiting i
 
 This rule is aimed at avoiding use of `return` in methods that doesn't need it. Here is the list : 
 
-* __constructor
-* __destructor
+* __construct
+* __destruct
 * __set
 * __clone
 * __unset
