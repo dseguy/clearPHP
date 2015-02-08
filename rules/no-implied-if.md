@@ -3,7 +3,7 @@
 
 PHP has `if...then` structures to handle conditional situations. 
 
-It also has herited from C behavior : in a `or` expression, the right expression will not be executed if the left expression is right. Indeed, since one of the expression only is needed to be true for the couple to succeed, the second expression has no need to be evaluated, saving some processing. 
+It also has inherited from C behavior : in a `or` expression, the right expression will not be executed if the left expression is right. Indeed, since one of the expression only is needed to be true for the couple to succeed, the second expression has no need to be evaluated, saving some processing. 
 
 ```php
 <?php

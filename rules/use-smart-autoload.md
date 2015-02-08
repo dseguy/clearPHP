@@ -16,7 +16,7 @@ function __autoload($classname) {
 ```
 This way, various libraries may cohabit peacefully. However, the function `__autoload` also introduces competition for libraries, that needed to provide their own support for the autoloading. 
 
-Thus, `spl_autoload_register` was introduced : it allows the registration of autoloader methods, may it be functions, methods or static methods. They will be played one after each other, giving a chance to every library to have its own fitted autloading. 
+Thus, `spl_autoload_register` was introduced : it allows the registration of autoloader methods, may it be functions, methods or static methods. They will be played one after each other, giving a chance to every library to have its own fitted autoloading. 
 
 It is highly recommended to rely on `spl_autoload_register` and to avoid defining any `__autoload` function. 
 

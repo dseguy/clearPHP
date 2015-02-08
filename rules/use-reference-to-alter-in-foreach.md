@@ -35,7 +35,7 @@ The following are considered a warning :
 
 foreach($source as $id => $element) {
 	// changing in the source this way is slow
-	$numbers[$id] = processElement($element);
+	$source[$id] = processElement($element);
 }
 
 ?>
@@ -51,7 +51,7 @@ foreach($source as &$element) {
 	$element = processElement($element);
 }
 
-// use $source[$id] for reading
+// use $source[$id] for reading is OK
 foreach($source as $id => &$element) {
 	$element = processElement($element, $source[$i]);
 }
