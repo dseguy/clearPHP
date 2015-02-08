@@ -1,7 +1,7 @@
-<!-- generated on 29-01-2015 09:0:52-->
+<!-- generated on 08-02-2015 10:0:46-->
 # Rules
 
-This list contains one hundred one rules, in six categories.
+This list contains one hundred three rules, in five categories.
 
 ## Potential Errors
 
@@ -15,6 +15,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
 
  * [always-have-visibility] (always-have-visibility.md) - 
  * [always-typehint] (always-typehint.md) - 
+ * [avoid-magic-number] (avoid-magic-number.md) - 
  * [avoid-those-functions] (avoid-those-functions.md) - 
  * [commented-fallthrough] (commented-fallthrough.md) - 
  * [compatible-typehint] (compatible-typehint.md) - 
@@ -25,6 +26,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [lowercase-keyword] (lowercase-keyword.md) - 
  * [no-array_merge-in-loop] (no-array_merge-in-loop.md) - 
  * [no-assign-null-from-method] (no-assign-null-from-method.md) - 
+ * [no-bracketless-blocks] (no-bracketless-blocks.md) - 
  * [no-catch-overwrite] (no-catch-overwrite.md) - 
  * [no-commented-code] (no-commented-code.md) - 
  * [no-curly-array] (no-curly-array.md) - 
@@ -54,6 +56,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [no-obsolete-directives] (no-obsolete-directives.md) - 
  * [no-obsolete-extensions] (no-obsolete-extensions.md) - 
  * [no-php4-class-syntax] (no-php4-class-syntax.md) - 
+ * [no-raw-exceptions] (no-raw-exceptions.md) - 
  * [no-references-on-objects] (no-references-on-objects.md) - 
  * [no-reserved-keywords] (no-reserved-keywords.md) - 
  * [no-static-this] (no-static-this.md) - 
@@ -114,12 +117,6 @@ The following rules are extracted from the manual.
  * [no-short-tags] (no-short-tags.md) - 
  * [no-unnecessary-string-concatenation] (no-unnecessary-string-concatenation.md) - 
  * [use-smart-autoload] (use-smart-autoload.md) - 
-
-## Coding Conventions
-
-The following rules are common coding conventions. They don't change PHP code, but will impact coding and understanding.
-
- * [no-bracketless-blocks] (no-bracketless-blocks.md) - 
 
 ## Performances
 

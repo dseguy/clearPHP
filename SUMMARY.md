@@ -2,6 +2,8 @@
 
 This is the summary of my book.
 
+* [Cover](COVER.md)
+* [Version](OURS.md)
 * [Introduction](README.md)
 * [List of Rules](rules/README.md)
 <!-- rules -->
@@ -10,6 +12,7 @@ This is the summary of my book.
  * Good Practices
    * [Always Has Visibility](rules/always-have-visibility.md)
    * [Always Typehint](rules/always-typehint.md)
+   * [No Magic Number](rules/avoid-magic-number.md)
    * [Avoid Those Functions](rules/avoid-those-functions.md)
    * [Commented Fallthrough](rules/commented-fallthrough.md)
    * [Compatible Typehint](rules/compatible-typehint.md)
@@ -20,6 +23,7 @@ This is the summary of my book.
    * [Lowercase Keywords](rules/lowercase-keyword.md)
    * [No Array_merge In Loops](rules/no-array_merge-in-loop.md)
    * [No Assign Null From Method](rules/no-assign-null-from-method.md)
+   * [No Bracketless Blocks](rules/no-bracketless-blocks.md)
    * [No Catch Overwrite](rules/no-catch-overwrite.md)
    * [No Commented Code](rules/no-commented-code.md)
    * [No Curly Array](rules/no-curly-array.md)
@@ -49,6 +53,7 @@ This is the summary of my book.
    * [No Obsolete Directives](rules/no-obsolete-directives.md)
    * [No Obsolete Extensions](rules/no-obsolete-extensions.md)
    * [No PHP4 Class Syntax](rules/no-php4-class-syntax.md)
+   * [No Raw Exception](rules/no-raw-exceptions.md)
    * [No References On Objects](rules/no-references-on-objects.md)
    * [No Reserved Words As Names](rules/no-reserved-keywords.md)
    * [No $this In Static Methods](rules/no-static-this.md)
@@ -101,8 +106,6 @@ This is the summary of my book.
    * [No Short Tags](rules/no-short-tags.md)
    * [No Unnecessary Concatenations](rules/no-unnecessary-string-concatenation.md)
    * [Use Smart Autoload](rules/use-smart-autoload.md)
- * Coding Conventions
-   * [No Bracketless Blocks](rules/no-bracketless-blocks.md)
  * Performances
    * [Always Preprocess](rules/always-preprocess.md)
    * [Avoid Those Slow Functions](rules/avoid-those-slow-functions.md)
