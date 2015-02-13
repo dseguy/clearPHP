@@ -20,6 +20,7 @@ There are a few PHP native functions that should be avoided for speed reasons. T
 | array_unshift      | Process the array the other way with array_push() |
 | strstr             | Use strpos() for simple searches |
 | uniqid()           | Always mention entropy (2nd parameter) |
+| range()            | You can use [generators](http://php.net/manual/ru/language.generators.overview.php), for preventing building an array in memory|
 
 <!--
 |   |   |
