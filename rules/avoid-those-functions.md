@@ -15,7 +15,7 @@ Their usage should be investigated.
 | SQLite3::escapeString | Not effective protection in SQL query for all characters  | Use prepared statements |
 | eval | This function has a rule for itself  | Use reflexion, closures. |
 | set\_include\_path | May interfere with other inclusions | Configure include_path in php.ini and don't mess with it again |
-
+| mime_content_type   | Deprecated  | Use Finfo class, with the constant `FILEINFO_MIME_TYPE`  |
 
 <!--
 |   |   |   |
