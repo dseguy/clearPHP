@@ -1,7 +1,7 @@
-<!-- generated on 08-02-2015 10:0:46-->
+<!-- generated on 19-02-2015 09:0:07-->
 # Rules
 
-This list contains one hundred three rules, in five categories.
+This list contains one hundred five rules, in five categories.
 
 ## Potential Errors
 
@@ -74,6 +74,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [no-unused-variable] (no-unused-variable.md) - 
  * [no-useless-argument-reference] (no-useless-argument-reference.md) - 
  * [no-useless-final] (no-useless-final.md) - 
+ * [no-useless-flowcontrol] (no-useless-flowcontrol.md) - 
  * [no-useless-instruction] (no-useless-instruction.md) - 
  * [no-useless-math] (no-useless-math.md) - 
  * [no-useless-return] (no-useless-return.md) - 
@@ -86,6 +87,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [use-constant-not-function] (use-constant-not-function.md) - 
  * [use-foreach] (use-foreach.md) - 
  * [use-object-api] (use-object-api.md) - 
+ * [use-provided-constants] (use-provided-constants.md) - 
  * [use-self] (use-self.md) - 
 
 ## Security

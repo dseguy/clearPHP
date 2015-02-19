@@ -71,6 +71,7 @@ This is the summary of my book.
    * [No Unused Variables](rules/no-unused-variable.md)
    * [No Useless Reference Arguments](rules/no-useless-argument-reference.md)
    * [No Useless Final](rules/no-useless-final.md)
+   * [Useless Flow Control](rules/no-useless-flowcontrol.md)
    * [Useless Instructions](rules/no-useless-instruction.md)
    * [No Useless Math](rules/no-useless-math.md)
    * [No Useless Return](rules/no-useless-return.md)
@@ -83,6 +84,7 @@ This is the summary of my book.
    * [Use Constant Rather Than Function](rules/use-constant-not-function.md)
    * [Use Foreach](rules/use-foreach.md)
    * [Use Object API](rules/use-object-api.md)
+   * [Use Provided Constants](rules/use-provided-constants.md)
    * [Use Self](rules/use-self.md)
  * Security
    * [Always Prepare Statement](rules/always-prepare-statement.md)
