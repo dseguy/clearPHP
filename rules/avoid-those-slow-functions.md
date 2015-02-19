@@ -13,7 +13,7 @@ There are a few PHP native functions that should be avoided for speed reasons. T
 | uasort             | Build the array to use non-u sort|
 | uksort             | Build the array to use non-u sort|
 | usort              | Build the array to use non-u sort|
-| in\_array           | Replace with isset() |
+| in\_array           | Build the array to be able to replace it with isset() |
 | preg\_replace       | Replace with str\_replace(), for simple replacements |
 | array\_search       | Replace with array\_key\_exists() |
 | array\_shift        | Process the array the other way with array\_pop() |
