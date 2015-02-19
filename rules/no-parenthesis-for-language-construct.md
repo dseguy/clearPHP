@@ -1,8 +1,7 @@
 <!-- PHP Manual -->
 # No Parenthesis For Language Construct
 
-`print` may be called without parenthesis : it, along with a small group of other PHP native structures, are called 'language construct' and are not usual functions. The language constructs are `echo`, `print`, `unset`, `isset`, `empty`, `include`, `include_once`, `require` and `require_once`.
-
+`print` may be called without parenthesis : it, along with a small group of other PHP native structures, are called 'language construct' and are not usual functions. The language constructs are `echo`, `print`, `include`, `include_once`, `require` and `require_once`.
 
 ```php
 <?php
@@ -38,6 +37,22 @@ The first print function displays the result of `("a") && print "b"`. This expre
 It is recommended not to use any parenthesis with language constructs, so as to avoid such pitfall.
 
 ## Rule Details
+
+List of language constructs whose parenthesis should be avoided: 
+
+* `print`
+* `echo`
+* `include`
+* `include_once`
+* `require`
+* `require_once`
+
+List of instructions whose parenthesis should be avoided too : 
+
+* `return` 
+* `throw`
+
+Note that some languages constructs, such as `unset`, `isset`, `empty`, ... may not be used without parenthesis.
 
 The following pattern is considered warnings:
 
