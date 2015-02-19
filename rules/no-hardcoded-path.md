@@ -22,7 +22,6 @@ It is recommended to check that functions that access files are not using hardco
 Here is a list of such functions : 
 
 * parse_ini_file
-* file_get_contents
 * chgrp
 * chown
 * chmod
