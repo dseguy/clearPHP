@@ -28,9 +28,9 @@ The same kind of `if..then` structure may be build with `and` though they are le
 
 This is an 'implied if' : the logical operator is made to combine logically two expressions, while it is used here to recreate a `if..then` structure. 
 
-Another alternative is to use the ternary operator, that may be more suitable to certains situations (like concatenation) than `if...then`. 
+Another alternative is to use the ternary operator, that may be more suitable to specific situations (like concatenations) than `if...then`. 
 
-It is recommended to use an explicit `if..then` expression when the code is intented to embody a condition, and let logical operator only work within logical expressions. 
+It is recommended to use an explicit `if..then` expression when the code is intended to embody a condition, and let logical operator only work within logical expressions. 
 
 ## Rule Details
 
