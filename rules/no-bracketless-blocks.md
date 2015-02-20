@@ -1,4 +1,4 @@
-<!-- Coding Conventions -->
+<!-- Good Practices -->
 # No Bracketless Blocks
 
 PHP allows statement like `for`, `if`-`elseif`-`then`, `do...while`, `while`, `foreach` to be followed by one instruction. In such case, only the next instruction will be included in the statement. This is convenient when writing short instruction, as this keeps it easy to read. 

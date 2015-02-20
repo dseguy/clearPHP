@@ -1,5 +1,5 @@
 <!-- Good Practices -->
-# No Assign Null Method
+# No Assign Null From Method
 
 PHP functions and methods may return `null` by not returning at all, or returning it explicitly. When they do so, the function may be called but no result should be assigned to a variable, as this is a waste of memory. 
 

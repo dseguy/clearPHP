@@ -1,5 +1,5 @@
 <!-- Good Practices -->
-# Disallow Use Of Reserved Words As Names
+# No Reserved Words As Names
 
 `PHP` will forbid usage of some of its keywords as structure names, such as variables, functions, classes, constants, methods, properties, trait or interface. However, it will also let it slip past its compiler sometimes. 
 
