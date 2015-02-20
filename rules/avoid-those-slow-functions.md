@@ -22,7 +22,7 @@ There are a few PHP native functions that should be avoided for speed reasons. T
 | uniqid()           | Always mention entropy (2nd parameter) |
 | array\_walk()      | Use foreach($source as &$variable) { } |
 | array\_map()       | Use foreach($source as &$variable) { } |
-| range()            | You can use [generators](http://php.net/manual/ru/language.generators.overview.php), for preventing building an array in memory|
+| range()            | You can use [generators](http://php.net/manual/language.generators.overview.php), for preventing building an array in memory|
 
 
 ## Rule Details
