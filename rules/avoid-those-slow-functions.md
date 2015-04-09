@@ -13,19 +13,16 @@ There are a few PHP native functions that should be avoided for speed reasons. T
 | uasort             | Build the array to use non-u sort|
 | uksort             | Build the array to use non-u sort|
 | usort              | Build the array to use non-u sort|
-| in\_array           | Build the array to be able to replace it with isset() |
-| preg\_replace       | Replace with str\_replace(), for simple replacements |
-| array\_search       | Replace with array\_key\_exists() |
-| array\_shift        | Process the array the other way with array\_pop() |
-| array\_unshift      | Process the array the other way with array\_push() |
+| in\_array          | Build the array to be able to replace it with isset() |
+| preg\_replace      | Replace with str\_replace(), for simple replacements |
+| array\_search      | Replace with array\_key\_exists() |
+| array\_shift       | Process the array the other way with array\_pop() |
+| array\_unshift     | Process the array the other way with array\_push() |
 | strstr             | Use strpos() for simple searches |
 | uniqid()           | Always mention entropy (2nd parameter) |
-| array\_walk()       | Use foreach($source as &$variable) { } |
+| array\_walk()      | Use foreach($source as &$variable) { } |
 | array\_map()       | Use foreach($source as &$variable) { } |
-
-<!--
-|   |   |
--->
+| range()            | You can use [generators](http://php.net/manual/language.generators.overview.php), for preventing building an array in memory|
 
 
 ## Rule Details
