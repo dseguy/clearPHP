@@ -31,9 +31,11 @@ Array
 )
 `
 
+It is recommended to unset the loop variable right after the loop, to avoid reusing it later.
+
 ## Rule Details
 
-This rule targets code that doesn't unset the loop's reference after usage. 
+This rule targets code that doesn't unset the loop's reference right after usage. 
 
 The following code is considered a warning:
 

@@ -30,13 +30,13 @@ The following patterns are considered warnings:
 ```php
 <?php
 
-define ('a', 1 * 2 + 3 - 8 / 2 % 4);
-// define('a', 5);
+define ('DAY_IN_SECONDS', 24 * 60 * 60);
+// define('DAY_IN_SECONDS', 86400);
 
-$x = array();
+$x = [];
 $x[] = 'a';
 $x[] = 'b';
-// $x = array('a', 'b');
+// $x = ['a', 'b'];
 
 ?>
 ```
