@@ -1,7 +1,7 @@
 <!-- Potential Errors -->
-# No Dangling References
+# 没有留坠的指引
 
-In a foreach loop, a variable is used for looping through the array. If this variable is made into a reference for on the spot modification purpose, the reference to the last element will survive after the end of the loop. When this last reference is reused later, it will apply to the last element of the array. 
+在一个foreach的循环中，一个变量被用来在循环过程中指引数组中的每个元素。如果这个变量，为了能就地修改的目的，被声明为一个指引，这个指引变量在循环结束后还是会存在。当这个最后的指引在后面再次使用时，它将会把它的值运用到数组的最后一个元素。
 
 ```php
 <?php
@@ -16,7 +16,7 @@ print_r($array2);
 ?>
 ```
 
-In this example, `$array[1]` finally get assigned with the value `'d'`, which is the last value in the second loop. Any assignation to `$a` would affect `$array` too.
+在这个例子中，`$array[1]` 最终会被赋值为`'d'`, 第二个循环的数组中的最后的一个值。任何对`$a`的赋值也都会对数组`$array`有影响。
 
 `
 Array
@@ -31,13 +31,11 @@ Array
 )
 `
 
-It is recommended to unset the loop variable right after the loop, to avoid reusing it later.
+## 规则细节
 
-## Rule Details
+这条规则针对在循环后没有unset循环的指引的代码的使用。
 
-This rule targets code that doesn't unset the loop's reference right after usage. 
-
-The following code is considered a warning:
+下面这样的代码视为一个警告：
 
 ```php
 <?php
@@ -45,12 +43,12 @@ foreach (array(1, 2, 3, 4) as &$value) {
     $value = $value * 2;
 }
 $other_value *= 2;
-unset($value); // don't wait too long to remove $value
+unset($value); // 不要等得太晚才移掉$value
 ?>
 ```
 
 
-The following pattern is considered legit:
+下面的代码片段是被视为合法的：
 
 ```php
 <?php
@@ -62,10 +60,10 @@ unset($value);
 ```
 
 <!--
-## When Not To Use It
+## 什么时候该不使用
 
 -->
 
-## Further Reading
+## 进一步的阅读
 
-* [foreach in PHP](http://php.net/manual/en/control-structures.foreach.php)
+* [PHP 中的 foreach](http://php.net/manual/en/control-structures.foreach.php)
