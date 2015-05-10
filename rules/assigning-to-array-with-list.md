@@ -46,4 +46,4 @@ If the equation is important to keep, then put it in a comment, and move this to
 -->
 
 ## Further Readings
-*[list()](http://php.net/manual/en/function.list.php)
+* [list()](http://php.net/manual/en/function.list.php)
