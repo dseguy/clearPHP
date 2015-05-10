@@ -1,9 +1,9 @@
 <!-- Good Practices -->
 # No Useless Math
 
-Adding 0 to a number or multiplying by 1 leave the processed value unchanged. Those are identify functions, in maths terms. This is waste in PHP, as it will force the processing of a value that will finally be the same.  
+Adding 0 to a number or multiplying it by 1 leaves the processed value unchanged : those are identity functions, in maths term. On the other hand, this is waste in PHP, as it will force the processing of a value that will eventually be the same. 
 
-In PHP, `* 1` and `+ 0` have side effect of type casting the value to integers or real numbers. Then, why not use the efficient casting operator `(int)`, which will also makes the intention clearer? 
+In PHP, `* 1` and `+ 0` have the side effect of type casting the value to integers or real numbers. Then, why not use the efficient casting operator `(int)`, which will also makes the intention clearer? 
 
 ```php
 <?php
