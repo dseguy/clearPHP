@@ -50,6 +50,9 @@ define('b', $dbResult->count());
 
 $s = 'Today is year '.date('Y');
 
+// this is constant scalar expression
+const someConstant = class::constante + 1;
+
 ?>
 ```
 

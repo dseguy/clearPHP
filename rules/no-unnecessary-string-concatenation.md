@@ -22,7 +22,7 @@ echo 'a' , $b , 'c';
 
 ?>
 ```
-At first, the difference is not obvious, as the concatenation operators dot `.` are simply turned into argument separators comma `,`. 
+At first, the difference is not obvious, as the concatenation operators dot `.` are simply turned into argument separators comma `,`. They also look alike very much. 
 
 Behind the scene, since there is no concatenation, this expression will not cost more memory than what is currently used. 
 
@@ -99,7 +99,7 @@ The following patterns are considered warnings:
 <?php
 
 echo $b. "\n";    // use ,
-print $c . "\n";  // use echo and ,
+print "$c\n";     // use echo and ,
 
 file_put_contents($file, $data . $more);
 fwrite($filePointer, $data . $more);

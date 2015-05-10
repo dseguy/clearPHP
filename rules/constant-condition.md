@@ -21,7 +21,26 @@ while($x = fetchData()) {
 ?>
 ```
 
-It is recommended to use the master function instead of any alias.
+Loops that are build with constant conditions, generally include an exit instruction, allowing them to be finalized without stopping the whole application. Such loops may be rewritten to make the exit function more visible, in the loop condition. 
+
+```php
+<?php
+
+while(true) {
+	waitForEvent();
+	
+	// exit function that needs to be in the while condition.
+	if (receivedQuitSignal()) {
+		break 1;
+	}
+}
+
+?>
+```
+
+Using constants in conditions is not regarded as constant conditions : such constants may be conditional constants (they value is dynamically defined at startup, from an external file), or even have dynamical value (such as the magic constants). Constant conditions will be build with literals.
+
+It is recommended to use non-constant conditions in the flow instructions. 
 
 
 ## Rule Details
@@ -69,13 +88,27 @@ The following pattern is considered legit:
 // SOME_CONSTANT may be configured somewhere
 if (SOME_CONSTANT) { 
 	// doSomething()
-} 
+} elseif (basename(__FILE__) == 'index.php') {
+	// __FILE__ is a dynamic constant
+}
 
 // with for
 for ( ; $object->property == 2 ; ) {
 	// doSomething()
 }
 
+// here, the condition is in the case
+switch (true) {
+	case $a : 
+		// doSomething()
+		break;
+	
+	case $c == $d; 
+		// doSomething()
+		break;
+	
+	default : 
+}
 
 ?>
 ```

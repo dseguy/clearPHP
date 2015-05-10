@@ -20,7 +20,7 @@ The incoming values are assigned to the arguments in the same order than in the 
 <?php
 
 function f($a, $b, $a) {
-	echo $a;
+	echo $b.$a;
 }
 
 f('e', 'f', 'g'); // prints 'fg'

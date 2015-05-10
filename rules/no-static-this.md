@@ -34,7 +34,7 @@ The following code is considered legit :
 class x {
 	static function y() {
 		self::callStaticMethod();
-		return sefl::$staticProperty;
+		return self::$staticProperty;
 	}
 }
 

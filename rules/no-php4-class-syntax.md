@@ -16,7 +16,7 @@ class x {
 ?>
 ```
 
-In PHP 5, constructors are now called `__constructor` and if this function is not defined, if the class has no parent and if the method is not the last element of the current namespace, PHP will try to use the function that bear the class's name instead. This is meant to ensure backward compatibility. 
+In PHP 5, constructors are now called `__construct` and if this function is not defined, if the class has no parent and if the method is not the last element of the current namespace, PHP will try to use the function that bear the class's name instead. This is meant to ensure backward compatibility. 
 
 In PHP 4, properties were declared using the `var` keyword. This keyword is still available, and is a synonym of `public`. However, it should be replaced by `public` or another visibility. 
 
@@ -46,19 +46,19 @@ The following snippets are considered a warning:
 <?php
 
 namespace {
-	// rename this from PHP4_style to __constructor()
+	// rename this from PHP4_style to __construct()
 	class PHP4_style {
 		function PHP4_style() { /**/ } 
 	}
 
-	// rename this from PHP4_style to __constructor()
+	// rename this from PHP4_style to __construct()
 	class PHP4_style_with_parent extends PHP4_style {
 		// will use PHP4_style
 	}
 
 	// check PHP4_PHP5_hybrid and see if it may be dropped or renamed
 	class PHP4_PHP5_hybrid {
-		function __constructor() { /**/ } 
+		function __construct() { /**/ } 
 		function PHP4_PHP5_hybrid() { /**/ } 
 	}
 
@@ -72,7 +72,7 @@ namespace {
 namespace Foo {
 	class Bar {
    		public function Bar() {
-       // treated as constructor in PHP 5.3.0-5.3.2
+       // treated as construct in PHP 5.3.0-5.3.2
        // treated as regular method as of PHP 5.3.3
     	}
 	}

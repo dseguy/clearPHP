@@ -22,7 +22,7 @@ var_dump($e, $f);
 ?>
 ```
 
-In the result `$e` is `false`, `$f` is `true`. Most of the time, expected precedence is the one associated with the logical operators `&&`, `||`, `^`. It is recommended to use them. 
+In the result `$e` is `true`, `$f` is `false`. Most of the time, expected precedence is the one associated with the logical operators `&&`, `||`, `^`. It is recommended to use them. 
 
 ## Rule Details
 

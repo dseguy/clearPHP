@@ -15,42 +15,7 @@ This rule require that every `case` statement without a `break` has at least a c
 
 ```php
 <?php
-switch (foo) {
-    case 'a':
-        doSomethingForA();
-        break 1;
-
-    case 'b':
-        doSomethingForB();
-		// no break here, fallthrough to C
-    case 'c':
-        doSomethingForC();
-        break 1;
-
-    default:
-        // do nothing
-}
-
-switch (foo) {
-    case 'a':
-        doSomethingForA();
-        break 1;
-
-    case 'b':
-        doSomethingForB();
-		// no break here, fallthrough to default
-
-    default:
-        doSomethingForDefault();
-}
-
-?>
-```
-
-The following code is considered legit : 
-
-```php
-<?php
+// case 'b' has uncommented fallthrough
 switch (foo) {
     case 'a':
     case 'c':
@@ -60,7 +25,29 @@ switch (foo) {
 
     case 'b':
         doSomethingForB();
+
+    default:
+        doSomethingForDefault();
+}
+?>
+```
+
+The following code is considered legit : 
+
+
+```php
+<?php
+// case 'b' has uncommented fallthrough
+switch (foo) {
+    case 'a':
+    case 'c':
+        doSomethingForA();
+        // will also do for c
         break 1;
+
+    case 'b':
+        doSomethingForB();
+        //also apply default behavior 
 
     default:
         doSomethingForDefault();
@@ -69,7 +56,8 @@ switch (foo) {
 ```
 <!--
 ### Options
--->
+
 ## When Not To Use It
 
 If default is not always necessary, you may disable this rule.
+-->

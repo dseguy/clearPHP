@@ -17,7 +17,6 @@ There are a few PHP native functions that should be avoided.
 | ncurses    | 5.3 | pecl/ncurses |
 | sqlite     | 5.4 | sqlite3 |
 | sybase     | 5.3 | pecl/sybase\_ct |
-| sybase     | 5.3 | pecl/sybase\_ct |
 
 <!--
 |   |   |   |
@@ -26,7 +25,7 @@ There are a few PHP native functions that should be avoided.
 
 ## Rule Details
 
-Using any of the extenions mentioned above will trigger a warning. 
+Using any of the extensions mentioned above will trigger a warning. Usage include constants, functions, classes, interfaces or directives, if any.
 
 <!--
 ### Options
