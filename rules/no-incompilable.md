@@ -45,4 +45,3 @@ It should be always on for broken code. It may be used less aggressively if back
 * [PHP 5.4 backward incompatible changes](http://php.net/manual/en/migration54.incompatible.php)
 * [PHP 5.3 backward incompatible changes](http://php.net/manual/en/migration53.incompatible.php)
 * [PHP 5.2 backward incompatible changes](http://php.net/manual/en/migration52.incompatible.php)
-n
