@@ -91,4 +91,4 @@ if (($res = readdir('.')) === false) {}
 -->
 
 ## Further Reading
-*[Strict vs. Loose Comparisons in PHP](http://www.copterlabs.com/blog/strict-vs-loose-comparisons-in-php/)
+* [Strict vs. Loose Comparisons in PHP](http://www.copterlabs.com/blog/strict-vs-loose-comparisons-in-php/)

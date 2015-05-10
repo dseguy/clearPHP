@@ -74,5 +74,4 @@ $sqlQuery = "SELECT column FROM table WHERE id = 10";
 -->
 
 ## Further Readings
-*[Prepared statements](http://php.net/manual/en/mysqli.quickstart.prepared-statements.php)
-
+* [Prepared statements](http://php.net/manual/en/mysqli.quickstart.prepared-statements.php)
