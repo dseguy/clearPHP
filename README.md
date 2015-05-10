@@ -40,11 +40,3 @@ ClearPHP was originally written by Damien Seguy. The following people have contr
 * Victor Stanciu (https://github.com/victorstanciu)
 * Juliette Reinders Folmer (https://github.com/jrfnl)
 * Aleksandr Yuriev (https://github.com/aleksandrzen)
-
-Proposing a New Rule
-------------------------------------
-
-To propose a new rule :
-
-- fork this repository, create a branch, checkout that branch, add the rule in `proposition` branch, push the branch to Github, and send a pull request
-- Join us on the [mailing-list](https://groups.google.com/forum/#!forum/clearphp)
