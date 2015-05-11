@@ -24,7 +24,7 @@ echo $a[foo];
 
 ?>
 ```
-It is recommended to always have index as strings or integers, so as to be consistent inside and outside quotes. Other types are cast or emit an error anyway.
+It is recommended to always have index as strings or integers, so as to be consistent inside and outside quotes. Check weel that any constant used there is actually defined. Other types are cast or emit an error anyway.
 
 ## Rule Details
 
@@ -48,9 +48,14 @@ The following patterns are not considered warnings:
 ```php
 <?php
 
-$a = array(1 =>   'c', 
-				     'd', // automated index
-			 'a' => 'e'
+const F = 10;
+define('G' ,11);
+
+$a = array(1 =>  'c', 
+				    'd', // automated index
+		 		    'a' => 'e',
+		 		    F => 1, // F is defined
+		 		    G => 2  // G is defined
 			 );
  
 ?>
@@ -63,5 +68,4 @@ $a = array(1 =>   'c',
 -->
 
 ## Further Readings
-*[Arrays](http://php.net/manual/en/language.types.array.php)
-
+* [Arrays](http://php.net/manual/en/language.types.array.php)

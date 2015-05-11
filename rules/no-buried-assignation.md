@@ -6,13 +6,15 @@ Assignation is an expression : this makes it possible to do an assignation anywh
 ```php
 <?php
 
-if (($id = array_search($haystack, $needle)) !== false) {
+if (($id = array_search($haystack, $needle = $arguments)) !== false) {
 	// process $id even more
 }
 
 ?>
 ```
+The condition in the `if` statement will both search for `$needle` in `$haystack`, but it will also assign `$arguments` to `$needle`, and the result of `array_search`to `$id`, while not touching `$haystack`. This shortens the code by two full lines (the two assignations), but it also buries the assignations. They are now difficult to spot in the code, and will surprise anyone reading the code. 
 
+It is recommended to keep assignations as visible as possible.
 
 
 ## Rule Details
@@ -82,4 +84,4 @@ If the equation is important to keep, then put it in a comment, and move this to
 -->
 
 ## Further Readings
-*[Magic methods](http://php.net/manual/en/language.oop5.magic.php)
+* [Magic methods](http://php.net/manual/en/language.oop5.magic.php)

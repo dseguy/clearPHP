@@ -20,38 +20,68 @@ if ($x == false) { /* process error */ } else { /* process finding */}
 ```
 Things gets a little more confusing when some information is carried by the type of the value. Here, `strpos` will return `false` if it can't find the needle (`'a'`) in the haystack (`'abc'`). But it will also return `0` if it finds the needle in the first position, which is indexed with 0. 
 
-The recommendation is to use `===` or `!==` when there are no good reason to use `==` or `!=`. 
+The recommendation is to use `===` or `!==` when there are no good reason to use `==` or `!=`. Always compare the returned value to `false` or `true` explicitly.
 
 ## Rule Details
 
-This rule targets code that doesn't do anything useful. 
+This rule targets methods that doesn't compare the result with `===` or `!==` to  `false` or `true`.
+
+Here is a list of PHP native functions that require strict comparison : 
+
+* array\_search
+* collator\_compare
+* collator\_get\_sort\_key
+* current
+* fgetc
+* file\_get\_contents
+* file\_put\_contents
+* iconv\_strpos
+* iconv\_strrpos
+* imagecolorallocate
+* imagecolorallocatealpha
+* mb\_strlen
+* next
+* pcntl\_getpriority
+* preg\_match
+* preg\_match\_all
+* prev
+* readdir
+* stripos
+* strpos
+* strripos
+* strrpos
+* strtok
 
 The following code is considered a warning:
 
 ```php
 <?php
-// literals in the code flow
-1; 
-My_CONSTANT;
-$b;
-function () { return $x = 3; }
 
-// post-incrementation in a return
-return $a++;
+// implicit comparisons
+if (strpos('abc', 'a')) {}
+
+// weak comparisons
+if (stripos('abc', 'a') == false) {}
+if (strrpos('abc', 'a') == 2) {}
+
+// weak and implicit comparisons
+if ($res = preg_match('/abc/', $a)) {}
 
 ?>
 ```
 
-
-The following pattern is considered legit:
+The following pattern are considered legit:
 
 ```php
 <?php
-// properties may be processed with __get()
-$object->property;
 
-// pre-incrementation in a return
-return ++$a;
+// explicit comparisons
+if (strpos('abc', 'a') === false) {}
+if (strripos('abc', 'a') !== true) {}
+
+// explicit comparison and assignation
+if (($res = readdir('.')) === false) {}
+
 ?>
 ```
 
@@ -61,4 +91,4 @@ return ++$a;
 -->
 
 ## Further Reading
-*[Strict vs. Loose Comparisons in PHP](http://www.copterlabs.com/blog/strict-vs-loose-comparisons-in-php/)
+* [Strict vs. Loose Comparisons in PHP](http://www.copterlabs.com/blog/strict-vs-loose-comparisons-in-php/)

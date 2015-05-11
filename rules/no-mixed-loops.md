@@ -1,5 +1,5 @@
 <!-- Good Practices -->
-# No Mixed Incrementations
+# No Mixed Loops
 
 `for` loops makes usage of local counters and requires a incrementation expression. Mixing the counters from one loop into the other is confusing at best. 
 
@@ -40,7 +40,8 @@ The following pattern is considered legit:
 ```php
 <?php
 
-for ($i = 0; $i < 10; $i++) {
+// $i incrementation obviously depends on the second loop
+for ($i = 0; $i < 10; ) {
 	for ($j = 0; $j < 20; ) {
 		$i++;
 		print "$i $j\n";

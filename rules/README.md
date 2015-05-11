@@ -1,7 +1,7 @@
-<!-- generated on 19-02-2015 09:0:07-->
+<!-- generated on 10-05-2015 10:1:23-->
 # Rules
 
-This list contains one hundred five rules, in five categories.
+This list contains one hundred eight rules, in five categories.
 
 ## Potential Errors
 
@@ -49,7 +49,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [no-incompilable] (no-incompilable.md) - 
  * [no-isolated-block] (no-isolated-block.md) - 
  * [no-missing-argument] (no-missing-argument.md) - 
- * [no-mixed-incrementations] (no-mixed-incrementations.md) - 
+ * [no-mixed-loops] (no-mixed-loops.md) - 
  * [no-multiple-instruction-per-line] (no-multiple-instruction-per-line.md) - 
  * [no-nested-ternary] (no-nested-ternary.md) - 
  * [no-noscream] (no-noscream.md) - 
@@ -65,6 +65,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [no-unchecked-resources] (no-unchecked-resources.md) - 
  * [no-undefined-properties] (no-undefined-properties.md) - 
  * [no-undefined-variables] (no-undefined-variables.md) - 
+ * [no-unresolved-catch] (no-unresolved-catch.md) - 
  * [no-unresolved-instanceof] (no-unresolved-instanceof.md) - 
  * [no-unresolved-use] (no-unresolved-use.md) - 
  * [no-unthrown-exceptions] (no-unthrown-exceptions.md) - 
@@ -76,10 +77,12 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [no-useless-final] (no-useless-final.md) - 
  * [no-useless-flowcontrol] (no-useless-flowcontrol.md) - 
  * [no-useless-instruction] (no-useless-instruction.md) - 
+ * [no-useless-interfaces] (no-useless-interfaces.md) - 
  * [no-useless-math] (no-useless-math.md) - 
  * [no-useless-return] (no-useless-return.md) - 
  * [no-useless-unset] (no-useless-unset.md) - 
  * [no-useless-use] (no-useless-use.md) - 
+ * [not-a-method] (not-a-method.md) - 
  * [one-class-per-file] (one-class-per-file.md) - 
  * [properties-always-used-locally] (properties-always-used-locally.md) - 
  * [strict-comparisons] (strict-comparisons.md) - 
