@@ -24,7 +24,7 @@ echo $a[foo];
 
 ?>
 ```
-It is recommended to always have index as strings or integers, so as to be consistent inside and outside quotes. Check weel that any constant used there is actually defined. Other types are cast or emit an error anyway.
+It is recommended to always have index as strings or integers, so as to be consistent inside and outside quotes. Check well that any constant used there is actually defined. Other types are cast or emit an error anyway.
 
 ## Rule Details
 
