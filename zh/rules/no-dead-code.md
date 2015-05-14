@@ -1,27 +1,27 @@
-<!-- Good Practices -->
-# No Dead Code
+<!-- 最佳实践 -->
+# 没有死代码
 
-Dead code is code that is not used. There may be two kind of situations : unreachable code and unused code. 
+死代码是那些没有被使用的代码。这可能有两种情况：不能运行到得代码和没有用到的代码。 
 
-Unreachable code happens when valid instruction is located where PHP will never reach them. This happens if some branching is executed before reaching the code itself. Here are some examples : 
+不能运行到的代码出现在当正确的语句出现在PHP永远都运行不到的地方。比如如果一些条件分支在达到这代码之前运行了就属于这个情况。下面是一些例子： 
 
 ```php
 <?php
 
 function y() {
-	return $x++; // ++ is unreachable
+	return $x++; // ++ 永远不能运行到
 }
 
 ?>
 ```
 
-Unused code happens when structures are defined but never used. For example, a function may be defined, but is never called. Such function will use coding space, require compilation and may also be included in extra tasks like Unit tests or code review. But if it isn't used, all that is wasted. 
+没有被使用的代码发生于指令被定义了但是从来没有被用过。比如，一个函数可能被定义，但是从来没有被调用过。这样的函数会使占用代码空间，要被编译也可能被包含在一些外部的任务中，像单元测试或代码审计。但是，如果它不被使用的话，所有的这些都是浪费。 
 
-It is recommended to spot as much dead code as possible, and remove it.
+一般推荐找到的死代码越多越好，然后删掉它们。
 
-## Rule Details
+## 规则细节
 
-The following patterns are considered warnings:
+如下的代码样式应被视为警告：
 
 ```php
 <?php
@@ -31,29 +31,29 @@ if (0) {
 }
 
 function y() {
-	return $x++; // ++ is unreachable
+	return $x++; // ++ 不能被运行到
 }
 
 switch ($x) {
 	case 1 : 
 		$a++;
 		break 1;
-		$b++; // $b can't be reached
+		$b++; // $b 不能被运行到
 	default : 
 		$c++;
 		break 1;
-	case 2 : // can't be reached 
+	case 2 : // 这里不能被运行到 
 		$d++;
 }
 
 function z() {
 	die();
-	return 3; // return can't be reached
+	return 3; // 返回值是不能被运行到
 }
 
 function w() {
 	return $a; 
-	$a++ // $a++ can't be reached
+	$a++ // $a++ 不能被运行到
 }
 
 
@@ -61,10 +61,10 @@ function w() {
 ```
 
 <!--
-### Options
+### 什么情况可以选择它
 
-## When Not To Use It
+## 什么时候不要用它
 
-## Further Readings
+## 进一步阅读
 -->
 
