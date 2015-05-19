@@ -1,29 +1,29 @@
 <!-- PHP Manual -->
-# No Short Tags
+# 不使用PHP短标记
 
 "PHP also allows for short open tag `<?` (which is discouraged since it is only available if enabled using the short_open_tag php.ini configuration file directive, or if PHP was configured with the --enable-short-tags option)."
 
-## Rule Details
+## 规则细节
 
-This rule require that every PHP opening tag is not a short tag. The following patterns are considered warnings:
+本规则要求 __不要使用__ 短标记作为PHP代码段的起始。如下例子将会触发 `E_WARNING`：
 
-```
+```php
 <?
 // ... some code
 ?>
 ```
 
-The following code is considered legit : 
+如下代码例子为正确的使用方式：
 
-```
+```php
 <?php
 
 
 ?>
 ```
 
-```
-<?= $y 
+```php
+<?= $y
 ?>
 ```
 <!--
@@ -34,5 +34,9 @@ The following code is considered legit :
 This is not checked by PHP but will lead to bugs.
 -->
 
-## Further Reading
-* [PHP tags](http://php.net/manual/en/language.basic-syntax.phptags.php)
+## 深入阅读
+* [PHP 标记](http://php.net/manual/zh/language.basic-syntax.phptags.php)
+
+## 译者
+
+* [Buck CHEN](https://github.com/cxbig)
