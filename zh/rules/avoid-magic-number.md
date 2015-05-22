@@ -1,39 +1,39 @@
-<!-- Good Practices -->
-# No Magic Number
+<!-- 优好的实践 -->
+# 没有“神”数字
 
-Magic Number is a number that is written as a literal in the code, while it may have a special or related meaning that is not obvious to understand. 
+神奇数字是指直接写在代码里面的字面数字，它有可能有特殊和相关的意义但是却不能很明显的被理解。
 
-At a later stage of the evolution, such magic number may need to be updated and a blind search/replace will not be possible as such literal may be used in other context.
+在（代码）演化的晚些时候，这些神奇数字也许需要被更新，而简单盲目的查找和替换是不可能的因为这样的字面值可能已经被用在其他的上下文中。
 
 ```php
 <?php
 
-if (strlen($password) < 10) { // 10 is a magic number, that may change at any time. 
-	$password['status'] = 33; // that is an error number, another magic number
-	$password['checked'] += 1; // that is not a magic number : it only counts password's checks
+if (strlen($password) < 10) { // 10 是一个神奇数字，它可能在任何时候改变。 
+	$password['status'] = 33; // 这是一个代码错误的数字符号，另外一个神奇数字。
+	$password['checked'] += 1; // 这不是一个神奇数字，它只是记录密码被检查的次数。
 }
 
 ?>
 ```
 
-Magic numbers will raise problems when they appear in two different locations, and are updated only once. 
+当神奇数字被使用在两个不同的地方，但却只被更新一次时，它会产生问题。
 
-0, 1, 2 and 100 are often regarded as exceptions, as they are so often used. However, it is also a good idea to consider them as magic number and provide a better name for them : for example, 0 and 1 may be used and confused as `false` and `true`.
+0, 1, 2 和 100 常被视为例外，因为它们被使用得实在是太平常了。但是，好的主意是把它们也视为神奇数字并为它们提供一个更好的（常量）名字：例如，0 和 1 可能被使用而且和“真”和“假”产生混乱。
 
-Magic numbers are useful in unit tests, where a wide range of valid and invalid values must be tested to check the behavior of the code.
+神奇数字在单元测试中很有用。在那里，范围很大的各种合法或不合法的值必须通过测试来验证代码的行为。
 
-It is recommended to provide explicit constant names for literals as often as possible. 0 and 1 should be considered too.
+在任何允许的情况下使用明显易懂的常量的名字来代替字面值是非常推荐的。即时0和1也不例外。
 
-## Rule Details
+## 规则细节
 
-This rules targets literals within comparisons, math expressions or assignations.
+这个规则针对在条件语句，算术表达式和赋值语句中用到的字面数值。
 
-The following code is considered a warning:
+下面的代码被视为一个警告：
 
 ```php
 <?php
-if ($value == 1) {  // magic number
-	$value *= 1.206;   // magic number for VAT in some countries
+if ($value == 1) {  // 神奇数字
+	$value *= 1.206;   // 一些国家的VAT计算中使用神奇数字
 }
 
 if (3 > $value) { 
@@ -42,23 +42,23 @@ if (3 > $value) {
 ?>
 ```
 
-The following pattern is considered legit:
+下面的代码是被视为合法的：
 
 ```php
 <?php
 
-$percentage /= 100; // classic percentage
+$percentage /= 100; // 传统的，典型的计算百分比的方法
 
-$count += 1; // simple increment
+$count += 1; // 简单的自增
 
 ?>
 ```
 
 <!--
-## When Not To Use It
+## 啥时候不要用它
 
 -->
 
-## Further Reading 
+## 进一步阅读 
 
-* [Magic number (programming)] (http://en.wikipedia.org/wiki/Magic_number_%28programming%29)
+* [神奇数字 (编程)] (http://en.wikipedia.org/wiki/Magic_number_%28programming%29)
