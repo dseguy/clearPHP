@@ -1,7 +1,7 @@
 <!-- PHP Manual -->
 # 不使用PHP短标记
 
-“PHP中可以使用短标记 `<?`   （不鼓励使用。只有`php.ini`中的选项`short_open_tag`被开启时有效，或是在命令行中加上 `--enable-short-tags` 选项）。”
+"PHP also allows for short open tag `<?` (which is discouraged since it is only available if enabled using the short_open_tag php.ini configuration file directive, or if PHP was configured with the --enable-short-tags option)."
 
 ## 规则细节
 
@@ -13,7 +13,7 @@
 ?>
 ```
 
-如下代码例子为正规的使用方式：
+如下代码例子为正确的使用方式：
 
 ```php
 <?php
@@ -35,7 +35,6 @@ This is not checked by PHP but will lead to bugs.
 -->
 
 ## 深入阅读
-
 * [PHP 标记](http://php.net/manual/zh/language.basic-syntax.phptags.php)
 
 ## 译者
