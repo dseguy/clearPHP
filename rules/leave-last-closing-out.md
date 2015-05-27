@@ -1,4 +1,4 @@
-<!-- Good practice -->
+<!-- Good Practices -->
 # Leave Last Closing Tag Out
 
 PHP use `<?php` for opening a PHP sequence, and `?>` for closing it. Everything outside is considered as `raw HTML` and will be displayed as is, while everything inside is considered as PHP code.
@@ -20,7 +20,7 @@ echo $a;
 ```
 The PHP interpreter will understand the end of the file as the end of the script, and will close any instruction. You may still get an fatal error if the instruction is badly build, or if there is not final `;`, so the behavior is the same as if you had closed the script.
 
-The added value here is avoiding the infamous `Cannot modify header information - headers already sent by (output started at /path/to/file.php:lineNumber)` bug. This happens when there is raw HTML strings, which are immediatly echoed to the server. Such strings are quite easy to spot when they are not blank (like a real `<html>` tag, or, when they are blank, at the beginning of the file.
+The added value here is avoiding the infamous `Cannot modify header information - headers already sent by (output started at /path/to/file.php:lineNumber)` bug. This happens when there is raw HTML strings, which are immediately echoed to the server. Such strings are quite easy to spot when they are not blank (like a real `<html>` tag, or, when they are blank, at the beginning of the file.
 
 At the end of the script, an extra space or tabulation might be difficult to spot, and, as such, will most probably generate the abovementioned error. This means that scripts must be checked, and may be commited again with whitespace fix. This is not efficient. 
 
