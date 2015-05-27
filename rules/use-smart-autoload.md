@@ -9,9 +9,7 @@ When it was introduced, class autoloading was build around the function `__autol
 // example of __autoload
 function __autoload($classname) {
     $filename = PROJECT_ROOT.'/'. $classname .'.php';
-    if (file_exists($filename)) {
-	    include($filename);
-	}
+    include($filename);
 }
 
 ?>
