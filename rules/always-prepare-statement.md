@@ -7,7 +7,7 @@ Prepared statement is the a way to build queries, that separates the query from 
 <?php
 
 // build the query without values, using place holders
-$sqlQuery = "SELECT column FROM table WHERE id = ?";
+$sqlQuery = 'SELECT column FROM table WHERE id = ?';
 
 // make the server compile the query
 $stmt = $mysqli->prepare($sqlQuery);
@@ -41,13 +41,13 @@ The following patterns are considered warnings:
 <?php
 
 // concatenating variable
-$sqlQuery = "SELECT column FROM table WHERE id = ".$id;
+$sqlQuery = 'SELECT column FROM table WHERE id = ' . $id;
 
 // concatenating with sanitization
-$sqlQuery = "SELECT column FROM table WHERE id = ".$sqlite->escapeString($id);
+$sqlQuery = 'SELECT column FROM table WHERE id = ' . $sqlite->escapeString($id);
 
 // concatenating with bad sanitization
-$sqlQuery = "SELECT column FROM table WHERE id = ".addslashes($id);
+$sqlQuery = 'SELECT column FROM table WHERE id = ' . addslashes($id);
 
 ?>
 ```
@@ -58,20 +58,28 @@ The following patterns are not considered warnings:
 <?php
 
 // prepared statement
-$sqlQuery = "SELECT column FROM table WHERE id = ?";
+$sqlQuery = 'SELECT column FROM table WHERE id = ?';
 
 
-// literal statement
-$sqlQuery = "SELECT column FROM table WHERE id = 10";
+// the Query is literal statement
+$sqlQuery = 'SELECT column FROM table WHERE id = 10';
+
+// Can't use arrays with IN
+$ids = [1, 3, 5];
+$sqlQuery = 'SELECT column FROM table WHERE id in (' .  join(',', $ids).')';
 
 ?>
 ```
 
 <!--
 ### Options
+-->
 
 ## When Not To Use It
--->
+* Prepared statement are not available for all queries : for example, changing the structure of a table can't be done with a prepared statement, or PHP arrays can't be used with IN SQL clauses. 
+* Prepared statement requires two calls to the database. This has overhead, though it usually is usually less than the query itself. 
 
 ## Further Readings
 * [Prepared statements](http://php.net/manual/en/mysqli.quickstart.prepared-statements.php)
+* [Using prepared statements](https://www.inanimatt.com/php-prepared-statements.html)
+* [PHP MySQL prepared SQL statement vs SQL statement](http://erlycoder.com/69/php-mysql-prepared-sql-statement-vs-sql-statement)
