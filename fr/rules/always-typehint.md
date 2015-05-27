@@ -1,48 +1,55 @@
 <!-- Good Practices -->
-# Always Typehint
+# Utilisez Les Typehint
 
-PHP allows the use of `<classname>`, `array` or `callable`, to type the incoming arguments as, respectively, objects of the class `<classname>`, arrays or callable functions. 
+PHP autorise l'utilisation de `<nom de classe>`, `array` et `callable`, pour valider le type des données entrantes : les arguments doivent alors, respectivement, être un object de la classe  `<nom de classe>`, un tableau ou une fonction callback.
 
-Whenever possible, typehint should be used so as to give more information about the incoming values. This will be used by PHP compiler and binary to check variables and, eventually, emits catchable exceptions when they are not. 
+Lorsque c'est possible, les Typehint doivent être utilisés dans les signatures de méthodes ou de fonctions, afin d'assurer une validation simple des données en entrée. Les typehints sont réutilisés par PHP ainsi que par les outils d'analyze et les IDE pour valider les données, et, éventuellement, émettre des exceptions si les valeurs introduites ne sont pas du type escompté. 
 
-It is recommended to always set the typehint.
+Les Typehint peuvent être des classes ou bien des interfaces. 
 
-## Rule Details
+Notons que PHP 7 va plus loin, et propose notamment des Typehint de retour, qui vérifie que la méthode retourne un type attendu. PHP 7 supporte aussi des types scalaires, tels que `integer` ou `string` et non plus seulement des types objets. 
 
-This rule is aimed at encouraging the use of typehint.
+Il est recommandé d'utiliser les Typehint autant que possible.
 
-The following patterns are considered warnings:
+## Détails de la règle
+
+Cette règle fait la promotion des Typhehint.
+
+Les exemples suivants sont des erreurs : 
 
 ```php
 <?php
 
 function foo($a) {
-	// $a should be typehinted with some class that support `callMethod` method.
-	$a->callMethod();
+	// $a devrait être un objet, d'une classe qui, elle ou un de ses parents, dispose d'une méthode appelée `methodeAppelee`
+	$a->methodeAppelee();
 }
 ?>
 ```
 
-The following patterns are not considered ambiguous:
+Les exemples suivants sont ambigus, et ne devraient pas générer d'alerte : 
 
 ```php
 <?php
 
 function foo($a) {
-	$b = $a . 1; // $a could be a string or an object that suport __toString()
+	$b = $a . '1'; // $a peut être une string ou bien un objet qui dispose de la méthode __toString()
 }
 
+function bar($a, $b) {
+	$c = $a + 1; // $a pourrait être un nombre ou un tableau
+}
 ?>
 ```
 
-The following patterns are not considered warnings:
+Les exemples suivants ne sont pas des erreurs : 
 
 ```php
 <?php
 
 function foo($a) {
-	$b = $a + 1; // $a should be an integer
-	$c = $a + 1.2; // $a should be an real
+	$b = $a + 1; // $a pourrait être un entier
+	$c = $a * 1.2; // $a pourrait etre un nombre décimal
 }
 
 ?>
