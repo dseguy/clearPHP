@@ -9,7 +9,7 @@ When it was introduced, class autoloading was build around the function `__autol
 // example of __autoload
 function __autoload($classname) {
     $filename = "./". $classname .".php";
-    include_once($filename);
+    include($filename);
 }
 
 ?>
