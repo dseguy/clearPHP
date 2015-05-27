@@ -1,7 +1,7 @@
-<!-- generated on 10-05-2015 10:1:23-->
+<!-- generated on 27-05-2015 03:1:58-->
 # Rules
 
-This list contains one hundred eight rules, in five categories.
+This list contains one hundred eleven rules, in five categories.
 
 ## Potential Errors
 
@@ -15,6 +15,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
 
  * [always-have-visibility] (always-have-visibility.md) - 
  * [always-typehint] (always-typehint.md) - 
+ * [always-use-semicolon] (always-use-semicolon.md) - 
  * [avoid-magic-number] (avoid-magic-number.md) - 
  * [avoid-those-functions] (avoid-those-functions.md) - 
  * [commented-fallthrough] (commented-fallthrough.md) - 
@@ -23,6 +24,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [declares-or-executes] (declares-or-executes.md) - 
  * [definitions-only] (definitions-only.md) - 
  * [imported-collision] (imported-collision.md) - 
+ * [leave-last-closing-out] (leave-last-closing-out.md) - 
  * [lowercase-keyword] (lowercase-keyword.md) - 
  * [no-array_merge-in-loop] (no-array_merge-in-loop.md) - 
  * [no-assign-null-from-method] (no-assign-null-from-method.md) - 
@@ -121,6 +123,7 @@ The following rules are extracted from the manual.
  * [no-reassign-references] (no-reassign-references.md) - 
  * [no-short-tags] (no-short-tags.md) - 
  * [no-unnecessary-string-concatenation] (no-unnecessary-string-concatenation.md) - 
+ * [use-properties-default-values] (use-properties-default-values.md) - 
  * [use-smart-autoload] (use-smart-autoload.md) - 
 
 ## Performances
