@@ -1,9 +1,9 @@
-<!-- Performances -->
-# Always Preprocess
+<!-- 性能 -->
+# 总是预处理
 
-Everything that may be prepared before compiling will be less work for PHP at later stage. This usually leads to building cache into the application, as most data are dynamical and not known at compile time.
+所有能在PHP编译之前准备好的事情都意味着PHP在后面花更少得事情。这个通常导致在应用中建立缓存，因为很多数据都是动态的而且在编译时是不知道的。
 
-However, there is a range of optimization that are rooted in coding laziness : 
+然而，有一系列的优化都是根源于代码的懒惰性(coding laziness): 
 
 ```php
 <?php
@@ -15,17 +15,17 @@ $seconds = 86400;
 ?>
 ```
 
-The first initialization is based on literals multiplications, and will waste a few cycles to actually start the script. 
+第一个初始化是基于字面上的乘法，而且将会在脚本开始启动时浪费一些(CPU)的周期。 
 
-It is recommended to always precalculate values and avoid literals operations in code.
+总是用预先计算好的值，避免字面值得（计算）操作是建议的选择。
 
-If it helps to keep the equation, comments will be the solution.
+如果公式是非常重要的话，使用注释是一个解决方式。
 
-## Rule Details
+## 规则详情
 
-This rule is aimed at avoiding using PHP to build initial values.
+这条规则针对于避免PHP来建立字面意义的值。
 
-The following patterns are considered warnings:
+下面的模式会被视为警告：
 
 ```php
 <?php
@@ -41,7 +41,7 @@ $x[] = 'b';
 ?>
 ```
 
-The following patterns are not considered warnings:
+下面的模式不会被视为警告：
 
 ```php
 <?php
@@ -50,17 +50,17 @@ define('b', $dbResult->count());
 
 $s = 'Today is year '.date('Y');
 
-// this is constant scalar expression
+// 这是一个常量纯表达式
 const someConstant = class::constante + 1;
 
 ?>
 ```
 
 <!--
-### Options
+### 选择
 -->
-## When Not To Use It
-If the equation is important to keep, then put it in a comment, and move this to documentation automatically. 
+## 什么时候不取使用它
+如果公式是很重要的，那么把它放到注释里，并且把它自动地列入到文档里去。 
 
 <!--
 ## Further Readings
