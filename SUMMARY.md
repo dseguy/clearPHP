@@ -123,6 +123,7 @@ This is the summary of my book.
    * [No Repeated Print](rules/no-repeated-print.md)
    * [No Unnecessary Conversion](rules/no-unnecessary-conversion.md)
    * [Use Reference To Alter In Foreach](rules/use-reference-to-alter-in-foreach.md)
+   * [Use Short Assignations](rules/use-short-assignations.md)
 <!-- rules -->
 * [Annexes](ANNEXES.md)
     * [Internals](internal.md)
