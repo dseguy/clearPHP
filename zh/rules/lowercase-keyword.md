@@ -1,7 +1,7 @@
-<!-- Good Practices -->
-# Lowercase Keywords
+<!-- 优良实践 -->
+# 关键字（应该）小写
 
-The general usage is to use PHP keywords in lowercase. Uppercase is possible, but ugly and unheard of. 
+通常来说PHP关键字应该用小写。大写是可能的，但是看上去很丑而且从来没有听说过有人这样干。
 
 ```php
 <?php
@@ -13,13 +13,13 @@ IF (OK_FOR_CONSTANTS) {
 ?>
 ```
 
-## Rule Details
+## 规则详情
 
-All PHP keywords should be lowercase, except for constants such as `TRUE`, `FALSE`, `NULL`, which are tolerated in uppercase version, and PHP constants, which are always used as constants.
+所有的PHP关键字都应该小写，除了常量`TRUE`, `FALSE`,`NULL`，它们的大写可以忍受。另外还有PHP的常量，它们一般总是被写成大写。
 
-This is incorrect : 
+这是不对的: 
 
-```php
+```
 <?php
 DO {
 	print "Result : ";
@@ -27,7 +27,7 @@ DO {
 ?>
 ```
 
-This is correct code : 
+这是对的: 
 
 ```php
 <?php
@@ -39,9 +39,9 @@ do {
 
 
 <!--
-## When Not To Use It
-Never
+## 什么时候不要用它
+永远
 
 
-## Further Reading 
+## 进一步阅读 
 -->
