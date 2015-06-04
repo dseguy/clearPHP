@@ -15,7 +15,9 @@ echo $a;
 There are a few situations where semicolon are not required, as another token will be used as instruction ending. For example : 
 
 ```php
-<?php echo 'a' ?>
+<?php 
+	echo 'a' 
+?>
 ```
 Here, the `echo 'a'` instruction will be closed automatically by the `?>` PHP closing tag. 
 

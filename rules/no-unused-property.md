@@ -29,6 +29,7 @@ class foo {
 The following patterns are not considered warnings:
 
 ```php
+<?php
 class foo {
 	public $used = 2;
 	
@@ -39,6 +40,7 @@ class foo {
 
 $foo = new foo();
 $foo->used = 4;
+?>
 ```
 
 <!--
