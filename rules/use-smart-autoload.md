@@ -8,8 +8,8 @@ When it was introduced, class autoloading was build around the function `__autol
 
 // example of __autoload
 function __autoload($classname) {
-    $filename = "./". $classname .".php";
-    include_once($filename);
+    $filename = PROJECT_ROOT.'/'. $classname .'.php';
+    include($filename);
 }
 
 ?>
@@ -30,7 +30,10 @@ The following are considered warning :
 
 // function definition
 function __autoload($classname) {
-
+    $filename = PROJECT_ROOT.'/'. $classname .'.php';
+    if (file_exists($filename)) {
+	    include($filename);
+	}
 }
 
 ?>
@@ -45,7 +48,10 @@ The following are considered legit :
 
 // registering one's function
 function my_autoloader($class) {
-    include 'classes/' . $class . '.class.php';
+    $filename = PROJECT_ROOT.'/'. $classname .'.php';
+    if (file_exists($filename)) {
+	    include($filename);
+	}
 }
 
 spl_autoload_register('my_autoloader');
@@ -53,16 +59,19 @@ spl_autoload_register('my_autoloader');
 
 // Or, using an anonymous function as of PHP 5.3.0
 spl_autoload_register(function ($class) {
-    include 'classes/' . $class . '.class.php';
+    $filename = PROJECT_ROOT.'/'. $classname .'.php';
+    if (file_exists($filename)) {
+	    include($filename);
+	}
 });
 
 ?>
 ```
 
 ## When Not To Use It
-Please, always use this rule.
+* If you need to include functions or constants, you can't use autoloading. 
 
 ## Further Reading
 * [Autoloading Classes ¶](http://php.net/manual/en/language.oop5.autoload.php)
-* [spl_autoload_register](http://php.net/manual/en/function.spl-autoload-register.php)
-* [__autoload](http://php.net/manual/en/function.autoload.php)
+* [spl\_autoload\_register](http://php.net/manual/en/function.spl-autoload-register.php)
+* [\_\_autoload](http://php.net/manual/en/function.autoload.php)

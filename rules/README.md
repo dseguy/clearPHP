@@ -1,9 +1,9 @@
-<!-- generated on 10-05-2015 10:1:23-->
-# Rules
+<!-- generated on 09-04-2015 01:1:07-->
+# Règles
 
-This list contains one hundred eight rules, in five categories.
+Cette liste contient cent onze règles, réparties en cinq catégories.
 
-## Potential Errors
+## Erreur possibles
 
 The following rules signal possible mistakes in the code.
 

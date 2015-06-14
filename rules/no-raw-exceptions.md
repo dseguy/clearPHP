@@ -1,7 +1,9 @@
 <!-- Good Practices -->
 # No Raw Exception
 
-PHP handles exceptions. `Exception` is the eponymous class, that is the mother of all exceptions : PHP's SPL exceptions, extensions Exceptions (mysqli, pdo, phar, soap, etc..) and, eventually, the one in the final application.
+PHP handles exceptions. `Exception` is the eponymous class, that is the mother of most of the exceptions : PHP's SPL exceptions, extensions Exceptions (mysqli, pdo, phar, soap, etc..) and, eventually, the one in the final application. 
+
+PHP 7 introduces a new Exception, called BaseException. This will take over the position of 'mother of all exceptions'. This means that code relying on `Exception` may now let the new `EngineException` and `ParseException` pass and generate a fatal error. 
 
 Thrown exceptions should inherit from `Exception`. This way, they may be selectively caught by a `try...catch` structure. 
 
@@ -94,11 +96,15 @@ The following code is considered a warning:
 ```php
 <?php
 
+namespace X;
+
 try {
 	/* Some Code */
 	throw new Exception('Message');
 
 } catch (Exception $e) {
+	// Catch all for the namespace if such class exists
+} catch (\Exception $e) {
 	// Catch all
 }
 
@@ -137,3 +143,4 @@ Catching `Exception` is accepted when it is used for a catch-all feature.
 * [PHP Exceptions](http://php.net/manual/en/language.exceptions.php)
 * [SPL Exceptions](http://php.net/manual/en/spl.exceptions.php)
 * [Exception Best Practices in PHP 5.3] (http://ralphschindler.com/2010/09/15/exception-best-practices-in-php-5-3)
+* [PHP 7 Exceptions](https://wiki.php.net/rfc/engine_exceptions_for_php7)

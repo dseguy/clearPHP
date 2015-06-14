@@ -12,6 +12,7 @@ This is the summary of my book.
  * Good Practices
    * [Always Has Visibility](rules/always-have-visibility.md)
    * [Always Typehint](rules/always-typehint.md)
+   * [Always Use Semicolon](rules/always-use-semicolon.md)
    * [No Magic Number](rules/avoid-magic-number.md)
    * [Avoid Those Functions](rules/avoid-those-functions.md)
    * [Commented Fallthrough](rules/commented-fallthrough.md)
@@ -20,6 +21,7 @@ This is the summary of my book.
    * [Declares Or Executes](rules/declares-or-executes.md)
    * [Definitions Only Files](rules/definitions-only.md)
    * [No Closure Argument Collisions](rules/imported-collision.md)
+   * [Leave Last Closing Tag Out](rules/leave-last-closing-out.md)
    * [Lowercase Keywords](rules/lowercase-keyword.md)
    * [No Array_merge In Loops](rules/no-array_merge-in-loop.md)
    * [No Assign Null From Method](rules/no-assign-null-from-method.md)
@@ -110,6 +112,7 @@ This is the summary of my book.
    * [No Reassign References](rules/no-reassign-references.md)
    * [No Short Tags](rules/no-short-tags.md)
    * [No Unnecessary Concatenations](rules/no-unnecessary-string-concatenation.md)
+   * [Use Default Property Values](rules/use-properties-default-values.md)
    * [Use Smart Autoload](rules/use-smart-autoload.md)
  * Performances
    * [Always Preprocess](rules/always-preprocess.md)
@@ -120,10 +123,12 @@ This is the summary of my book.
    * [No Repeated Print](rules/no-repeated-print.md)
    * [No Unnecessary Conversion](rules/no-unnecessary-conversion.md)
    * [Use Reference To Alter In Foreach](rules/use-reference-to-alter-in-foreach.md)
+   * [Use Short Assignations](rules/use-short-assignations.md)
 <!-- rules -->
 * [Annexes](ANNEXES.md)
     * [Internals](internal.md)
     * [Translations](translations.md)
     * [Glossary](GLOSSARY.md)
+    * [Tools](TOOLS.md)
     * [License](LICENSE.md)
     * [Authors](AUTHORS.md)

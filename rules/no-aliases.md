@@ -38,6 +38,10 @@ if (is_int($value)) {
 ?>
 ```
 
+## See Also
+* [Avoid Those Functions](avoid-those-functions.md)
+* [No Deprecated](no-deprecated.md)
+
 <!--
 ## When Not To Use It
 
