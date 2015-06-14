@@ -1,9 +1,9 @@
-<!-- Good Practices -->
-# No Hardcoded Path
+<!-- 优秀实践 -->
+# 没有hardcoded的路径
 
-Just like hardcoded credentials, hardcoded path will be a problem anytime the file hierarchy changes : modifications may occurs as server migration, security concerns, file reorganization, etc. 
+就像hardcoded的用户信息一样，hardcoded的路径将会在任何时候文件层级改变时引起麻烦：(路径)改动可能在服务器迁移，安全考虑，文件重组，等等的时候发生。 
 
-The best way to handle the matter is to make the root of the application a configuration directive, and then, add the application's own file hierarchy. 
+处理这个问题的最好的方式是使应用的根目录成为一个配置栏目，然后，再加上应用自己的文件层级。 
 
 ```php
 <?php
@@ -15,11 +15,11 @@ $fp = fopen('/tmp/tmp.txt', 'w');
 ?>
 ```
 
-It is recommended to check that functions that access files are not using hardcoded path. 
+检查所有使用文件的函数没有使用hardcode的路径，是强烈推荐的。
 
-## Rule Details
+## 规则详情
 
-Here is a list of such functions : 
+这是一系列这样的函数： 
 
 * parse_ini_file
 * chgrp
@@ -78,6 +78,8 @@ Here is a list of such functions :
 * simplexml_load_file
 
 
+下面这样的代码，应该被视为警告：
+
 ```php
 <?php
 
@@ -86,7 +88,7 @@ file_get_contents('./config/config.yaml');
 ?>
 ```
 
-The following pattern is considered OK :
+下面的代码被视为可以接受的：
 
 ```php
 <?php
@@ -97,13 +99,13 @@ file_get_contents($config['webroot'].'/config/config.yaml');
 
 ```
 <!--
-### Options
+### 选择
 
-## When Not To Use It
+## 什么时候不去使用它
 
-If default is not always necessary, you may disable this rule.
+如果缺省值不是总是必要的，你可以关掉这条规则。
 
 
-## Further Reading
+## 进一步阅读
 * []()
 -->
