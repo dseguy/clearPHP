@@ -1,9 +1,9 @@
 <!-- generated on 09-04-2015 01:1:07-->
-# Règles
+# Rules
 
-Cette liste contient cent onze règles, réparties en cinq catégories.
+This list contains one hundred and eleven rules, broken down into five categories.
 
-## Erreur possibles
+## Possible errors
 
 The following rules signal possible mistakes in the code.
 
@@ -95,7 +95,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
 
 ## Security
 
-The following rules are help strengthening the security of your application.
+The following rules help strengthen the security of your application.
 
  * [always-prepare-statement] (always-prepare-statement.md) - 
  * [know-your-variables] (know-your-variables.md) - 
@@ -125,7 +125,7 @@ The following rules are extracted from the manual.
 
 ## Performances
 
-The following rules will speed up the code execution.
+The following rules will speed up code execution.
 
  * [always-preprocess] (always-preprocess.md) - 
  * [avoid-those-slow-functions] (avoid-those-slow-functions.md) - 
