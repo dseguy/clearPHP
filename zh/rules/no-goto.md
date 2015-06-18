@@ -1,11 +1,11 @@
-<!-- Good Practices -->
-# No Goto
+<!-- 优良实践 -->
+# 没有Goto
 
-`Goto` are considered a thing of the past : the code will be much harder to read and understand. It leads to keeping all code in one big heap, code spaghetti and maintenance headaches. 
+`Goto` 被考虑为是一个过去时代的事情：它将使代码非常难读和难懂。它导致所有的代码都堆成一团，"意大利面条式"的代码(code spaghetti)和维护头痛。
 
-## Rule Details
+## 规则详情
 
-The following code is considered a warning:
+下面的代码被考虑为一个警告：
 
 ```php
 <?php
@@ -36,13 +36,13 @@ return;
 ```
 
 <!--
-## When Not To Use It
+## 啥时候不用它
 
 
 -->
-## Further Reading 
+## 进一步阅读 
 
-* [Programming with Reason: Why is goto Bad?](http://www.drdobbs.com/jvm/programming-with-reason-why-is-goto-bad/228200966)
-* [Goto at xkcd](http://xkcd.com/292/)
-* [Goto Considered Harmful](http://c2.com/cgi/wiki?GotoConsideredHarmful)
+* [理性的编程：为什么got是坏的东西？](http://www.drdobbs.com/jvm/programming-with-reason-why-is-goto-bad/228200966)
+* [xkcd Goto 漫画](http://xkcd.com/292/)
+* [Goto 应被视为有危害](http://c2.com/cgi/wiki?GotoConsideredHarmful)
 
