@@ -29,7 +29,7 @@ array(3) {
 }
 ```
 
-如果顺序对于结果的数组是很重要的，推荐使用 `array_reverse` 给结果数组排序，或者使用其他方法构造数组。
+如果顺序对于结果数组是很重要的，推荐使用 `array_reverse` 给结果数组反转，或者使用其他方法构造数组。
 
 <!--
 The following patterns are not considered warnings:
