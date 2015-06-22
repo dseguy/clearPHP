@@ -64,10 +64,10 @@ $a = $b - $a;
 ?>
 ```
 <!--
-## When Not To Use It
+## Quand L'Éviter
 If the project doesn't use any OOP feature, it may ignore this rule.
 
 
-## Further Reading
+## Bibliographie
 
 -->
