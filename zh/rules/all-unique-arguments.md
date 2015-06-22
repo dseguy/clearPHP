@@ -1,7 +1,7 @@
-<!-- PHP Manual -->
-# All Unique Arguments
+<!-- PHP 手册 -->
+# 所有的参数名保持唯一
 
-When defining a PHP method, multiples arguments may carry the same name. 
+当定义一个PHP方程的时候，多个参数可以使用同样的名字。
 
 ```php
 <?php
@@ -14,7 +14,8 @@ f('b', 'c', 'd'); // prints 'd'
 
 ?>
 ```
-The incoming values are assigned to the arguments in the same order than in the method definition : the last one overwrite the first. 
+
+函数被调用时，变量会根据定义的顺序被赋值，后一个传入的值会覆盖前一个。
 
 ```php
 <?php
@@ -28,11 +29,11 @@ f('e', 'f', 'g'); // prints 'fg'
 ?>
 ```
 
-It is recommended to always use distinct names for arguments variables.
+推荐使用不同的名字定义函数变量。
 
-## Rule Details
+## 规则细节
 
-The following patterns are considered warnings:
+以下例子将会触发PHP警报：
 
 ```php
 <?php
@@ -52,7 +53,7 @@ function f(Stdclass $a, &$a) { /**/ }
 ?>
 ```
 
-The following patterns are not considered warnings:
+以下例子被认为是正规的使用方法：
 
 ```php
 <?php
@@ -64,8 +65,10 @@ function f($a, $b, $c) { /**/ }
 <!--
 ### Options
 -->
-## When Not To Use It
-Always use this.
+
+## 什么时候使用此规则
+
+永远使用这个规则。
 
 <!--
 ## Further Readings
