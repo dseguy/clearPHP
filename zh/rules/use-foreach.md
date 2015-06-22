@@ -1,7 +1,8 @@
-<!-- Good Practices -->
-# Use Foreach
+<!-- 好的实践 -->
+# 使用 Foreach
 
-`foreach` instruction has been introduced in PHP 4 : it s a loop that will review all element in the source provided. `foreach` has evolved over the years, and is now able to loop over any object that implements the `Iterator` interface. 
+`foreach` 指令在 PHP 4 就被推荐使用：这是一个循环指令，可以遍历数据源中的所有元素。  
+`foreach` 在多年内不断的进化，现在它可以用来遍历任何带有迭代器接口的对象。
 
 ```php
 <?php
@@ -12,65 +13,67 @@ foreach ($source as $key => $element) {
 
 ?>
 ```
-Older ways of building such loops include the usage of the `for` loop, and the `while...each` loop. 
+
+更早的遍历指令，如 `for` 和 `while...each`：
 
 ```php
 <?php
 
 while(list($key, $element) = each($source)) {
-  // doSomething with the element	
+  // doSomething with the element
 }
 
-// often used with indexed arrays, as hashes may be more cumbersome
+// 通常用于已排序的数组。对带有 `hash` 索引的数组不适用
 $count = count($source);
 for($i = 0 ; $i < $count; $i++) {
-  // doSomething with the $source[$i]	
+  // doSomething with the $source[$i]
 }
 
 ?>
 ```
 
-While the two alternatives still available, and may even be faster in edge cases, it is recommended to always use `foreach`. 
+虽然这两种方案仍然可以使用，甚至在一些特定场合会更快，但还是推荐总是使用 `foreach`。
 
-`foreach` takes charge of looping over the array, whatever its size. It prevents the usage of `count()` in the for() loop, and assign the values into handy variables.
+`foreach` 控制循环遍历数组，无论其大小。它避免了在 `for` 循环中使用 `count()`。  
+而且将元素的索引和值直接赋给变量，易于操作。
 
-Besides, foreach may be used with more complex structures, including iterators or generators. 
+另外，`foreach` 可以用于更复杂的结构，包括迭代器或生成器。
 
-It is recommended to always use foreach over arrays or finished sources. 
+建议总是使用 `foreach` 来处理数组和完整的数据源。
 
-## Rule Details
+## 规则细节
 
-The following snippets are considered a warning:
+如下例子将是为一个警告：
 
 ```php
 <?php
 
 while(list($key, $element) = each($source)) {
-  // doSomething with the element	
+  // doSomething with the element
 }
 
 $count = count($source);
 for($i = 0 ; $i < $count; $i++) {
-  // doSomething with the $source[$i]	
+  // doSomething with the $source[$i]
 }
-	
+
 ?>
 ```
 
-The following snippets are considered legit:
+一下例子被视为正规用法：
 
 ```php
 <?php
 
-// No array involved
+// 无数组的for循环
 for ($i =0; $i < $nb; $i++) {
-	$div = $nb % $i; 
+	$div = $nb % $i;
 }
 
-// undefined size source (sql result)
-// also, this will avoid dumping all result in memory
+// 无大小定义的来源 (如 SQL 结果)
+// 同时，这种方法可以避免将整个源数据加载到内存（避免内存超限）
 while($row = $pdo->fetchRow()) {
-  // doSomething with the element	
+    // doSomething with the element
 }
 
 ?>
@@ -81,7 +84,11 @@ while($row = $pdo->fetchRow()) {
 ## When Not To Use It
 -->
 
-## Further Readings
-* [Iterator](http://php.net/manual/en/class.iterator.php)
-* [PHP generators](http://php.net/manual/en/language.generators.overview.php)
-* [Foreach](http://php.net/manual/en/control-structures.foreach.php)
+## 延伸阅读
+* [Iterator](http://php.net/manual/zh/class.iterator.php)
+* [PHP generators](http://php.net/manual/zh/language.generators.overview.php)
+* [Foreach](http://php.net/manual/zh/control-structures.foreach.php)
+
+## 译者
+
+* [cxbig](https://github.com/cxbig)
