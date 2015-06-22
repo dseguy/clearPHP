@@ -41,22 +41,29 @@ The following patterns are considered warnings:
 
 ?>
 ```
-<!--
 The following patterns are not considered warnings:
 
 ```php
 <?php
 
-
+	// URI are distinct
+    $htmlLink = '<a href="'.strtr(strtolower($url), ' ', '-').'.php"><img src="'.strtr(strtolower($url.'?id='.time()), ' ', '-').'.png" alt="$title"></a>';
+    
+    // les appels de la fonction sont différents
+    $a = foo(1);
+    $b = foo(2);
 ?>
 ```
-
+<!--
 
 ### Options
+-->
 
 ## When Not To Use It
-If the equation is important to keep, then put it in a comment, and move this to documentation automatically. 
+* Avoid creating variables to hold some value in the global context, as it may be difficult to spot the reuse across the whole application. It is safer within a method.
+* Some functioncalls not only return a result, but also change the state of the called system, such as  `ini_set` or a status method. With such methods, the result may be cached, but the call is still necessary.
 
+<!--
 ## Further Readings
 -->
 
