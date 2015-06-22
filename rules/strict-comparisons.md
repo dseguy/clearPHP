@@ -121,3 +121,4 @@ if (($res = readdir('.')) === false) {}
 * [Magic hashes](https://blog.whitehatsec.com/magic-hashes/)
 * [password_verify](http://php.net/manual/en/function.password-verify.php)
 * [Userland password_hash](https://github.com/ircmaxell/password_compat)
+* [PHP weak typing woes](http://pen-testing.sans.org/blog/2014/12/18/php-weak-typing-woes-with-some-pontification-about-code-and-pen-testing)
