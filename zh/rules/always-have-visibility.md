@@ -1,19 +1,20 @@
-<!-- Good Practices -->
-# Always Has Visibility
+<!-- 好的实践 -->
+# 总是定义 类 的 属性 和 方法 的可见度
 
-For compatibility reasons, PHP allows methods and properties to be defined without visibility : `public`, `protected` or `private`. By default, methods and properties are defined as `public`, making them available to all other objects without restriction.
+为了兼容性，PHP允许不定义 **方法** 和 **属性** 的 **可见度** ：`public`，`protected` 或 `private`。  
+默认的，**方法** 和 **属性** 会被定义为`public`。可以被其他 **类** 不加限制的访问。
 
-One development approach is to set visibility by default to `private`, and then, lift the constraint as it is apparent that the resource has to be reached from parents or from outside objects. 
+一个开发的方向是将 **可见度** 默认设置为`private`。然后，根据需要进行提权，用于继承访问或外部访问。
 
-This is one core principle of Object Oriented Programming : encapsulation. It must be used to separate as much as possible the internals of the object from the outside, limiting its impact to a few and selected methods or properties. 
+这是面向对象编程的一个核心准则：**封装**。尽可能的将 **类** 的内部与外部区隔开来，仅开放少数必要的 **方法** 和 **属性**。
 
-It is recommended to always set the visibility, as restrictive as possible.
+推荐总是设置可见度，尽量加大约束。
 
-## Rule Details
+## 规则细节
 
-This rule is aimed at avoiding omitting visibility for properties and methods.
+本规则针对 **类** 的 **属性** 和 **方法** 被漏掉的 **可见度** 定义。
 
-The following patterns are considered warnings:
+如下例子会触发PHP警报：
 
 ```php
 <?php
@@ -26,13 +27,13 @@ abstract class x {
 	static function defautVisibilityStaticMethod() {}
 	final function defautVisibilityFinalMethod() {}
 	abstract function defautVisibilityAbstractMethod();
-	
+
 }
 
 ?>
 ```
 
-The following patterns are not considered warnings:
+如下例子是正规的使用方法：
 
 ```php
 <?php
@@ -45,7 +46,6 @@ abstract class x {
 	static protected function defautVisibilityStaticMethod() {}
 	final private function defautVisibilityFinalMethod() {}
 	abstract public function defautVisibilityAbstractMethod();
-	
 }
 
 ?>
@@ -58,4 +58,3 @@ abstract class x {
 
 ## Further Readings
 -->
-
