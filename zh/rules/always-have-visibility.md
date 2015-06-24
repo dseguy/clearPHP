@@ -1,19 +1,19 @@
-<!-- Good Practices -->
-# Always Has Visibility
+<!-- 最佳实践 -->
+# 永远都有可见性
 
-For compatibility reasons, PHP allows methods and properties to be defined without visibility : `public`, `protected` or `private`. By default, methods and properties are defined as `public`, making them available to all other objects without restriction.
+为了兼容性的原因，PHP允许方法和属性被定义为没有可见性的: ‘公有’，‘保护'或'私有'。缺省情况下，方法和属性被定义为'公有'，使它们对所有其他的对象可见没有任何限制。
 
-One development approach is to set visibility by default to `private`, and then, lift the constraint as it is apparent that the resource has to be reached from parents or from outside objects. 
+一个开放的途径是把可见性开始都设置为‘私有’，然后，随着资源有被父类或其他外部对象使用的需要，移除必要的限制。
 
-This is one core principle of Object Oriented Programming : encapsulation. It must be used to separate as much as possible the internals of the object from the outside, limiting its impact to a few and selected methods or properties. 
+这是一个面向对象编程的一个核心原则：封装。它必须被使用以来把对象内部实现和外部分离，限制冲击仅仅对于选择的方法和属性。
 
-It is recommended to always set the visibility, as restrictive as possible.
+总是使用可见性是被推荐的，越严厉越好。
 
-## Rule Details
+## 规则详情
 
-This rule is aimed at avoiding omitting visibility for properties and methods.
+这个规则目的是避免省去了方法和属性的可见性。
 
-The following patterns are considered warnings:
+下面的模式是将被视为警告：
 
 ```php
 <?php
@@ -32,7 +32,7 @@ abstract class x {
 ?>
 ```
 
-The following patterns are not considered warnings:
+下面的模式将不会被视为警告：
 
 ```php
 <?php
@@ -52,10 +52,10 @@ abstract class x {
 ```
 
 <!--
-### Options
+### 选择
 
-## When Not To Use It
+## 什么时候不用它
 
-## Further Readings
+## 进一步阅读
 -->
 
