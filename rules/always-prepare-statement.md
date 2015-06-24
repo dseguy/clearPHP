@@ -33,7 +33,7 @@ They are called 'prepared statements' in SQL world, and may carry other names wi
 
 ## Rule Details
 
-This rule is aimed at avoiding omitting visibility for properties and methods.
+This rule is aimed at ensure the use of prepared statement.
 
 The following patterns are considered warnings:
 
