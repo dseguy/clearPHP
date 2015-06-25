@@ -72,6 +72,6 @@ spl_autoload_register(function ($class) {
 * If you need to include functions or constants, you can't use autoloading. 
 
 ## Further Reading
-* [Autoloading Classes ¶](http://php.net/manual/en/language.oop5.autoload.php)
-* [spl\_autoload\_register](http://php.net/manual/en/function.spl-autoload-register.php)
+* [Autoloading Classes ¶](http://php.net/autoload)
+* [spl\_autoload\_register](http://php.net/spl_autoload_register)
 * [\_\_autoload](http://php.net/manual/en/function.autoload.php)
