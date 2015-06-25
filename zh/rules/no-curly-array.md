@@ -36,7 +36,9 @@ The following is OK :
 ```php
 <?php
 
-$x[1][0];
+$x[1];
+$object->property[0][1];
+$x[0][1][] = 2;
 
 ?>
 ```
@@ -48,6 +50,5 @@ Please, always use it.
 
 ## Further Reading
 
-* [Strings](http://php.net/manual/en/language.types.string.php)
-* [Arrays](http://php.net/manual/en/language.types.array.php)
-
+* [Strings](http://php.net/strings)
+* [Arrays](http://php.net/array)
