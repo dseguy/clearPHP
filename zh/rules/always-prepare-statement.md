@@ -1,78 +1,77 @@
-<!-- Security -->
-# Always Prepare Statement
+<!-- 安全 -->
+# 永远使用准备称述（Prepare Statement）
 
-Prepared statement is the a way to build queries, that separates the query from the values. The general synopsis is the following : 
+准备陈述（Prepared statement）是一个建立查询的方式，它把查询和值分离开来。它的基本概要可以表示为：
 
 ```php
 <?php
 
-// build the query without values, using place holders
+// 建造不含值的查询，使用占位符
 $sqlQuery = "SELECT column FROM table WHERE id = ?";
 
-// make the server compile the query
+// 让服务器编译查询
 $stmt = $mysqli->prepare($sqlQuery);
 
-// Link a variable to the query, mentionning a format for the data
+// 链接值到查询，提供数据的格式
 $stmt->bind_param('s', $city);
 
-// Run the query with the value
+// 执行含值的查询
 $stmt->execute();
 
-// Fetch some result
+// 得到结果
 $stmt->bind_result($result);
 
 ?>
 ```
-In this process, the SQL server is protected at two levels : first, the query is compiled with only known data. This makes it easy to review, and impossible to tamper with. Secondly, incoming data gets a format. The server will handle them in a separate memory space than the query, reducing interferences to null.
+在这个过程中，SQL服务器在两个层面被保护了：第一个，查询语句只被与已知的数据编译。这个使得(代码)容易审视，而且不可能被（黑客）搬弄。第二个，输入的值有格式声明。服务器将会用于查询不同的内存空间来处理它们，减少null值的干扰。
 
-The traditional way to build queries is to concatenate the user data in the query, after sanitization. If sanitization is forgotten, or a new way to circumvent it is discovered, the user data have a chance to interfere with the query. 
+传统的建造查询的方式是集中于查询中用户的数据，在数据清理之后。如果数据清理步骤被忘记了，或者新的绕过它的方式被发现了，用户的数据将有机会与查询相干扰。 
  
-It is recommended to always use prepared statements when using a remote server and user data. If query is static (i.e. doesn't include external data), it may be passed directly. 
+当使用远程服务器和用户数据时总是运用准备称述是强烈推荐的。如果查询是静态的（即，不包含外部的数据），它可以直接地被传入。
 
-They are called 'prepared statements' in SQL world, and may carry other names with other technologies. This rule will apply to any paradigm that separate data and query. 
+在SQL的世界，它们被称为'准备称述'('prepared statements'), 在其他的技术中可能拥有不同的名字。这个规则会运用于任何的查询和数据相分离的范式。
 
-## Rule Details
+## 规则详情
 
-This rule is aimed at avoiding omitting visibility for properties and methods.
 
-The following patterns are considered warnings:
+下面的模式被视为警告：
 
 ```php
 <?php
 
-// concatenating variable
+// 连结变量
 $sqlQuery = "SELECT column FROM table WHERE id = ".$id;
 
-// concatenating with sanitization
+// 连结数据清理
 $sqlQuery = "SELECT column FROM table WHERE id = ".$sqlite->escapeString($id);
 
-// concatenating with bad sanitization
+// 连结坏的数据清理
 $sqlQuery = "SELECT column FROM table WHERE id = ".addslashes($id);
 
 ?>
 ```
 
-The following patterns are not considered warnings:
+下面的模式不会被视为警告：
 
 ```php
 <?php
 
-// prepared statement
+// 准备称述
 $sqlQuery = "SELECT column FROM table WHERE id = ?";
 
 
-// literal statement
+// 字面称述
 $sqlQuery = "SELECT column FROM table WHERE id = 10";
 
 ?>
 ```
 
 <!--
-### Options
+### 选择
 
-## When Not To Use It
+## 什么时候不使用它
 -->
 
-## Further Readings
-*[Prepared statements](http://php.net/manual/en/mysqli.quickstart.prepared-statements.php)
+## 进一步阅读
+*[准备称述](http://php.net/manual/en/mysqli.quickstart.prepared-statements.php)
 
