@@ -1,22 +1,27 @@
-<!-- Good Practices -->
-# No Nested Ternary
+<!-- 好的实践 -->
+# 不要嵌套三元运算
 
-The ternary operator is a compact version of a `if then else` structure. It is very convenient when the branching is needed but should be inline with the rest of the code.
-
-```php
-<?php
-print 'Result : '.( $success ? 'transaction succeded' : 'transaction failed');
-?>
-```
-Ternary operators may be nested. This degrades very quickly the readability of the code.
+三元运算是一个压缩的 `if then else` 结构。用一行判断就可以处理简单的逻辑分支，十分的方便。
 
 ```php
 <?php
-print 'Result : '.( $success ? $christmas ? 'transaction success and you get a gift' : 'transaction success' : 'transaction failed');
+
+print 'Result : ' . ( $success ? 'transaction succeded' : 'transaction failed');
+
 ?>
 ```
 
-It must also be mentioned that ternary may not produce the expected result when nesting them. For example : 
+三元运算是可以嵌套的。但这会降低代码的可读性。
+
+```php
+<?php
+
+print 'Result : ' . ( $success ? $christmas ? 'transaction success and you get a gift' : 'transaction success' : 'transaction failed');
+
+?>
+```
+
+必须要提到的是：嵌套的三元运算有时不会得到你所期待的结果。例如：
 
 ```php
 <?php
@@ -26,22 +31,22 @@ echo $foo ? 'a' : $bar ? 'b' : 'c';
 ?>
 ```
 
-Here is the result for all values of `$foo` and `$bar` : 
+以下是 `$foo` 和 `$bar` 的四种逻辑组合的结果：
 
 | `$foo` | `$bar` | result |
 |--------|--------|--------|
-| true   | true   | b      | 
-| true   | false  | b      | 
-| false  | true   | b      | 
-| false  | false  | c      | 
+| true   | true   | b      |
+| true   | false  | b      |
+| false  | true   | b      |
+| false  | false  | c      |
 
-It is recommended to avoid nesting ternary operators. 
+所以，建议大家不要使用嵌套的三元运算。
 
-## Rule Details
+## 规则细节
 
-Ternary operators are fine. Nesting them hurts. 
+三元运算是很好的。但是嵌套它就不那么舒服了。
 
-The following code will raise a warning : 
+如下代码会被视为警告：
 
 ```php
 <?php
@@ -55,7 +60,7 @@ $foo ?: $bar ?: 'c';
 ?>
 ```
 
-The following code will is legit : 
+如下代码是正规用法：
 
 ```php
 <?php
@@ -79,5 +84,9 @@ if ($foo) {
 Never
 
 
-## Further Reading 
+## Further Reading
 -->
+
+## 译者
+
+* [cxbig](http://github.com/cxbig)
