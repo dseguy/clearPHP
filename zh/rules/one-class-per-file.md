@@ -1,13 +1,15 @@
-<!-- Good Practices -->
-# One Class Per File
+<!-- 好的实践 -->
+# 每个文件只放一个类
 
-One class per file makes it easy to find class definitions in the file system. It is confusing to search for class A in B.php file, as they are both in the same file. Version control log messages are also either to read.
+每个文件一个类，这样在系统里可以很容易找到类的定义。在 `B.php` 文件里找类 `A` 是让人迷惑的，而且版本控制里的日志也是不容易理解的。
 
-It also help to follow PSR-0 to PSR-4 recommendations and automate class loading with namespaces and autoload. 
+同样，跟据 `PSR-0` 到 `PSR-4` 所推荐的，可以轻易的使用类的命名空间和自动加载功能。
 
-## Rule Details
+## 规则细节
 
-This rule require that every `class` is defined in a file, and that every file that defines a class only hold one. The following patterns are considered warnings:
+本规则规定每一个 `class` 都放在一个独立的文件里。同时，每个文件也只包含一个类。
+
+以下代码会视为警告：
 
 ```php
 <?php
@@ -19,16 +21,17 @@ class b extends a { /**/ }
 ?>
 ```
 
-The following code is considered legit : 
+以下代码是正规的用法：
 
 ```php
 <?php
 
 class a { /**/ }
+
 ?>
 ```
 
-Another file : 
+另一个例子：
 
 ```php
 <?php
@@ -40,7 +43,6 @@ class b extends a { /**/ }
 <!--
 ### Options
 -->
-## When Not To Use It
+## 何时不适用此规则
 
-If you have some mechanism that compile all classes into one file for faster loading, this rule may be ignore for that kind of file. 
-
+如果你有一些机制将所有的类编译到一个文件内来提高加载的速度，对那样的文件而言，可以忽略本规则。
