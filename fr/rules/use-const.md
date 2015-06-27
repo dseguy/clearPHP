@@ -1,46 +1,47 @@
 <!-- Good Practices -->
-# Use Const
+# Utilisez Const
 
-There are two ways to create constants in PHP : `const` and `define`. 
+Il y a deux moyens de créer des constantes en PHP : `const` et `define`. 
 
-`const` may be used to create constants. Those constants will be placed the current namespace. Since PHP 5.6, static constant expressions may be used, giving some flexibility on constant creation. When not used in a class, `const` must be used at the top level of a namespace : no function, class, nor `if..then`  or any loop structure. All has to be known at compile time. This may give `const` its main advantages : it is slightly faster and more readable than its counterpart, `define`. 
+`const` sert aussi à créer des constantes, et pas seulement des constantes de classe. Ces constantes sont alors placées dans l'espace de nom courant. Depuis PHP 5.6, les expressions statiques peuvent être utilisées lors de la création de ces constantes, ce qui donne une importante flexibilité. Lorsqu'il n'est pas utilisé dans une classe, `const` doit être placé dans la racine de l'espace de noms : il ne peut être dans une fonction, dans une instruction `if..then` ou dans une boucle. En fait, tout cela permet de définir la valeur de la constante dès la compilation. Cela confère à `const` ses avantages : il est légèrement plus rapide  et plus lisible que son cousin, `define`. 
 
-`define`, on the other hand, is the time-honored function to create constants. It may be used to create constants anywhere in the code, with dynamical expressions or not. The resulting constant will be available in the global space, or in the namespace if the namespace was included in the constant name at definition time. It may also be made case insensitive. 
+`define`, d'un autre coté, est la fonction traditionelle pour créer les constantes en PHP. Il peut être utilisé n'importe où dans le code, et même avec des expressions dynamiques. Les résultat est une constante de l'espace global, ou bien d'un espace de nom si ce dernier a été inclut dans le nom de la constante lors de la définition. Ces constantes peuvent être rendues insensibles à la casse.
 
-`define` tends to be slower that `const`, and will not benefit much from opcode cache. This will be specially visible when using large number of constants. 
+`define` s'avère un peu plus lent que `const`, et ne profite pas des systèmes d'opcode. Cela est d'autant plus vrai que le nombre de constantes est de l'application est grand.
 
-It is recommended to use `const` whenever possible. 
+Il est recommandé d'utiliser `const` dès que c'est possible.
 
-## Rule Details
+## Détails De La Règle
 
-The following are considered a warning : 
+L'exemple suivant n'est pas valide : 
 
 ```php
 <?php
 
 define('a', 1);
 define('b', 'a' . 'c');
-define('c', someClass::constant);
+define('c', uneClasse::constante);
 
 ?>
 ```
 
-The following are OK : 
+L'exemple suivant est correct : 
 
 ```php
 <?php
 
 define('l', 3, true);
 define('m', $x, true);
-define('n', array(1,2,3), true); // before PHP 5.6
+define('n', array(1,2,3), true); // avant PHP 5.6
 
 ?>
 ```
 
-## When Not To Use It
-For backward compatibility, or to load configuration as constants, `define()` is still more convenient for definition. In terms of usage, both syntax are good.
+## Quand L'Éviter
+* Pour la compatibilité ascendante
+* Pour charger des directives de configuration sous forme de constante, `define()` est toujours plus pratique. 
 
-## Further Reading
+## Bibliographie
 
 * [define() versus const (PHP Best practises)](https://phpbestpractices.org/#constants)
 * [define vs const (Stackoverflow)](http://stackoverflow.com/questions/2447791/define-vs-const)

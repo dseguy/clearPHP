@@ -1,26 +1,27 @@
 <!-- Good Practices -->
-# No Exit
+# Pas d'Exit
 
-It is possible to end the execution of a script with `die` and `exit` functions. They will interrupt the execution and destruct all resources. 
+Il est possible d'interrompre l'exécution d'un script avec les commandes `die` et `exit`. Elles stoppent l'exécution et détruisent immédiatement toutes les ressources.
 
 ```php
 <?php
 
 if (mysql_connect('localhost', 'user', 'pass')) {
-	die('No database');
+	die('Pas de base de données');
 }
 
 ?>
 ```
 
-Exiting a script this way will also break any library that is including the `die` or `exit`. This may be difficult to spot, especially if those functions are used without any argument, thus displaying nothing about the location of the exit. 
+Interrompre une application avec `die` or `exit` fonctionne aussi dans une bibliothèque. Cela rend la localisation de l'interruption très difficile, notamment lorsque ces commandes sont utilisées sans aucun arguments, et qu'elles ne donnent aucune indication sur la localisation ou la raison du problème. 
 
-It is usually better to `throw` an exception or raise an error (with `trigger_error`) or use any error handling set up available (returning a value, calling a `error` method, etc..). 
+Cela empêche aussi le programme principal de tenter un sauvetage ou de clore proprement les ressources : ces dernières sont détruites en l'état, au moment du die. 
 
- 
+Il est recommandé d'utiliser `throw` pour lancer une exception ou d'émettre une erreur PHP (avec `trigger_error`), ou encore d'utiliser le mécanisme de gestion d'erreur disponible dans votre application (retourner un code d'erreur, appeler une méthode `erreur`, etc..). 
 
-## Rule Details
+## Détails De La Règle
 
+La règle cible toutes les utilisations de `die` or `exit`. 
 
 ```php
 <?php
@@ -30,14 +31,13 @@ die(__METHOD__);
 
 ?>
 ```
+Cette règle s'applique aussi aux bibliothèques bâties sur le concept de débugage avec `var_dump`, telles que [Kint](http://raveren.github.io/kint/) ou [Krumo](http://krumo.sourceforge.net/), ou d'autres encore (liste non-exhaustive). Ces bibiothèques disposent de directives de configuration qui permettent de contrôler l'affichage ou non des erreurs, contrairement aux fonctions natives telles que `print_r` et `var_dump`. Même si c'est indéniablement mieux, il est préférable d'éviter la possibilité d'interrompre l'exécution. 
 
-Rule may also apply to libraries build on top of `var_dump` concept, such as [Kint](http://raveren.github.io/kint/) or [Krumo](http://krumo.sourceforge.net/). They provide configuration to disable them while leaving debug traces in the code, which is not the case for native PHP functions such as `print_r`. While this is indeed better, this still mean code that won't be used is pushed to production. As such, it must be avoided. 
 
+## Quand L'Éviter
+Lorsque le code est exécuté en ligne de commande, `exit` et `die` permettent de conclure le script et de retourner un statut, tout comme `return`. 
 
-## When Not To Use It
-When the code is run as a commandline script, `exit` and `die` are good to return status, just like `return`. 
-
-## Further Reading
+## Bibliographie
 
 * [Exceptions](http://php.net/manual/en/language.exceptions.php)
 * [Trigger_error](http://php.net/manual/en/function.trigger-error.php)

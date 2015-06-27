@@ -1,7 +1,7 @@
 <!-- Performances -->
-# No Recalculate
+# Pas De Recalculs
 
-Within a scope, it is always faster to cache any calculated value than recalculate it. For example, 
+Dans une méthode, il est toujours plus rapide de mettre en cache une valeur que de la recalculer. Par exemple, 
 
 ```php
 <?php
@@ -10,7 +10,7 @@ Within a scope, it is always faster to cache any calculated value than recalcula
 ?>
 ```
 
-In this example, both the URI link and the image URI are built from the `$title` variable, with some characters replacements. Calling both `strtr` and `strtolower`, or even one of them only, will be slower than calling them once, and caching the result in a variable. 
+Dans cet exemple, les URI du lien et de l'image sont construits à partir de la variable `$title`, afin de protéger les caractères spéciaux. Appeler les fonctions `strtr` et `strtolower`, ou simplement l'une des deux, sera toujours plus lent que de mettre le résultat en cache dans une variable.
 
 ```php
 <?php
@@ -21,42 +21,50 @@ In this example, both the URI link and the image URI are built from the `$title`
 ?>
 ```
 
-This has the added advantage of making the second line easier to read, and to update (as long as both URIs are build the same way). 
+Ce nouveau code présente l'avantage supplémentaire d'être plus facile à lire, et à modifier (tant que les deux URI sont les mêmes).
 
-When the functioncall is used once, there is no gain to cache it in a variable. As soon at the functioncall is used twice, there is some gain. Of course, the simpler the functioncall and the fewer the reuse, the lesser is the gain. 
+Lorsqu'un appel de fonction est utilisé seulement une fois, il n'y a pas d'avantage à le mettre en variable. Dès que cet appel est fait deux fois, la mise en cache est plus rapide. Evidemment, plus la fonction est complexe, plus le gain est important. Notamment, la mise en cache d'appels de fonctions utilisateurs est bien plus recommandé que la mise en cache de fonctions natives.
 
-It is recommended to avoid recalculation in any function scope. In the global scope, this is also recommended, although it may be harder to spot. 
+Il est recommandé d'éviter les recalculs dans une méthode. Au niveau global, il est toutefois recommandé de les éviter car les recalculs sont difficiles à identifier.
 
-## Rule Details
+## Détails De La Règle
 
-This rule is aimed at avoiding recalculating the same values several times.
+Cette règle cible les appels multiples aux mêmes fonctions, avec les mêmes valeurs.
 
-The following patterns are considered warnings:
+Les exemples suivants sont à éviter : 
 
 ```php
 <?php
 
-	// $url is calculated twice identically
+	// $url est calculé deux fois de la même manière
     $htmlLink = '<a href="'.strtr(strtolower($url), ' ', '-').'.php"><img src="'.strtr(strtolower($url), ' ', '-').'.png" alt="$title"></a>';
 
 ?>
 ```
-<!--
-The following patterns are not considered warnings:
+
+Les exemples suivants sont valides : 
 
 ```php
 <?php
 
-
+	// les URI sont distinctes
+    $htmlLink = '<a href="'.strtr(strtolower($url), ' ', '-').'.php"><img src="'.strtr(strtolower($url.'?id='.time()), ' ', '-').'.png" alt="$title"></a>';
+    
+    // les appels de la fonction sont différents
+    $a = foo(1);
+    $b = foo(2);
 ?>
 ```
-
+<!--
 
 ### Options
+-->
 
 ## When Not To Use It
-If the equation is important to keep, then put it in a comment, and move this to documentation automatically. 
+* Évitez de créer des variables de cache au niveau global, car elles sont difficiles à identifier et à réutiliser au niveau de l'ensemble de l'application. Il est plus sécuritaire de le faire à l'intérieur d'une méthode.
+* Certains appels de méthodes effectuent des calculs mais modifient aussi l'état d'un systène, comme par exemple `ini_set` ou une méthode de changement d'état dans une classe. Si les résultats peuvent être mis en cache, l'appel reste nécessaire.
 
+<!--
 ## Further Readings
 -->
 

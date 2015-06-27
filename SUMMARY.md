@@ -128,6 +128,7 @@ This is the summary of my book.
 * [Annexes](ANNEXES.md)
     * [Internals](internal.md)
     * [Translations](translations.md)
+    * [Contributing](contributing.md)
     * [Glossary](GLOSSARY.md)
     * [Tools](TOOLS.md)
     * [License](LICENSE.md)
