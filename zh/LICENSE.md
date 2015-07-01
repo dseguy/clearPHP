@@ -1,3 +1,3 @@
-# License
+# 许可证
 
-Unless stated otherwise, all content is licensed under the Creative Commons Attribution License.
+除非另外声明，所有的内容请遵照 [Creative Commons Attribution License](clearPHP/zh/LICENSE-CC.md)
