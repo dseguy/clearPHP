@@ -1,43 +1,42 @@
-<!-- Good Practices -->
-# No Useless Use
+<!-- 好的实践 -->
+# 不要无效的Use
 
-`use` statement are present at the beginning of the namespace to help PHP find classes definitions in the rest of the code. PHP will collect them and use them all to look for classes that are requested during the execution of the current file.
+在命名空间开头使用 `use` 申明可以让PHP在整个类定义中找到对应的类。PHP会收集和使用找到的类，在当前文件的实际使用中正确的调用。
 
-Any extra `use` statement will require extra searching to understand from which namespace the class will come, including resolving unnecessary name collisions. 
+任何多余的 `use` 申明都会额外消耗资源去寻找对应的类，包括处理不必要的命名冲突。
 
 ```php
 <?php
 
 namespace name {
-	// foobar is useless
+	// foobar 是无用的
 	use foo, bar, foobar;
-	
+
 	class barfoo extends foo implements bar {
-	
+
 	}
 }
 
 ?>
 ```
 
-It is recommended to keep the number of `use` statement to the minimum. 
+建议保留最小需求的 `use`。
 
-## Rule Details
+## 规则细节
 
-The following patterns are considered warnings:
+如下代码被视为警告：
 
 ```php
 <?php
 
 namespace name {
-	// foobar is useless
+	// foobar 是无用的
 	use foo, bar, foobar;
-	
+
 	class barfoo extends foo implements bar {
-	
+
 	}
 }
-
 
 ?>
 ```
@@ -46,5 +45,8 @@ namespace name {
 ### Options
 
 ## When Not To Use It
-
 -->
+
+## 译者
+
+* [cxbig](https://github.com/cxbig)
