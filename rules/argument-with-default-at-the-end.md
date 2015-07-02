@@ -86,4 +86,4 @@ function f($a, $b, $c, $d) {}
 Always use it. 
 
 ## Further Readings
-* [Function arguments](http://php.net/manual/en/functions.arguments.php) (See Example #5 Incorrect usage of default function arguments)
+* [Function arguments](http://php.net/functions.arguments) (See Example #5 Incorrect usage of default function arguments)

@@ -29,6 +29,6 @@ It is recommended to remove any exception that is not thrown at least once in th
 ## When Not To Use It
 
 ## Further Readings
-*[Arrays](http://php.net/manual/en/language.types.array.php)
+*[]()
 
 -->

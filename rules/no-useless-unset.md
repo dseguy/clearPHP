@@ -101,4 +101,4 @@ function foo() {
 -->
 
 ## Further Reading
-* [unset](http://php.net/manual/en/function.unset.php)
+* [unset](http://php.net/unset)

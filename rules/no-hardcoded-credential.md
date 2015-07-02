@@ -86,5 +86,5 @@ If default is not always necessary, you may disable this rule.
 
 ## Further Reading
 * [PHP dotenv](https://github.com/vlucas/phpdotenv)
-* [ext/Mysqli runtime configuration](http://php.net/manual/en/mysqli.configuration.php)
+* [ext/Mysqli runtime configuration](http://php.net/mysqli.configuration)
 * [Is it secure to store passwords as environment variables](http://stackoverflow.com/questions/12461484/is-it-secure-to-store-passwords-as-environment-variables-rather-than-as-plain-t)

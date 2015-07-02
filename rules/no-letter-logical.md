@@ -55,4 +55,4 @@ If default is not always necessary, you may disable this rule.
 
 
 ## Further Reading
-* [Logical operators](http://php.net/manual/en/language.operators.logical.php)
+* [Logical operators](http://php.net/language.operators.logical)

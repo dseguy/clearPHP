@@ -19,7 +19,10 @@ If you plan to keep your application linked to some PHP version, then you can sa
 
 ## Further Reading
 
-* [Deprecated features in PHP 5.6.x](http://php.net/manual/en/migration56.deprecated.php)
-* [Deprecated features in PHP 5.5.x](http://php.net/manual/en/migration55.deprecated.php)
-* [Deprecated features in PHP 5.4.x](http://php.net/manual/en/migration54.deprecated.php)
-* [Deprecated features in PHP 5.3.x](http://php.net/manual/en/migration53.deprecated.php)
+<!--
+* [Deprecated features in PHP 7.0.x](http://php.net/migration70.deprecated)
+-->
+* [Deprecated features in PHP 5.6.x](http://php.net/migration56.deprecated)
+* [Deprecated features in PHP 5.5.x](http://php.net/migration55.deprecated)
+* [Deprecated features in PHP 5.4.x](http://php.net/migration54.deprecated)
+* [Deprecated features in PHP 5.3.x](http://php.net/migration53.deprecated)

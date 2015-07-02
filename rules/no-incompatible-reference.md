@@ -86,5 +86,5 @@ function &ReferenceReturningFunction() {
 Always use this.
 
 ## Further Readings
-* [Passing references as arguments](http://php.net/manual/en/language.references.pass.php)
-* [Functions arguments](http://php.net/manual/en/functions.arguments.php)
+* [Passing references as arguments](http://php.net/language.references.pass)
+* [Functions arguments](http://php.net/functions.arguments)

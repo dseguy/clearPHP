@@ -88,5 +88,5 @@ If `print` is always used alone in the expression, there is no need to chase the
 
 ## Further Reading 
 
-* [Variable functions](http://php.net/manual/en/functions.variable-functions.php)
+* [Variable functions](http://php.net/functions.variable-functions)
 * [print](http://php.net/print)

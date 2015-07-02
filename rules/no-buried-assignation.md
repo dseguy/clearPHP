@@ -84,4 +84,4 @@ If the equation is important to keep, then put it in a comment, and move this to
 -->
 
 ## Further Readings
-* [Magic methods](http://php.net/manual/en/language.oop5.magic.php)
+* [Magic methods](http://php.net/language.oop5.magic)

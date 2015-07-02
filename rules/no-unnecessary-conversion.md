@@ -57,7 +57,7 @@ If the equation is important to keep, then put it in a comment, and move this to
 -->
 
 ## Further Readings
-* [Casting integers] (http://php.net/manual/en/language.types.integer.php#language.types.integer.casting)
+* [Casting integers] (http://php.net/language.types.integer#language.types.integer.casting)
 * [floor] (http://php.net/floor)
 * [ceil] (http://php.net/ceil)
 

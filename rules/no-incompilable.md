@@ -40,8 +40,8 @@ It should be always on for broken code. It may be used less aggressively if back
 
 ## Further Reading
 
-* [PHP 5.6 backward incompatible changes](http://php.net/manual/en/migration56.incompatible.php)
-* [PHP 5.5 backward incompatible changes](http://php.net/manual/en/migration55.incompatible.php)
-* [PHP 5.4 backward incompatible changes](http://php.net/manual/en/migration54.incompatible.php)
-* [PHP 5.3 backward incompatible changes](http://php.net/manual/en/migration53.incompatible.php)
-* [PHP 5.2 backward incompatible changes](http://php.net/manual/en/migration52.incompatible.php)
+* [PHP 5.6 backward incompatible changes](http://php.net/migration56.incompatible)
+* [PHP 5.5 backward incompatible changes](http://php.net/migration55.incompatible)
+* [PHP 5.4 backward incompatible changes](http://php.net/migration54.incompatible)
+* [PHP 5.3 backward incompatible changes](http://php.net/migration53.incompatible)
+* [PHP 5.2 backward incompatible changes](http://php.net/migration52.incompatible)

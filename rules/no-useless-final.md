@@ -61,4 +61,4 @@ final class foo {
 -->
 
 ## Further Reading
-* [Final Keyword](http://php.net/manual/en/language.oop5.final.php)
+* [Final Keyword](http://php.net/language.oop5.final)

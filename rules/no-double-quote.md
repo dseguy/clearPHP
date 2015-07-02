@@ -62,6 +62,6 @@ Speed-wise, only very high volume application will benefit from this.
 
 
 ## Further Reading 
-* [Strings](http://php.net/manual/en/language.types.string.php)
+* [Strings](http://php.net/language.types.string)
 * [Disproving the Single Quotes Performance Myth](http://nikic.github.io/2012/01/09/Disproving-the-Single-Quotes-Performance-Myth.html)
 * [PHP The Right Way: Strings](http://www.phptherightway.com/pages/The-Basics.html#strings)
