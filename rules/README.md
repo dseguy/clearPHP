@@ -1,9 +1,9 @@
-<!-- generated on 09-04-2015 01:1:07-->
+<!-- generated on 02-07-2015 07:1:48-->
 # Rules
 
-This list contains one hundred and eleven rules, broken down into five categories.
+This list contains one hundred thirteen rules, in five categories.
 
-## Possible errors
+## Possible Errors
 
 The following rules signal possible mistakes in the code.
 
@@ -15,6 +15,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
 
  * [always-have-visibility] (always-have-visibility.md) - 
  * [always-typehint] (always-typehint.md) - 
+ * [always-use-semicolon] (always-use-semicolon.md) - 
  * [avoid-magic-number] (avoid-magic-number.md) - 
  * [avoid-those-functions] (avoid-those-functions.md) - 
  * [commented-fallthrough] (commented-fallthrough.md) - 
@@ -23,6 +24,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [declares-or-executes] (declares-or-executes.md) - 
  * [definitions-only] (definitions-only.md) - 
  * [imported-collision] (imported-collision.md) - 
+ * [leave-last-closing-out] (leave-last-closing-out.md) - 
  * [lowercase-keyword] (lowercase-keyword.md) - 
  * [no-array_merge-in-loop] (no-array_merge-in-loop.md) - 
  * [no-assign-null-from-method] (no-assign-null-from-method.md) - 
@@ -32,6 +34,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
  * [no-curly-array] (no-curly-array.md) - 
  * [no-dead-code] (no-dead-code.md) - 
  * [no-deep-definitions] (no-deep-definitions.md) - 
+ * [no-double-comparisons] (no-double-comparisons.md) - 
  * [no-double-quote] (no-double-quote.md) - 
  * [no-duplicate-case] (no-duplicate-case.md) - 
  * [no-duplicate-key] (no-duplicate-key.md) - 
@@ -95,7 +98,7 @@ The following rules are common sense practices that help avoid bugs or conflicts
 
 ## Security
 
-The following rules help strengthen the security of your application.
+The following rules help strengthening the security of your application.
 
  * [always-prepare-statement] (always-prepare-statement.md) - 
  * [know-your-variables] (know-your-variables.md) - 
@@ -121,11 +124,12 @@ The following rules are extracted from the manual.
  * [no-reassign-references] (no-reassign-references.md) - 
  * [no-short-tags] (no-short-tags.md) - 
  * [no-unnecessary-string-concatenation] (no-unnecessary-string-concatenation.md) - 
+ * [use-properties-default-values] (use-properties-default-values.md) - 
  * [use-smart-autoload] (use-smart-autoload.md) - 
 
 ## Performances
 
-The following rules will speed up code execution.
+The following rules will speed up the code execution.
 
  * [always-preprocess] (always-preprocess.md) - 
  * [avoid-those-slow-functions] (avoid-those-slow-functions.md) - 
@@ -135,4 +139,5 @@ The following rules will speed up code execution.
  * [no-repeated-print] (no-repeated-print.md) - 
  * [no-unnecessary-conversion] (no-unnecessary-conversion.md) - 
  * [use-reference-to-alter-in-foreach] (use-reference-to-alter-in-foreach.md) - 
+ * [use-short-assignations] (use-short-assignations.md) - 
 

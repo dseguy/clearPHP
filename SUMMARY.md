@@ -7,7 +7,7 @@ This is the summary of my book.
 * [Introduction](README.md)
 * [List of Rules](rules/README.md)
 <!-- rules -->
-  * Potential Errors
+  * Possible Errors
    * [No Dangling References](rules/no-dangling-reference.md)
  * Good Practices
    * [Always Has Visibility](rules/always-have-visibility.md)
@@ -31,6 +31,7 @@ This is the summary of my book.
    * [No Curly Array](rules/no-curly-array.md)
    * [No Dead Code](rules/no-dead-code.md)
    * [No Deep Definitions](rules/no-deep-definitions.md)
+   * [No Double Comparisons](rules/no-double-comparisons.md)
    * [No Double Quotes](rules/no-double-quote.md)
    * [No Duplicate Case In Switch](rules/no-duplicate-case.md)
    * [No Duplicate Keys In Array](rules/no-duplicate-key.md)
