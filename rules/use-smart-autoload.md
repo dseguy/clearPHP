@@ -74,4 +74,4 @@ spl_autoload_register(function ($class) {
 ## Further Reading
 * [Autoloading Classes ¶](http://php.net/autoload)
 * [spl\_autoload\_register](http://php.net/spl_autoload_register)
-* [\_\_autoload](http://php.net/manual/en/function.autoload.php)
+* [\_\_autoload](http://php.net/function.autoload)
