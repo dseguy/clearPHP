@@ -21,7 +21,7 @@ It is usually better to `throw` an exception or raise an error (with `trigger_er
 
 ## Rule Details
 
-The aim of this rule is to avoid using `exit` and `die` and rely on other error mecanisms. 
+The aim of this rule is to avoid using `exit` and `die` and rely on other error mechanisms. 
 
 This is considered a warning. 
 
@@ -58,7 +58,7 @@ When the code is run as a commandline script, `exit` and `die` are good to retur
 
 ## Further Reading
 
-* [Exceptions](http://php.net/manual/en/language.exceptions.php)
-* [Trigger_error](http://php.net/manual/en/function.trigger-error.php)
-* [Return](http://php.net/manual/en/function.return.php)
+* [Exceptions](http://php.net/language.exceptions)
+* [Trigger_error](http://php.net/trigger_error)
+* [Return](http://php.net/return)
 * [Understanding PHP objects](http://fr.slideshare.net/jpauli/understanding-php-objects)

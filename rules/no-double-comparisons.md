@@ -39,7 +39,7 @@ var_dump(abs($a-$b) < 0.00001); // This is true
 
 In this example, the error margin is `0.00001`. 
 
-It is recommended to avoid comparing literal float or expression using float directly, with the equality operators. When possible, float may be avoided alltogether, and replaced with integers or one of the PHP extensions that deals with arbitrary precision mathematics. 
+It is recommended to avoid comparing literal float or expression using float directly, with the equality operators. When possible, float may be avoided altogether, and replaced with integers or one of the PHP extensions that deals with arbitrary precision mathematics. 
 
 ## Rule Details
 

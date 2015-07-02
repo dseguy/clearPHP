@@ -23,9 +23,9 @@ class Null {
 ?>
 ```
 
-In this example, `Null` is used as a class name, allowing `$var = new Null();`. `PHP` will compile and run such code. However, readability is decreased.
+In this example, `Null` is used as a class name, allowing `$var = new Null();`. `PHP` (up to 7.0) will compile and run such code. However, readability is decreased.
 
-`Null` is not a real PHP keyword, but, just like `true` and `false`, it may just be considered as one. 
+Until PHP 7.0, `null` is not a real PHP keyword, but, just like `true` and `false`, it may just be considered as one. PHP 7.0 introduced several new reserved keywords, such as `float`, `int`, `string` or `boolean`.
 
 Constants and variables will easily bear keyword names, and not interfere with compilation. They may still confuse the reader. 
 
@@ -51,7 +51,9 @@ The following patterns are not considered warnings:
 
 ```php
 <?php
+
 $a = [ "class" => "or" ];
+
 ?>
 ```
 
@@ -62,4 +64,4 @@ If you don't fear any interference between structures names and code, you can tu
 
 ## Further Reading
 
-* [PHP reserved keywords](http://php.net/manual/en/reserved.keywords.php)
+* [PHP reserved keywords](http://php.net/reserved.keywords)
