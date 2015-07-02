@@ -39,24 +39,24 @@ It is recommended to always check values that are return by those resource-creat
 
 ## Rule Details
 
-Resource creating functions are listed in ["Resources types"](http://php.net/manual/en/resource.php). There are over 130 of them, excluding exotic PHP-extensions. The most usual are below : 
+Resource creating functions are listed in ["Resources types"](http://php.net/resource). There are over 130 of them, excluding exotic PHP extensions. The most usual are below : 
 
 * dir
 * fopen
 * fsockopen
-* ftp_connect
-* ftp_ssl_connect
+* ftp\_connect
+* ftp\_ssl\_connect
 * imagecreate and co
-* imap_open
-* ldap_connect
+* imap\_open
+* ldap\_connect
 * opendir
-* openssl_get_privatekey
-* openssl_get_publickey
-* pdf_new
+* openssl\_get\_privatekey
+* openssl\_get\_publickey
+* pdf\_new
 * pfsockopen
 * popen
-* sem_get
-* shm_attach
+* sem\_get
+* shm\_attach
 * tmpfile
 
 
@@ -114,6 +114,4 @@ if (pspell_check($pspell_link, "testt")) {
 -->
 
 ## Further Readings
-* [Resources types](http://php.net/manual/en/resource.php)
-
-
+* [Resources types](http://php.net/resource)
