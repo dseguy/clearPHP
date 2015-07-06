@@ -120,6 +120,7 @@ This is the summary of my book.
    * [Avoid Those Slow Functions](rules/avoid-those-slow-functions.md)
    * [No Debug Code](rules/no-debug-code.md)
    * [No Functioncall In Loop](rules/no-functioncall-in-loop.md)
+   * [No Query In Loop](rules/no-query-in-loop.md)
    * [No Recalculate](rules/no-recalculate.md)
    * [No Repeated Print](rules/no-repeated-print.md)
    * [No Unnecessary Conversion](rules/no-unnecessary-conversion.md)

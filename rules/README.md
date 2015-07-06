@@ -1,7 +1,7 @@
-<!-- generated on 02-07-2015 07:1:48-->
+<!-- generated on 06-07-2015 04:1:43-->
 # Rules
 
-This list contains one hundred thirteen rules, in five categories.
+This list contains one hundred fourteen rules, in five categories.
 
 ## Possible Errors
 
@@ -135,6 +135,7 @@ The following rules will speed up the code execution.
  * [avoid-those-slow-functions] (avoid-those-slow-functions.md) - 
  * [no-debug-code] (no-debug-code.md) - 
  * [no-functioncall-in-loop] (no-functioncall-in-loop.md) - 
+ * [no-query-in-loop] (no-query-in-loop.md) - 
  * [no-recalculate] (no-recalculate.md) - 
  * [no-repeated-print] (no-repeated-print.md) - 
  * [no-unnecessary-conversion] (no-unnecessary-conversion.md) - 
