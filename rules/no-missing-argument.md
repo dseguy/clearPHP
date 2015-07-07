@@ -69,7 +69,7 @@ z(1, 2, 3, 4);
 -->
 
 ## Further Reading 
-* [func_get_arg](http://php.net/manual/en/function.func-get-arg.php)
-* [func_get_args](http://php.net/manual/en/aliases.php)
-* [func_num_args](http://php.net/manual/en/function.func-num-args.php)
-* [Variable-length argument lists](http://php.net/manual/en/functions.arguments.php#functions.variable-arg-list)
+* [func_get_arg](http://php.net/func_get_arg)
+* [func_get_args](http://php.net/manual/aliases)
+* [func_num_args](http://php.net/manual/func_num_args)
+* [Variable-length argument lists](http://php.net/functions.arguments#functions.variable-arg-list)

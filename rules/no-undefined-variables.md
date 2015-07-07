@@ -54,5 +54,5 @@ functionCall($undefinedVariable);
 
 ## Further Reading 
 
-* [PHP functions aliases] (http://php.net/manual/en/aliases.php)
+* [] ()
 -->

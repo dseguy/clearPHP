@@ -140,7 +140,7 @@ Catching `Exception` is accepted when it is used for a catch-all feature.
 
 ## Further Reading 
 
-* [PHP Exceptions](http://php.net/manual/en/language.exceptions.php)
-* [SPL Exceptions](http://php.net/manual/en/spl.exceptions.php)
+* [PHP Exceptions](http://php.net/language.exceptions)
+* [SPL Exceptions](http://php.net/spl.exceptions)
 * [Exception Best Practices in PHP 5.3] (http://ralphschindler.com/2010/09/15/exception-best-practices-in-php-5-3)
 * [PHP 7 Exceptions](https://wiki.php.net/rfc/engine_exceptions_for_php7)

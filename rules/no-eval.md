@@ -57,6 +57,6 @@ Please, always use this rule.
 
 ## Further Reading
 * [Using Eval in PHP](http://blog.joshuaeichorn.com/archives/2005/08/01/using-eval-in-php/)
-* [eval](http://php.net/manual/en/function.eval.php)
-* [create_function](http://php.net/manual/en/function.create_function.php)
-* [Closures](http://php.net/manual/en/class.closure.php)
+* [eval](http://php.net/eval)
+* [create_function](http://php.net/create_function)
+* [Closures](http://php.net/class.closure)

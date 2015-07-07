@@ -63,6 +63,6 @@ while(count($a) > 0) {
 
 ## Further Readings
 * [array_merge() in Incredibly Slow When Merging A List of Arrays](https://secure.phabricator.com/book/phabflavor/article/php_pitfalls/#array-merge-in-incredibl)
-* [array_merge] (http://php.net/manual/en/function.array-merge.php)
-* [call_user_func_array](http://php.net/manual/en/function.call-user-func-array.php)
-* [Variadic](http://php.net/manual/en/functions.arguments.php#functions.variable-arg-list)
+* [array_merge] (http://php.net/array_merge)
+* [call_user_func_array](http://php.net/call_user_func_array)
+* [Variadic](http://php.net/functions.arguments#functions.variable-arg-list)

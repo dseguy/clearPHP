@@ -57,9 +57,9 @@ class myClass {
 -->
 
 ## When Not To Use It
-* If you hate unbalanced parenthesis : [(](https://xkcd.com/859/)
+* If you hate unbalanced parenthesis or other unbalanced tags : [(](https://xkcd.com/859/)
 * If you check all closing tags with your IDE or some code beautifier : just don't do this manually. 
 
 ## Further Readings
-* [PHP Closing Tag](http://php.net/manual/en/language.basic-syntax.phptags.php)
+* [PHP Closing Tag](http://php.net/language.basic-syntax.phptags)
 * [PSR-2 coding style guide](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)

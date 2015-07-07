@@ -68,4 +68,4 @@ $a = array(1 =>  'c',
 -->
 
 ## Further Readings
-* [Arrays](http://php.net/manual/en/language.types.array.php)
+* [Arrays](http://php.net/language.types.array)

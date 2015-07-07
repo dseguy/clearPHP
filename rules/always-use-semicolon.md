@@ -15,7 +15,7 @@ echo $a;
 There are a few situations where semicolon are not required, as another token will be used as instruction ending. For example : 
 
 ```php
-<?php 
+<?php
 	echo 'a' 
 ?>
 ```
@@ -79,7 +79,9 @@ It is recommended to make sure that all required semicolon are always set, even 
 The following patterns are considered warnings:
 
 ```php
-<?php echo $a ?>
+<?php
+echo $a
+?>
 <?= 3 ?>
 ```
 
@@ -99,5 +101,5 @@ include
 -->
 
 ## Further Readings
-http://php.net/manual/en/language.basic-syntax.instruction-separation.php
+* [Instruction separation](language.basic-syntax.instruction-separation)
 

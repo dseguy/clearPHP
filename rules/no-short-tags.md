@@ -32,4 +32,4 @@ This is not checked by PHP but will lead to bugs.
 
 ## Further Reading
 
-* [PHP tags](http://php.net/manual/en/language.basic-syntax.phptags.php)
+* [PHP tags](http://php.net/language.basic-syntax.phptags)

@@ -1,7 +1,8 @@
-<!-- Good Practices -->
-# No Unthrown Exceptions
+<!-- 好的实践 -->
+# 不留无效的Exceptions
 
-PHP supports exceptions. Exceptions are defined by extending the `\Exception` class and then thrown when an error needs to be reported. 
+PHP提供了 **例外**：`Exception`。  
+所有 **例外** 被定义为继承 PHP 的根 `Exception`，然后当错误需要被报告的时候抛出。
 
 ```php
 <?php
@@ -21,7 +22,8 @@ print $a / $b."\n";
 
 ?>
 ```
-It is recommended to remove any exception that is not thrown at least once in the rest of the application.
+
+这里建议删除没有被使用的 **例外**：`unusedException`。
 
 <!--
 ### Options
@@ -32,3 +34,7 @@ It is recommended to remove any exception that is not thrown at least once in th
 *[Arrays](http://php.net/manual/en/language.types.array.php)
 
 -->
+
+## 译者
+
+* [cxbig](https://github.com/cxbig)
