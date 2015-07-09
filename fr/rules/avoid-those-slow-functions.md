@@ -1,40 +1,67 @@
 <!-- Performances -->
-# Avoid Those Slow Functions
+# Evitez Ces Fonctions Lentes
 
-There are a few PHP native functions that should be avoided for speed reasons. They are listed below. 
+Il y a quelques fonctions PHP natives qui doivent être évitées pour des raisons de performances. Elles sont listées ci-dessous :
 
 | Function | Alternative |
 |---|---|
-| array\_diff        | Try using array\_diff\_key, as keys are unique |
-| array\_intersect   | Try using array\_intersect\_key, as keys are unique |
-| array\_udiff       | Try using array\_diff\_key, as keys are unique |
-| array\_uintersect  | Try using array\_intersect\_key, as keys are unique |
-| array\_unique      | Use array\_count\_values and array\_keys|
-| uasort             | Build the array to use non-u sort|
-| uksort             | Build the array to use non-u sort|
-| usort              | Build the array to use non-u sort|
-| in\_array          | Build the array to be able to replace it with isset() |
-| preg\_replace      | Replace with str\_replace(), for simple replacements |
-| array\_search      | Replace with array\_key\_exists() |
-| array\_shift       | Process the array the other way with array\_pop() |
-| array\_unshift     | Process the array the other way with array\_push() |
-| strstr             | Use strpos() for simple searches |
-| uniqid()           | Always mention entropy (2nd parameter) |
-| array\_walk()      | Use foreach($source as &$variable) { } |
-| array\_map()       | Use foreach($source as &$variable) { } |
-| range()            | You can use [generators](http://php.net/manual/language.generators.overview.php), for preventing building an array in memory|
+| array\_diff        | Utilisez array\_diff\_key, car les clés sont uniques |
+| array\_intersect   | Utilisez array\_intersect\_key, car les clés sont uniques |
+| array\_udiff       | Utilisez array\_diff\_key, car les clés sont uniques |
+| array\_uintersect  | Utilisez array\_intersect\_key, car les clés sont uniques |
+| array\_unique      | Utilisez array\_count\_values et array\_keys|
+| uasort             | Construisez le tableau pour éviter les tris personnalisés (fonctions u\*sort) |
+| uksort             | Construisez le tableau pour éviter les tris personnalisés (fonctions u\*sort) |
+| usort              | Construisez le tableau pour éviter les tris personnalisés (fonctions u\*sort) |
+| in\_array          | Construisez le tableau pour pouvoir utiliser isset() |
+| preg\_replace      | Remplacez le par str\_replace(), pour les remplacements simples |
+| array\_search      | Remplacez le par array\_key\_exists() |
+| array\_shift       | Utilisez le tableau dans l'autre sens, avec array\_pop() |
+| array\_unshift     | Utilisez le tableau dans l'autre sens, avec array\_push() |
+| strstr             | Utilisez strpos() pour les recherches simples |
+| uniqid()           | Toujours fournir le deuxième argument, l'entropie |
+| array\_walk()      | Utilisez foreach($source as &$variable) { } |
+| array\_map()       | Utilisez foreach($source as &$variable) { } |
+| range()            | Vous pouvez utiliser les [generateurrs](http://php.net/manual/language.generators.overview.php), pour réduire la consommation de mémoire|
 
+## Opérateur d'incrémentation
 
-## Rule Details
+Même si ce n'est pas une fonction, l'opérateur de pré-incrémentation est plus rapide que celui de post-incrémentation, car ce dernier effectue une copie en mémoire.
 
-Using any of the functions mentioned above will trigger a warning. 
+Notez bien que remplacer `$i++` par `++$i` n'est pas inconditionnel : dans toutes les situations où la valeur initiale de post-incrémentation est assignée à une variable ou un argument doit être laissé tel quel.
+
+```php
+<?php
+
+// Remplacements possibles
+for($i = 0; $i < 10; $i++) { 
+	//Some work here
+}
+$d++; // Seul sur sa ligne
+
+// Une revue est nécessaire avant de faire le remplacement
+$a = $b++;
+$c = pow($d++, 2); // Élève $d à la puissance de 2, et non pas $d + 1
+
+?>
+```
+
+## Détails De La Règle
+
+Utilisez n'importe laquelle des fonctions ci-dessus produit une alerte.
 
 <!--
 ### Options
 
-## When Not To Use It
 -->
 
-## Further Readings
+## Quand Ne Pas L'utiliser
+
+Lorsque ces modifications sont des micro-optimisations en comparaison avec les optimizations d'architecture. Ne vous lancez pas dans un remplacement systématique, mais les utiliser du premier coup sera toujours bénéfique.
+
+Lorsque vos conventions de codage vous poussent à utiliser l'une de ces fonctions plutôt que d'autres : il vaut mieux garder la convention cohérente.
+
+## Bibliotgraphie
 
 * [PHP Pitfalls](https://secure.phabricator.com/book/phabflavor/article/php_pitfalls/)
+* [What's the difference between ++$i and $i++ in PHP?](http://stackoverflow.com/questions/1756015/whats-the-difference-between-i-and-i-in-php)
