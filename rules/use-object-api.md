@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # Use Object API
 
-PHP is hosting both a procedural API and an OOP one. For example, mysqli extension has both the native function `mysqli_connect` and the OOP method `mysqli::__construct`. Both produce the same result. For example, the procedural style : 
+PHP features both a procedural API and an OOP one. For example, `mysqli` extension has both the native function `mysqli_connect` and the OOP method `mysqli::__construct`. Both API produce the same result. For example, the procedural style : 
 
 ```php
 <?php
@@ -37,7 +37,7 @@ One of the main difference between the two styles, is the handling of the resour
 
 On the other hand, OOP style provides an object and a wealth of methods to manipulate it. Method names are closely related to their procedural counterpart : `mysqli_prepare` is called `mysqli::prepare` in OOP. Most of the time, the prefix is simply removed. In reality, the old resource is hidden inside the object. The main change is that every method is now freed of the first argument : since it is already inside the object, there is no more need to pass it as the first argument. 
 
-Some PHP extensions have no OOP equivalent : string and number manipulations. Those, of course, will keep the procedural approach. On the other hands, a large number of extensions now comes with an OOP interface, and no procedural one, such as ext/phar or ext/zmq.
+Some PHP extensions have no OOP equivalent : array and number manipulations. Those, of course, will require the procedural API. On the other hand, a large number of extensions now comes with an OOP interface, and no procedural one, such as `ext/phar` or `ext/zmq`.
 
 It is recommended to use the object approach whenever possible. 
 
@@ -48,7 +48,7 @@ The following are considered a warning :
 ```php
 <?php
 
-
+$link = mysqli_connect('localhost', 'my_user', 'my_password', 'my_db');
 
 ?>
 ```
@@ -58,9 +58,12 @@ The following are OK :
 ```php
 <?php
 
-define('l', 3, true);
-define('m', $x, true);
-define('n', array(1,2,3), true); // before PHP 5.6
+try {
+	$db = new mysqli('localhost', 'my_user', 'my_password', 'my_db');
+} catch (Exception $e) {
+	die('Connect Error (' . $db->errorno . ') ';
+
+}
 
 ?>
 ```
@@ -68,8 +71,6 @@ define('n', array(1,2,3), true); // before PHP 5.6
 ## When Not To Use It
 If the project doesn't use any OOP feature, it may ignore this rule.
 
-<!--
-
 ## Further Reading
 
--->
+* [The Best Tool For The Job: OO versus Procedural Programming in PHP](http://devzone.zend.com/256/the-best-tool-for-the-job-oo-versus-procedural-programming-in-php/)
