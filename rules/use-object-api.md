@@ -74,3 +74,4 @@ If the project doesn't use any OOP feature, it may ignore this rule.
 ## Further Reading
 
 * [The Best Tool For The Job: OO versus Procedural Programming in PHP](http://devzone.zend.com/256/the-best-tool-for-the-job-oo-versus-procedural-programming-in-php/)
+* [Dual procedural and object-oriented interface](http://php.net/mysqli.quickstart.dual-interface)
