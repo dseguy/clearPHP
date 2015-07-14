@@ -30,6 +30,7 @@ There are a few PHP native functions that should be avoided for speed reasons. T
 | floatval()         | Cast to `(float)`                                     |
 | strval()           | Cast to `(string)`                                    |
 | boolval()          | Cast to `(bool)`                                      |
+| settype()          | Cast to `(bool)`, `(string)`, `(int)` or `(float)`    |
 
 
 ## Increment Operator
