@@ -1,40 +1,40 @@
-<!-- Performances -->
-# Avoid Those Slow Functions
+<!-- 性能 -->
+# 避免使用运行慢的函数
 
-There are a few PHP native functions that should be avoided for speed reasons. They are listed below. 
+有些PHP原生函数应该处于速度原因避免使用。它们列在下面。
 
-| Function | Alternative |
+| 函数 | 替代方法 |
 |---|---|
-| array\_diff        | Try using array\_diff\_key, as keys are unique |
-| array\_intersect   | Try using array\_intersect\_key, as keys are unique |
-| array\_udiff       | Try using array\_diff\_key, as keys are unique |
-| array\_uintersect  | Try using array\_intersect\_key, as keys are unique |
-| array\_unique      | Use array\_count\_values and array\_keys|
-| uasort             | Build the array to use non-u sort|
-| uksort             | Build the array to use non-u sort|
-| usort              | Build the array to use non-u sort|
-| in\_array          | Build the array to be able to replace it with isset() |
-| preg\_replace      | Replace with str\_replace(), for simple replacements |
-| array\_search      | Replace with array\_key\_exists() |
-| array\_shift       | Process the array the other way with array\_pop() |
-| array\_unshift     | Process the array the other way with array\_push() |
-| strstr             | Use strpos() for simple searches |
-| uniqid()           | Always mention entropy (2nd parameter) |
-| array\_walk()      | Use foreach($source as &$variable) { } |
-| array\_map()       | Use foreach($source as &$variable) { } |
-| range()            | You can use [generators](http://php.net/manual/language.generators.overview.php), for preventing building an array in memory|
+| array\_diff        | 尝试使用 array\_diff\_key, 因为键是唯一的 |
+| array\_intersect   | 尝试使用 array\_intersect\_key, 因为键是唯一的 |
+| array\_udiff       | 尝试使用 array\_diff\_key, 因为键是唯一的 |
+| array\_uintersect  | 尝试使用 array\_intersect\_key, 因为键是唯一的 |
+| array\_unique      | 使用 array\_count\_values 和 array\_keys|
+| uasort             | 建造一个数组，来不使用u sort|
+| uksort             | 建造一个数组，来不使用u sort|
+| usort              | 建造一个数组，来不使用u sort|
+| in\_array          | 建造一个数组，使它能够被isset()替换 |
+| preg\_replace      | 对于简单的替换，用str\_replace()替换 |
+| array\_search      | 用array\_key\_exists()来替换 |
+| array\_shift       | 用另外一种方式来处理数组，使用array\_pop() |
+| array\_unshift     | 用另外一种方式来处理数组，使用array\_push() |
+| strstr             | 对于简单的搜索，使用strpos() |
+| uniqid()           | 请总是提到entropy (它的第二个参数) |
+| array\_walk()      | 使用 foreach($source as &$variable) { } |
+| array\_map()       | 使用 foreach($source as &$variable) { } |
+| range()            | 你可以使用 [generators](http://php.net/manual/language.generators.overview.php), 来避免在内存中建立数组 |
 
 
-## Rule Details
+## 规则详情
 
-Using any of the functions mentioned above will trigger a warning. 
+使用上面提到的任何函数会触发一个警告。
 
 <!--
-### Options
+### 选择
 
-## When Not To Use It
+## 什么时候不使用它
 -->
 
-## Further Readings
+## 进一步阅读
 
-* [PHP Pitfalls](https://secure.phabricator.com/book/phabflavor/article/php_pitfalls/)
+* [PHP 陷阱](https://secure.phabricator.com/book/phabflavor/article/php_pitfalls/)
