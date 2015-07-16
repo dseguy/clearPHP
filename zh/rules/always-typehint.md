@@ -1,58 +1,58 @@
-<!-- Good Practices -->
-# Always Typehint
+<!-- 最佳实践 -->
+# 总是使用类型暗示
 
-PHP allows the use of `<classname>`, `array` or `callable`, to type the incoming arguments as, respectively, objects of the class `<classname>`, arrays or callable functions. 
+PHP 总是使用`<classname>`, `array` or `callable`, 来给输入参数指明数据类型是某个类，数组或可调用的函数。
 
-Whenever possible, typehint should be used so as to give more information about the incoming values. This will be used by PHP compiler and binary to check variables and, eventually, emits catchable exceptions when they are not. 
+只要有可能，类型暗示应该用来给输入的值更多的信息。这个将会被PHP编译器和PHP解释器来检查变量，以及抛出可抓取的异常。
 
-It is recommended to always set the typehint.
+设置类型暗示是永远被建议使用的。
 
-## Rule Details
+## 规则详情
 
-This rule is aimed at encouraging the use of typehint.
+本规则的目的是用来鼓励使用类型暗示。
 
-The following patterns are considered warnings:
+下面的代码模式被视为警告：
 
 ```php
 <?php
 
 function foo($a) {
-	// $a should be typehinted with some class that support `callMethod` method.
+	// $a 应该被类型暗示为某些支持'callMethod'方法的类。
 	$a->callMethod();
 }
 ?>
 ```
 
-The following patterns are not considered ambiguous:
+下面的代码会视为有歧义的：
 
 ```php
 <?php
 
 function foo($a) {
-	$b = $a . 1; // $a could be a string or an object that suport __toString()
+	$b = $a . 1; // $a 可能是一个字符串或一个支持__toString()的对象
 }
 
 ?>
 ```
 
-The following patterns are not considered warnings:
+下面的代码不会视为一个警告：
 
 ```php
 <?php
 
 function foo($a) {
-	$b = $a + 1; // $a should be an integer
-	$c = $a + 1.2; // $a should be an real
+	$b = $a + 1; // $a 应该是一个整数
+	$c = $a + 1.2; // $a 应该是一个实数
 }
 
 ?>
 ```
 
 <!--
-### Options
+### 选择
 
-## When Not To Use It
+## 什么时候不使用它
 
-## Further Readings
+## 进一步的阅读
 -->
 
