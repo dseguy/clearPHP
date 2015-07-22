@@ -1,19 +1,19 @@
-<!-- Good Practices -->
-# Compatible Typehint
-In PHP's functions and methods, arguments may have `typehint`, that forces arguments to be objects, compatible with a class or interface, array or callable. When classes and interfaces are used, objects of the same class or implementing the interface, or any of their child may be accepted. 
+<!-- 最佳实践 -->
+# 兼容性的类型暗示
+在PHP函数和方法中，参数可以有“类型暗示”，它强制参数必须是对象，与某个类或借口兼容，或数组或可调用的（函数）。当类和借口被使用时，同一个类或实现同一个借口的对象，或者它的继承都是可以被接受的。 
 
-When such criteria is not met, the code will emit a catchable error. 
+当这样的标准没有被达到的时候，代码将会释放出一个可以抓取的错误。
 
-This validation will be done at execution time. This rules aims at avoiding any situation where a method is called with the wrong type of arguments, as much as it may be identified at compile time.
+这个验证将会在运行时执行。这个规则目的在于，尽可能在编译时，避免任何某个方法调用错误的类型参数的情况。
 
-## Rule Details
+## 规则详情
 
-The following are considered a warning : 
+下面的代码被考虑为一个警告：
 
 ```php
 <?php
 
-function x(A $a) { /* some Code */ }
+function x(A $a) { /* 一些代码 */ }
 
 x(new b());
 
@@ -25,7 +25,7 @@ The following are OK :
 ```php
 <?php
 
-function x(A $a) { /* some Code */ }
+function x(A $a) { /* 一些代码 */ }
 
 x(new a());
 
@@ -33,9 +33,9 @@ x(new a());
 ```
 
 <!--
-## When Not To Use It
+## 什么时候不使用它
 
-## Further Reading
+## 进一步阅读
 
 * []()
 
