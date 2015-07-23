@@ -50,6 +50,18 @@ $c = pow($d++, 2); // Élève $d à la puissance de 2, et non pas $d + 1
 
 Utilisez n'importe laquelle des fonctions ci-dessus produit une alerte.
 
+```php
+<?php
+
+// avoid using array_unique
+$distinct = array_unique($incomingArray);
+
+// use a cast
+$price = floatval($source['price']);
+
+?>
+```
+
 <!--
 ### Options
 
@@ -61,7 +73,7 @@ Lorsque ces modifications sont des micro-optimisations en comparaison avec les o
 
 Lorsque vos conventions de codage vous poussent à utiliser l'une de ces fonctions plutôt que d'autres : il vaut mieux garder la convention cohérente.
 
-## Bibliotgraphie
+## Bibliographie
 
 * [PHP Pitfalls](https://secure.phabricator.com/book/phabflavor/article/php_pitfalls/)
 * [What's the difference between ++$i and $i++ in PHP?](http://stackoverflow.com/questions/1756015/whats-the-difference-between-i-and-i-in-php)
