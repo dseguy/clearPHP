@@ -60,7 +60,7 @@ Les exemples suivants sont valides :
 ### Options
 -->
 
-## When Not To Use It
+## Quand L'Éviter
 * Évitez de créer des variables de cache au niveau global, car elles sont difficiles à identifier et à réutiliser au niveau de l'ensemble de l'application. Il est plus sécuritaire de le faire à l'intérieur d'une méthode.
 * Certains appels de méthodes effectuent des calculs mais modifient aussi l'état d'un systène, comme par exemple `ini_set` ou une méthode de changement d'état dans une classe. Si les résultats peuvent être mis en cache, l'appel reste nécessaire.
 
