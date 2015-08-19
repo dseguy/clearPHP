@@ -1,27 +1,27 @@
-<!-- Good Practices -->
-# Constant Condition
+<!-- 最佳实践 -->
+# 常量条件
 
-Constant conditions signals a debug situation (forcing some rare behavior), a bug or a typo. 
+常量条件预示着一个调试情况（强制某些少有的行为），一个bug或一个笔误。
 
 ```php
 <?php
 if (true) { 
-	// Store in cache
+	// 存在缓存中
 }
-// caching is forced, while it should be configurable
+// 缓存被强制了，而它应该是可以设置的
 
 while($x = fetchData()) {
 
 	if (strlen($x) == 0) { break 1;}
 	
-	// process $x
+	// 处理 $x
 }
-// should be a do ... while() without a break
+// 应该是一个do ... while() 并且没有break
 
 ?>
 ```
 
-Loops that are build with constant conditions, generally include an exit instruction, allowing them to be finalized without stopping the whole application. Such loops may be rewritten to make the exit function more visible, in the loop condition. 
+使用常量条件的循环，通常包含一个退出指令，以允许它们终止而不影响整个应用。这样的循环也许可以将退出函数更加明显的方式重写，在循环的条件中。
 
 ```php
 <?php
@@ -29,7 +29,7 @@ Loops that are build with constant conditions, generally include an exit instruc
 while(true) {
 	waitForEvent();
 	
-	// exit function that needs to be in the while condition.
+	// 退出函数需要放置于循环条件中。
 	if (receivedQuitSignal()) {
 		break 1;
 	}
@@ -38,41 +38,41 @@ while(true) {
 ?>
 ```
 
-Using constants in conditions is not regarded as constant conditions : such constants may be conditional constants (they value is dynamically defined at startup, from an external file), or even have dynamical value (such as the magic constants). Constant conditions will be build with literals.
+然而在条件中使用常量不会被视为常量条件：这样的常量可以是条件式常量（它们的值可能在程序开始时动态地定义，或来自一个外置的文件），或甚至拥有动态的值（比如魔力常量的情况--magic constants）。常理条件将会使用字面常量值。
 
-It is recommended to use non-constant conditions in the flow instructions. 
+在流程指令中使用非常量条件是强烈推荐的。
 
 
-## Rule Details
+## 规则详情
 
-This rules spots conditional structures which value may be processed even before compiling the code. Such structures should be reviewed.
+这个规则定位到常理条件，它甚至可能在编译时之前处理。这样的结果是应该被审核的。
 
-The following codes are considered a warning:
+下面的代码被视为一个警告：
 
 ```php
 <?php
 
-// with if or elseif
+// 用 if 或 elseif
 if (true) { 
 	// doSomething()
 } elseif (2) {
 	// doSomething()
 }
 
-// with ternary operator
+// 使用 ternary 操作符
 $x = 0 ? 1 : 2;
 
-// with do...while
+// 使用 do...while
 do 
 	// doSomething()
 while (1 == 1);
 
-// with while
+// 使用 while
 while (!false) {
 	// doSomething()
 }
 
-// with for
+// 使用 for
 for ( ; $x == 2 || true ; ) {
 	// doSomething()
 }
@@ -80,24 +80,24 @@ for ( ; $x == 2 || true ; ) {
 ?>
 ```
 
-The following pattern is considered legit:
+下面的代码是被视为合法的：
 
 ```php
 <?php
 
-// SOME_CONSTANT may be configured somewhere
+// SOME_CONSTANT 也许在其他地方设置了
 if (SOME_CONSTANT) { 
 	// doSomething()
 } elseif (basename(__FILE__) == 'index.php') {
 	// __FILE__ is a dynamic constant
 }
 
-// with for
+// 使用 for
 for ( ; $object->property == 2 ; ) {
 	// doSomething()
 }
 
-// here, the condition is in the case
+// 这里，, 条件在 case 从句里面
 switch (true) {
 	case $a : 
 		// doSomething()
@@ -114,11 +114,11 @@ switch (true) {
 ```
 
 <!--
-## When Not To Use It
+## 什么时候不使用
 
 
 
-## Further Reading 
+## 进一步阅读 
 
-* [PHP functions aliases] (http://php.net/manual/en/aliases.php)
+* [PHP 函数别名] (http://php.net/manual/aliases.php)
 -->
