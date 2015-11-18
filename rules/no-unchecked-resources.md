@@ -8,7 +8,7 @@ PHP resources are a special type of data in PHP. They represent an external stru
 
 $fp = fopen('/tmp/someText.txt', 'w');
 
-fwrite($fp, date('r');
+fwrite($fp, date('r'));
 
 fclose($fp);
 
