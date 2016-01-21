@@ -88,7 +88,7 @@ function foo() {
 	unset($this->property);
 	
 	foreach($array as $key => $value) {
-		unset($array[$value]);
+		unset($array[$key]);
 	}
 }
 
