@@ -33,6 +33,9 @@ This rule require that logical operators uses `&&`, `||`, `^`, instead of `and`,
 
 $a = 1 and 2 or 3 xor 4;
 
+// mixing style is bad too
+$a = 1 and 2 or 3 xor 4;
+
 ?>
 ```
 
@@ -51,8 +54,9 @@ $a = 1 && 2 || 3 ^ 4;
 -->
 ## When Not To Use It
 
-If default is not always necessary, you may disable this rule.
+When logical operations are never mixed with assignations or ternary operators, this rule may be skipped. However, this is an easily broken pre-requisite.
 
 
 ## Further Reading
 * [Logical operators](http://php.net/language.operators.logical)
+* ['AND' vs '&&' as operator](http://stackoverflow.com/questions/2803321/and-vs-as-operator)

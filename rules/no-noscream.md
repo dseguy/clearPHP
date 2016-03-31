@@ -47,12 +47,11 @@ while($line = fgets($fp)) {
 ?>
 ```
 
-<!--
 ## When Not To Use It
-Never
+When a native PHP function still produce some exepected errors that can't be hidden. 
 
--->
 ## Further Reading 
 
 * [Example that shows the effect of scream](http://php.net/scream.examples-simple)
 * [ext/scream extension](http://pecl.php.net/package/scream)
+* [Five reasons why the shut-op operator (@) should be avoided](http://derickrethans.nl/five-reasons-why-the-shutop-operator-should-be-avoided.html)

@@ -3,6 +3,7 @@
 
 Loops are a way to execute the same instructions multiple times. That ability makes them prime candidate for optimization : the less process in a loop, the fastest the loop performs. 
 
+## Avoid recounting always the same array
 ```php
 <?php
 
@@ -27,6 +28,22 @@ for($i = 0; $i < $count; $i++) {
 ?>
 ```
 This second code will do the same as the first, but speed will be dramatically increased. 
+
+##Also avoid constants expressions
+
+```php
+<?php
+
+$x = range(1,10);
+$count = count($x);
+for($i = 0; $i < $count; $i++) {
+	// doSomething with $i
+}
+	
+?>
+```
+This second code will do the same as the first, but speed will be dramatically increased. 
+
 
 As a general rule, anything inside the loop (here `doSomething with $i`), in the terminal clause or in the incrementation clause (second and third argument to `for`, are worth checking for any operation that will not be affected by `$i`. If it is always the same, then it should be preprocessed. 
 

@@ -11,7 +11,7 @@ This rule require that every `switch` statement has at least a `default` case.
 
 ```php
 <?php
-switch (foo) {
+switch ($foo) {
     case 'a':
         doA();
         break 1;
