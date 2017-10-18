@@ -1,5 +1,5 @@
 <!-- Good Practices -->
-# Always Has Visibility
+# Always Have Visibility
 
 For compatibility reasons, PHP allows methods and properties to be defined without visibility : `public`, `protected` or `private`. By default, methods and properties are defined as `public`, making them available to all other objects without restriction.
 
@@ -18,7 +18,8 @@ The following patterns are considered warnings:
 ```php
 <?php
 
-abstract class x {
+interface i { function anInterfaceMethod() ; }
+abstract class x extends i {
 	static $staticProperty;
 	var $varProperty;
 
@@ -27,6 +28,7 @@ abstract class x {
 	final function defautVisibilityFinalMethod() {}
 	abstract function defautVisibilityAbstractMethod();
 	
+	function anInterfaceMethod() {} 
 }
 
 ?>
@@ -45,16 +47,18 @@ abstract class x {
 	static protected function defautVisibilityStaticMethod() {}
 	final private function defautVisibilityFinalMethod() {}
 	abstract public function defautVisibilityAbstractMethod();
-	
+
 }
 
 ?>
 ```
 
+## When Not To Use It
+
+Methods that implements interfaces are public and must remain public. As such, they may omit even the default mention, or they may be explicitely mentioned for consistency sake.
+
 <!--
 ### Options
-
-## When Not To Use It
 
 ## Further Readings
 -->
