@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # Always Have Visibility
 
-For compatibility reasons, PHP allows methods and properties to be defined without visibility : `public`, `protected` or `private`. By default, methods and properties are defined as `public`, making them available to all other objects without restriction.
+For compatibility reasons, PHP allows methods and properties to be defined without visibility : `public`, `protected` or `private`. By default, methods and properties are defined as `public`, making them available to all other objects without restriction. 
 
 One development approach is to set visibility by default to `private`, and then, lift the constraint as it is apparent that the resource has to be reached from parents or from outside objects. 
 
@@ -18,8 +18,15 @@ The following patterns are considered warnings:
 ```php
 <?php
 
-interface i { function anInterfaceMethod() ; }
+interface i { public function anInterfaceMethod() ; }
+
+trait t {
+	private function aTraitMethod() ;
+}
+
 abstract class x extends i {
+	use t;
+	
 	static $staticProperty;
 	var $varProperty;
 
@@ -28,7 +35,7 @@ abstract class x extends i {
 	final function defautVisibilityFinalMethod() {}
 	abstract function defautVisibilityAbstractMethod();
 	
-	function anInterfaceMethod() {} 
+	public function anInterfaceMethod() {} 
 }
 
 ?>
@@ -55,7 +62,7 @@ abstract class x {
 
 ## When Not To Use It
 
-Methods that implements interfaces are public and must remain public. As such, they may omit even the default mention, or they may be explicitely mentioned for consistency sake.
+Interface's methods are always public, so it is redundant to add the 'public' visibility. Adding 'public' on interface's methods is for consistency sake.
 
 <!--
 ### Options
